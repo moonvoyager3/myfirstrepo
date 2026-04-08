@@ -204,11 +204,7 @@ learner_debug_popout_button = web.page["learner-debug-popout-btn"]
 learner_debug_hide_button = web.page["learner-debug-hide-btn"]
 learner_debug_reopen_button = web.page["learner-debug-reopen-btn"]
 cowboy_debug_diagnostics = web.page["cowboy-debug-diagnostics"]
-cowboy_debug_grid = web.page["cowboy-debug-grid"]
-cowboy_debug_refresh_button = web.page["cowboy-debug-refresh-btn"]
-cowboy_debug_replay_button = web.page["cowboy-debug-replay-btn"]
 cowboy_debug_trigger_loader_button = web.page["cowboy-debug-trigger-loader-btn"]
-cowboy_debug_copy_button = web.page["cowboy-debug-copy-btn"]
 cowboy_debug_home_button = web.page["cowboy-debug-home-btn"]
 
 
@@ -763,174 +759,7 @@ def end_question_transition_loader(request_id: int) -> None:
     hide_question_transition_loader()
 
 
-def cowboy_loader_data_uri() -> str:
-    return (
-        "data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20240%20180%27%3E"
-        "%3Cg%20fill%3D%27none%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20stroke-width%3D%276%27%3E"
-        "%3Ccircle%20cx%3D%27164%27%20cy%3D%2742%27%20r%3D%2724%27%20stroke%3D%27%23cc8d2a%27/%3E"
-        "%3Cpath%20d%3D%27M144%2056%20C134%2064%2C%20126%2072%2C%20122%2090%27%20stroke%3D%27%23cc8d2a%27/%3E"
-        "%3Ccircle%20cx%3D%27112%27%20cy%3D%2748%27%20r%3D%2712%27%20stroke%3D%27%2371451f%27/%3E"
-        "%3Cpath%20d%3D%27M92%2040%20C103%2034%2C%20121%2034%2C%20132%2040%27%20stroke%3D%27%2371451f%27/%3E"
-        "%3Cpath%20d%3D%27M103%2038%20L107%2026%20L121%2026%20L124%2038%27%20stroke%3D%27%2371451f%27/%3E"
-        "%3Cpath%20d%3D%27M112%2060%20L116%2084%20L128%2096%27%20stroke%3D%27%2371451f%27/%3E"
-        "%3Cpath%20d%3D%27M113%2066%20L132%2074%27%20stroke%3D%27%2371451f%27/%3E"
-        "%3Cpath%20d%3D%27M68%2098%20C88%2076%2C%20132%2076%2C%20160%2094%27%20stroke%3D%27%2371451f%27/%3E"
-        "%3Cpath%20d%3D%27M160%2094%20C172%2082%2C%20182%2082%2C%20192%2090%27%20stroke%3D%27%2371451f%27/%3E"
-        "%3Cpath%20d%3D%27M192%2090%20C204%2092%2C%20208%20102%2C%20202%20112%20C194%20118%2C%20182%20116%2C%20178%20108%27%20stroke%3D%27%2371451f%27/%3E"
-        "%3Cpath%20d%3D%27M66%2098%20C58%20118%2C%2058%20132%2C%2076%20136%20L160%20136%20C174%20132%2C%20178%20116%2C%20172%20102%27%20stroke%3D%27%2371451f%27/%3E"
-        "%3Cpath%20d%3D%27M66%20100%20C52%20102%2C%2048%20114%2C%2054%20126%27%20stroke%3D%27%2371451f%27/%3E"
-        "%3Cpath%20d%3D%27M86%20136%20L80%20166%27%20stroke%3D%27%2371451f%27/%3E"
-        "%3Cpath%20d%3D%27M112%20136%20L108%20168%27%20stroke%3D%27%2371451f%27/%3E"
-        "%3Cpath%20d%3D%27M146%20136%20L150%20168%27%20stroke%3D%27%2371451f%27/%3E"
-        "%3Cpath%20d%3D%27M168%20134%20L176%20166%27%20stroke%3D%27%2371451f%27/%3E"
-        "%3Cpath%20d%3D%27M34%20168%20H208%27%20stroke%3D%27%2371451f%27/%3E%3C/g%3E%3C/svg%3E"
-    )
-
-
-def cowboy_debug_cards_html() -> str:
-    data_uri = cowboy_loader_data_uri()
-    spinning_image_style = (
-        "width:12.5rem;max-width:min(12.5rem, 70vw);margin:0 auto;display:block;"
-        "transform-origin:center;"
-        "animation:loader-cowboy-bounce 0.7s ease-out, loader-cowboy-spin 2.8s linear infinite;"
-    )
-    return (
-        f"""
-        <article class="cowboy-debug-card">
-            <h3>Attempt 1</h3>
-            <p>Centered inline-block card, based on the old Attempt 9 shape, with inline image spin.</p>
-            <div class="cowboy-debug-stage" data-debug-stage="attempt-1" style="background:#fff7ec;">
-                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
-                    <div data-debug-art="attempt-1" style="display:inline-block;background:linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%);border:2px solid #b88444;padding:0.8rem 1rem;text-align:center;">
-                        <img src="{data_uri}" alt="Cowboy loader" style="{spinning_image_style}">
-                        <div style="margin-top:0.55rem;text-align:center;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</div>
-                    </div>
-                </div>
-            </div>
-            <div class="cowboy-debug-meta" data-debug-meta="attempt-1"></div>
-        </article>
-        <article class="cowboy-debug-card">
-            <h3>Attempt 2</h3>
-            <p>Fixed-width centered card with explicit centered text block and inline spin.</p>
-            <div class="cowboy-debug-stage" data-debug-stage="attempt-2" style="background:#fff7ec;">
-                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
-                    <div data-debug-art="attempt-2" style="width:14rem;max-width:14rem;background:linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%);border:2px solid #b88444;box-shadow:0 12px 28px rgba(77,45,14,0.12);padding:0.8rem;text-align:center;">
-                        <img src="{data_uri}" alt="Cowboy loader" style="{spinning_image_style}">
-                        <div style="margin-top:0.55rem;display:block;width:100%;text-align:center;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</div>
-                    </div>
-                </div>
-            </div>
-            <div class="cowboy-debug-meta" data-debug-meta="attempt-2"></div>
-        </article>
-        <article class="cowboy-debug-card">
-            <h3>Attempt 3</h3>
-            <p>Centered inline-block card with a nested fixed-width content column to isolate text alignment from card width.</p>
-            <div class="cowboy-debug-stage" data-debug-stage="attempt-3" style="background:#fff7ec;">
-                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
-                    <div data-debug-art="attempt-3" style="display:inline-block;background:linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%);border:2px solid #b88444;padding:0.85rem 1rem;">
-                        <div style="width:13rem;max-width:13rem;margin:0 auto;text-align:center;">
-                            <img src="{data_uri}" alt="Cowboy loader" style="{spinning_image_style}">
-                            <div style="margin-top:0.55rem;text-align:center;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cowboy-debug-meta" data-debug-meta="attempt-3"></div>
-        </article>
-        <article class="cowboy-debug-card">
-            <h3>Attempt 4</h3>
-            <p>Absolute-positioned fixed card with flat colors only, in case gradients affect layout.</p>
-            <div class="cowboy-debug-stage" data-debug-stage="attempt-4" style="background:#f0dfc4;">
-                <div style="position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);">
-                    <div data-debug-art="attempt-4" style="width:14rem;background:#ffe6bf;border:2px solid #b88444;padding:0.85rem;text-align:center;">
-                        <img src="{data_uri}" alt="Cowboy loader" style="{spinning_image_style}">
-                        <div style="margin-top:0.55rem;text-align:center;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</div>
-                    </div>
-                </div>
-            </div>
-            <div class="cowboy-debug-meta" data-debug-meta="attempt-4"></div>
-        </article>
-        <article class="cowboy-debug-card">
-            <h3>Attempt 5</h3>
-            <p>Width locked with <code>min/max/width</code> and centered by inline flex shell, preserving the richer card look.</p>
-            <div class="cowboy-debug-stage" data-debug-stage="attempt-5" style="background:#fff7ec;">
-                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
-                    <div data-debug-art="attempt-5" style="width:14rem;min-width:14rem;max-width:14rem;background:linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%);border:2px solid #b88444;box-shadow:0 12px 28px rgba(77,45,14,0.12);padding:0.8rem;text-align:center;">
-                        <img src="{data_uri}" alt="Cowboy loader" style="{spinning_image_style}">
-                        <div style="margin-top:0.55rem;text-align:center;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</div>
-                    </div>
-                </div>
-            </div>
-            <div class="cowboy-debug-meta" data-debug-meta="attempt-5"></div>
-        </article>
-        <article class="cowboy-debug-card">
-            <h3>Attempt 6</h3>
-            <p>Compact hostile-host-safe fallback: centered flat card, inline sizing, inline text, inline image spin.</p>
-            <div class="cowboy-debug-stage" data-debug-stage="attempt-6" style="background:#f0dfc4;position:relative;min-height:220px;">
-                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
-                    <div data-debug-art="attempt-6" style="display:inline-block;background:#ffe6bf;border:2px solid #b88444;padding:0.8rem;text-align:center;">
-                        <img src="{data_uri}" alt="Cowboy loader" style="width:12rem;max-width:12rem;display:block;margin:0 auto;transform-origin:center;animation:loader-cowboy-bounce 0.7s ease-out, loader-cowboy-spin 2.8s linear infinite;">
-                        <div style="margin-top:0.55rem;text-align:center;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</div>
-                    </div>
-                </div>
-            </div>
-            <div class="cowboy-debug-meta" data-debug-meta="attempt-6"></div>
-        </article>
-        """
-    )
-
-
-def draw_cowboy_canvas(canvas) -> None:
-    context = canvas.getContext("2d")
-    if context is None:
-        return
-    context.clearRect(0, 0, canvas.width, canvas.height)
-    context.lineWidth = 6
-    context.lineCap = "round"
-    context.lineJoin = "round"
-
-    def stroke_path(color: str, commands: list[tuple[str, tuple[float, ...]]]) -> None:
-        context.beginPath()
-        context.strokeStyle = color
-        for index, (command, values) in enumerate(commands):
-            if command == "moveTo":
-                context.moveTo(values[0], values[1])
-            elif command == "lineTo":
-                context.lineTo(values[0], values[1])
-            elif command == "bezierCurveTo":
-                context.bezierCurveTo(*values)
-            elif command == "arc":
-                context.arc(*values)
-        context.stroke()
-
-    stroke_path("#cc8d2a", [("arc", (164, 42, 24, 0, 6.283185307179586)), ("moveTo", (144, 56)), ("bezierCurveTo", (134, 64, 126, 72, 122, 90))])
-    stroke_path("#71451f", [("arc", (112, 48, 12, 0, 6.283185307179586))])
-    stroke_path("#71451f", [("moveTo", (92, 40)), ("bezierCurveTo", (103, 34, 121, 34, 132, 40))])
-    stroke_path("#71451f", [("moveTo", (103, 38)), ("lineTo", (107, 26)), ("lineTo", (121, 26)), ("lineTo", (124, 38))])
-    stroke_path("#71451f", [("moveTo", (112, 60)), ("lineTo", (116, 84)), ("lineTo", (128, 96))])
-    stroke_path("#71451f", [("moveTo", (113, 66)), ("lineTo", (132, 74))])
-    stroke_path("#71451f", [("moveTo", (68, 98)), ("bezierCurveTo", (88, 76, 132, 76, 160, 94))])
-    stroke_path("#71451f", [("moveTo", (160, 94)), ("bezierCurveTo", (172, 82, 182, 82, 192, 90))])
-    stroke_path("#71451f", [("moveTo", (192, 90)), ("bezierCurveTo", (204, 92, 208, 102, 202, 112)), ("bezierCurveTo", (194, 118, 182, 116, 178, 108))])
-    stroke_path("#71451f", [("moveTo", (66, 98)), ("bezierCurveTo", (58, 118, 58, 132, 76, 136)), ("lineTo", (160, 136)), ("bezierCurveTo", (174, 132, 178, 116, 172, 102))])
-    stroke_path("#71451f", [("moveTo", (66, 100)), ("bezierCurveTo", (52, 102, 48, 114, 54, 126))])
-    stroke_path("#71451f", [("moveTo", (86, 136)), ("lineTo", (80, 166))])
-    stroke_path("#71451f", [("moveTo", (112, 136)), ("lineTo", (108, 168))])
-    stroke_path("#71451f", [("moveTo", (146, 136)), ("lineTo", (150, 168))])
-    stroke_path("#71451f", [("moveTo", (168, 134)), ("lineTo", (176, 166))])
-    stroke_path("#71451f", [("moveTo", (34, 168)), ("lineTo", (208, 168))])
-
-
 def refresh_cowboy_debug_screen() -> None:
-    cowboy_debug_grid.innerHTML = cowboy_debug_cards_html()
-    runtime_card = cowboy_debug_grid._dom_element.querySelector("[data-debug-inline-runtime='true']")
-    runtime_card_style = getattr(runtime_card, "style", None)
-    if runtime_card_style is not None:
-        runtime_card_style.background = "linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%)"
-        runtime_card_style.border = "2px solid #b88444"
-        runtime_card_style.boxShadow = "0 12px 28px rgba(77, 45, 14, 0.12)"
-        runtime_card_style.color = "#6a3c16"
-
     host = getattr(window.location, "host", "")
     path_name = getattr(window.location, "pathname", "")
     styles_supported = hasattr(window, "getComputedStyle")
@@ -941,51 +770,11 @@ def refresh_cowboy_debug_screen() -> None:
         f"devicePixelRatio: {window.devicePixelRatio}",
         f"screen: {window.innerWidth}x{window.innerHeight}",
         f"computedStyle: {styles_supported}",
-        "Use Replay Animations to remeasure the six background/text repair attempts side by side.",
+        "",
+        "This page now keeps only the real production loader preview.",
+        "Use Trigger Real Loader to show the actual site overlay.",
     ]
     cowboy_debug_diagnostics.textContent = "\n".join(diagnostics_lines)
-    replay_cowboy_debug_animations()
-    window.setTimeout(create_proxy(lambda: replay_cowboy_debug_animations()), 120)
-
-
-def replay_cowboy_debug_animations() -> None:
-    art_ids = [
-        "attempt-1",
-        "attempt-2",
-        "attempt-3",
-        "attempt-4",
-        "attempt-5",
-        "attempt-6",
-    ]
-    for art_id in art_ids:
-        art = cowboy_debug_grid._dom_element.querySelector(f"[data-debug-art='{art_id}']")
-        meta = cowboy_debug_grid._dom_element.querySelector(f"[data-debug-meta='{art_id}']")
-        stage = cowboy_debug_grid._dom_element.querySelector(f"[data-debug-stage='{art_id}']")
-        if art is None or meta is None:
-            continue
-        rect = art.getBoundingClientRect()
-        computed = window.getComputedStyle(art)
-        background = computed.getPropertyValue("background-image") if computed is not None else ""
-        border = computed.getPropertyValue("border-top-width") if computed is not None else ""
-        animation_name = computed.getPropertyValue("animation-name") if computed is not None else ""
-        stage_background = ""
-        if stage is not None:
-            stage_background = window.getComputedStyle(stage).getPropertyValue("background-image")
-        extra = ""
-        if art.tagName.lower() == "img":
-            extra = (
-                f"natural: {getattr(art, 'naturalWidth', 0)}x{getattr(art, 'naturalHeight', 0)}\n"
-                f"client: {art.clientWidth}x{art.clientHeight}\n"
-            )
-        meta.textContent = (
-            f"box: {round(rect.width, 1)} x {round(rect.height, 1)}\n"
-            f"client: {art.clientWidth} x {art.clientHeight}\n"
-            f"animation-name: {animation_name or '-'}\n"
-            f"card background: {background or '-'}\n"
-            f"card border width: {border or '-'}\n"
-            f"stage background: {stage_background or '-'}\n"
-            f"{extra}"
-        ).strip()
 
 
 def show_cowboy_debug_screen() -> None:
@@ -5412,14 +5201,6 @@ def on_qna_content_click(event) -> None:
         event.stopPropagation()
 
 
-def on_cowboy_debug_refresh_click(event) -> None:
-    refresh_cowboy_debug_screen()
-
-
-def on_cowboy_debug_replay_click(event) -> None:
-    replay_cowboy_debug_animations()
-
-
 async def preview_real_cowboy_loader() -> None:
     loader_request_id = begin_question_transition_loader()
     if question_transition_loader_task is not None and not question_transition_loader_task.done():
@@ -5434,26 +5215,6 @@ async def preview_real_cowboy_loader() -> None:
 
 def on_cowboy_debug_trigger_loader_click(event) -> None:
     asyncio.create_task(preview_real_cowboy_loader())
-
-
-def on_cowboy_debug_copy_click(event) -> None:
-    diagnostics = cowboy_debug_diagnostics.textContent or ""
-    meta_blocks = cowboy_debug_grid._dom_element.querySelectorAll("[data-debug-meta]")
-    parts = [diagnostics]
-    for meta in meta_blocks:
-        card = meta.closest(".cowboy-debug-card") if hasattr(meta, "closest") else None
-        title = ""
-        if card is not None:
-            header = card.querySelector("h3")
-            title = header.textContent if header is not None else ""
-        parts.append(f"{title}\n{meta.textContent or ''}".strip())
-    asyncio.create_task(
-        copy_text_to_clipboard(
-            "\n\n".join(part for part in parts if part),
-            "Cowboy debug diagnostics copied to clipboard.",
-            "There are no cowboy debug diagnostics to copy right now.",
-        )
-    )
 
 
 def on_cowboy_debug_home_click(event) -> None:
@@ -5852,10 +5613,7 @@ learner_debug_reopen_button.on_click.add_listener(on_learner_debug_reopen_click)
 stats_tab_button.on_click.add_listener(on_stats_tab_click)
 qna_tab_button.on_click.add_listener(on_qna_tab_click)
 qna_tab.on_click.add_listener(on_qna_content_click)
-cowboy_debug_refresh_button.on_click.add_listener(on_cowboy_debug_refresh_click)
-cowboy_debug_replay_button.on_click.add_listener(on_cowboy_debug_replay_click)
 cowboy_debug_trigger_loader_button.on_click.add_listener(on_cowboy_debug_trigger_loader_click)
-cowboy_debug_copy_button.on_click.add_listener(on_cowboy_debug_copy_click)
 cowboy_debug_home_button.on_click.add_listener(on_cowboy_debug_home_click)
 advanced_options_toggle.on_click.add_listener(on_advanced_options_toggle)
 question_metadata_toggle.on_click.add_listener(on_question_metadata_toggle)
