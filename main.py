@@ -788,19 +788,21 @@ def cowboy_loader_data_uri() -> str:
 
 def cowboy_debug_cards_html() -> str:
     data_uri = cowboy_loader_data_uri()
-    image_style = "width:9.5rem;max-width:70%;margin:0 auto;display:block;"
-    image_style_large = "width:13rem;max-width:min(13rem, 70vw);margin:0 auto;display:block;"
-    text_html = '<p class="cowboy-debug-loader-title">Hold on cowboy</p>'
+    spinning_image_style = (
+        "width:12.5rem;max-width:min(12.5rem, 70vw);margin:0 auto;display:block;"
+        "transform-origin:center;"
+        "animation:loader-cowboy-bounce 0.7s ease-out, loader-cowboy-spin 2.8s linear infinite;"
+    )
     return (
         f"""
         <article class="cowboy-debug-card">
             <h3>Attempt 1</h3>
-            <p>Class-based background and text styling only, with the image using working inline sizing.</p>
-            <div class="cowboy-debug-stage" data-debug-stage="attempt-1">
-                <div class="cowboy-debug-loader">
-                    <div class="cowboy-debug-loader-card" data-debug-art="attempt-1">
-                        <img src="{data_uri}" alt="Cowboy loader" style="{image_style}">
-                        {text_html}
+            <p>Centered inline-block card, based on the old Attempt 9 shape, with inline image spin.</p>
+            <div class="cowboy-debug-stage" data-debug-stage="attempt-1" style="background:#fff7ec;">
+                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+                    <div data-debug-art="attempt-1" style="display:inline-block;background:linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%);border:2px solid #b88444;padding:0.8rem 1rem;text-align:center;">
+                        <img src="{data_uri}" alt="Cowboy loader" style="{spinning_image_style}">
+                        <div style="margin-top:0.55rem;text-align:center;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</div>
                     </div>
                 </div>
             </div>
@@ -808,12 +810,12 @@ def cowboy_debug_cards_html() -> str:
         </article>
         <article class="cowboy-debug-card">
             <h3>Attempt 2</h3>
-            <p>Inline background, border, shadow, and text colors directly on the card.</p>
-            <div class="cowboy-debug-stage" data-debug-stage="attempt-2">
-                <div class="cowboy-debug-loader">
-                    <div class="cowboy-debug-loader-card" data-debug-art="attempt-2" style="border:2px solid #b88444;background:linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%);box-shadow:0 12px 28px rgba(77, 45, 14, 0.12);color:#6a3c16;">
-                        <img src="{data_uri}" alt="Cowboy loader" style="{image_style}">
-                        <p class="cowboy-debug-loader-title" style="margin:0.55rem 0 0;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</p>
+            <p>Fixed-width centered card with explicit centered text block and inline spin.</p>
+            <div class="cowboy-debug-stage" data-debug-stage="attempt-2" style="background:#fff7ec;">
+                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+                    <div data-debug-art="attempt-2" style="width:14rem;max-width:14rem;background:linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%);border:2px solid #b88444;box-shadow:0 12px 28px rgba(77,45,14,0.12);padding:0.8rem;text-align:center;">
+                        <img src="{data_uri}" alt="Cowboy loader" style="{spinning_image_style}">
+                        <div style="margin-top:0.55rem;display:block;width:100%;text-align:center;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</div>
                     </div>
                 </div>
             </div>
@@ -821,12 +823,14 @@ def cowboy_debug_cards_html() -> str:
         </article>
         <article class="cowboy-debug-card">
             <h3>Attempt 3</h3>
-            <p>Inline stage background plus inline card background, testing whether the backdrop layer is the missing part.</p>
-            <div class="cowboy-debug-stage" data-debug-stage="attempt-3" style="background:radial-gradient(circle at top, rgba(255, 244, 217, 0.75), transparent 45%), #fff7ec;">
-                <div class="cowboy-debug-loader">
-                    <div class="cowboy-debug-loader-card" data-debug-art="attempt-3" style="border:2px solid #b88444;background:linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%);">
-                        <img src="{data_uri}" alt="Cowboy loader" style="{image_style}">
-                        <p class="cowboy-debug-loader-title" style="margin:0.55rem 0 0;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</p>
+            <p>Centered inline-block card with a nested fixed-width content column to isolate text alignment from card width.</p>
+            <div class="cowboy-debug-stage" data-debug-stage="attempt-3" style="background:#fff7ec;">
+                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+                    <div data-debug-art="attempt-3" style="display:inline-block;background:linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%);border:2px solid #b88444;padding:0.85rem 1rem;">
+                        <div style="width:13rem;max-width:13rem;margin:0 auto;text-align:center;">
+                            <img src="{data_uri}" alt="Cowboy loader" style="{spinning_image_style}">
+                            <div style="margin-top:0.55rem;text-align:center;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -834,12 +838,12 @@ def cowboy_debug_cards_html() -> str:
         </article>
         <article class="cowboy-debug-card">
             <h3>Attempt 4</h3>
-            <p>JS-applied inline card styling after render, to test whether host strips styles at parse time but not runtime.</p>
-            <div class="cowboy-debug-stage" data-debug-stage="attempt-4">
-                <div class="cowboy-debug-loader">
-                    <div class="cowboy-debug-loader-card" data-debug-art="attempt-4" data-debug-inline-runtime="true">
-                        <img src="{data_uri}" alt="Cowboy loader" style="{image_style}">
-                        {text_html}
+            <p>Absolute-positioned fixed card with flat colors only, in case gradients affect layout.</p>
+            <div class="cowboy-debug-stage" data-debug-stage="attempt-4" style="background:#f0dfc4;">
+                <div style="position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);">
+                    <div data-debug-art="attempt-4" style="width:14rem;background:#ffe6bf;border:2px solid #b88444;padding:0.85rem;text-align:center;">
+                        <img src="{data_uri}" alt="Cowboy loader" style="{spinning_image_style}">
+                        <div style="margin-top:0.55rem;text-align:center;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</div>
                     </div>
                 </div>
             </div>
@@ -847,14 +851,12 @@ def cowboy_debug_cards_html() -> str:
         </article>
         <article class="cowboy-debug-card">
             <h3>Attempt 5</h3>
-            <p>Whole card rendered as one inline HTML block with all important background/text styles embedded.</p>
-            <div class="cowboy-debug-stage" data-debug-stage="attempt-5">
-                <div class="cowboy-debug-loader">
-                    <div class="cowboy-debug-loader-card" data-debug-art="attempt-5" style="background:#ffe6bf;border:2px solid #b88444;box-shadow:0 12px 28px rgba(77,45,14,0.12);">
-                        <div style="background:#fff7e8;padding:0.35rem;">
-                            <img src="{data_uri}" alt="Cowboy loader" style="{image_style}">
-                            <div style="margin-top:0.55rem;font:800 0.92rem/1.2 inherit;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</div>
-                        </div>
+            <p>Width locked with <code>min/max/width</code> and centered by inline flex shell, preserving the richer card look.</p>
+            <div class="cowboy-debug-stage" data-debug-stage="attempt-5" style="background:#fff7ec;">
+                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+                    <div data-debug-art="attempt-5" style="width:14rem;min-width:14rem;max-width:14rem;background:linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%);border:2px solid #b88444;box-shadow:0 12px 28px rgba(77,45,14,0.12);padding:0.8rem;text-align:center;">
+                        <img src="{data_uri}" alt="Cowboy loader" style="{spinning_image_style}">
+                        <div style="margin-top:0.55rem;text-align:center;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</div>
                     </div>
                 </div>
             </div>
@@ -862,96 +864,16 @@ def cowboy_debug_cards_html() -> str:
         </article>
         <article class="cowboy-debug-card">
             <h3>Attempt 6</h3>
-            <p>Plainest fallback: solid inline background color blocks with no gradients or shadows at all.</p>
-            <div class="cowboy-debug-stage" data-debug-stage="attempt-6" style="background:#f0dfc4;">
-                <div class="cowboy-debug-loader">
-                    <div class="cowboy-debug-loader-card" data-debug-art="attempt-6" style="background:#ffe6bf;border:2px solid #b88444;">
-                        <img src="{data_uri}" alt="Cowboy loader" style="{image_style}">
-                        <p class="cowboy-debug-loader-title" style="margin:0.55rem 0 0;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</p>
+            <p>Compact hostile-host-safe fallback: centered flat card, inline sizing, inline text, inline image spin.</p>
+            <div class="cowboy-debug-stage" data-debug-stage="attempt-6" style="background:#f0dfc4;position:relative;min-height:220px;">
+                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+                    <div data-debug-art="attempt-6" style="display:inline-block;background:#ffe6bf;border:2px solid #b88444;padding:0.8rem;text-align:center;">
+                        <img src="{data_uri}" alt="Cowboy loader" style="width:12rem;max-width:12rem;display:block;margin:0 auto;transform-origin:center;animation:loader-cowboy-bounce 0.7s ease-out, loader-cowboy-spin 2.8s linear infinite;">
+                        <div style="margin-top:0.55rem;text-align:center;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</div>
                     </div>
                 </div>
             </div>
             <div class="cowboy-debug-meta" data-debug-meta="attempt-6"></div>
-        </article>
-        <article class="cowboy-debug-card">
-            <h3>Attempt 7</h3>
-            <p>Revives the old Attempt 5 spirit: a wider card with an oversized art block and nested solid background.</p>
-            <div class="cowboy-debug-stage" data-debug-stage="attempt-7" style="background:#f1dfc0;">
-                <div class="cowboy-debug-loader">
-                    <div class="cowboy-debug-loader-card" data-debug-art="attempt-7" style="width:13.5rem;max-width:13.5rem;background:#ffe6bf;border:2px solid #b88444;box-shadow:0 12px 28px rgba(77,45,14,0.12);">
-                        <div style="background:#fff7e8;padding:0.55rem;">
-                            <img src="{data_uri}" alt="Cowboy loader" style="{image_style_large}">
-                            <div style="margin-top:0.55rem;font:800 0.92rem/1.2 inherit;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cowboy-debug-meta" data-debug-meta="attempt-7"></div>
-        </article>
-        <article class="cowboy-debug-card">
-            <h3>Attempt 8</h3>
-            <p>Fixed-width card with inline centering and a larger image, still using gradient styling.</p>
-            <div class="cowboy-debug-stage" data-debug-stage="attempt-8" style="background:#fff7ec;">
-                <div class="cowboy-debug-loader">
-                    <div class="cowboy-debug-loader-card" data-debug-art="attempt-8" style="width:14rem;max-width:14rem;margin:0 auto;background:linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%);border:2px solid #b88444;box-shadow:0 12px 28px rgba(77,45,14,0.12);">
-                        <img src="{data_uri}" alt="Cowboy loader" style="{image_style_large}">
-                        <p class="cowboy-debug-loader-title" style="margin:0.55rem 0 0;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</p>
-                    </div>
-                </div>
-            </div>
-            <div class="cowboy-debug-meta" data-debug-meta="attempt-8"></div>
-        </article>
-        <article class="cowboy-debug-card">
-            <h3>Attempt 9</h3>
-            <p>Inline-block card instead of block sizing, to see if the host is stretching only block boxes.</p>
-            <div class="cowboy-debug-stage" data-debug-stage="attempt-9" style="background:#fff7ec;">
-                <div class="cowboy-debug-loader">
-                    <div class="cowboy-debug-loader-card" data-debug-art="attempt-9" style="display:inline-block;width:auto;max-width:none;background:linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%);border:2px solid #b88444;padding:0.8rem 1rem;">
-                        <img src="{data_uri}" alt="Cowboy loader" style="width:12.5rem;display:block;margin:0 auto;">
-                        <p class="cowboy-debug-loader-title" style="margin:0.55rem 0 0;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</p>
-                    </div>
-                </div>
-            </div>
-            <div class="cowboy-debug-meta" data-debug-meta="attempt-9"></div>
-        </article>
-        <article class="cowboy-debug-card">
-            <h3>Attempt 10</h3>
-            <p>Inline width constraints on both the loader shell and the card, reducing reliance on inherited centering.</p>
-            <div class="cowboy-debug-stage" data-debug-stage="attempt-10" style="background:#fff7ec;">
-                <div class="cowboy-debug-loader" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
-                    <div class="cowboy-debug-loader-card" data-debug-art="attempt-10" style="width:14rem;min-width:14rem;max-width:14rem;background:#ffe6bf;border:2px solid #b88444;box-shadow:0 12px 28px rgba(77,45,14,0.12);">
-                        <img src="{data_uri}" alt="Cowboy loader" style="{image_style_large}">
-                        <p class="cowboy-debug-loader-title" style="margin:0.55rem 0 0;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</p>
-                    </div>
-                </div>
-            </div>
-            <div class="cowboy-debug-meta" data-debug-meta="attempt-10"></div>
-        </article>
-        <article class="cowboy-debug-card">
-            <h3>Attempt 11</h3>
-            <p>Old-school absolute positioning with explicit left/right unset and a fixed card width.</p>
-            <div class="cowboy-debug-stage" data-debug-stage="attempt-11" style="background:#fff7ec;">
-                <div style="position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);pointer-events:none;">
-                    <div class="cowboy-debug-loader-card" data-debug-art="attempt-11" style="width:14rem;background:linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%);border:2px solid #b88444;box-shadow:0 12px 28px rgba(77,45,14,0.12);">
-                        <img src="{data_uri}" alt="Cowboy loader" style="{image_style_large}">
-                        <p class="cowboy-debug-loader-title" style="margin:0.55rem 0 0;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</p>
-                    </div>
-                </div>
-            </div>
-            <div class="cowboy-debug-meta" data-debug-meta="attempt-11"></div>
-        </article>
-        <article class="cowboy-debug-card">
-            <h3>Attempt 12</h3>
-            <p>Everything critical inline, including the stage shell, card, image, and text block with simple flat colors.</p>
-            <div class="cowboy-debug-stage" data-debug-stage="attempt-12" style="background:#f0dfc4;border:1px dashed #c7ae87;min-height:220px;position:relative;overflow:hidden;">
-                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
-                    <div data-debug-art="attempt-12" style="width:14rem;background:#ffe6bf;border:2px solid #b88444;padding:0.8rem;text-align:center;">
-                        <img src="{data_uri}" alt="Cowboy loader" style="{image_style_large}">
-                        <div style="margin-top:0.55rem;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</div>
-                    </div>
-                </div>
-            </div>
-            <div class="cowboy-debug-meta" data-debug-meta="attempt-12"></div>
         </article>
         """
     )
@@ -1001,11 +923,12 @@ def draw_cowboy_canvas(canvas) -> None:
 def refresh_cowboy_debug_screen() -> None:
     cowboy_debug_grid.innerHTML = cowboy_debug_cards_html()
     runtime_card = cowboy_debug_grid._dom_element.querySelector("[data-debug-inline-runtime='true']")
-    if runtime_card is not None:
-        runtime_card.style.background = "linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%)"
-        runtime_card.style.border = "2px solid #b88444"
-        runtime_card.style.boxShadow = "0 12px 28px rgba(77, 45, 14, 0.12)"
-        runtime_card.style.color = "#6a3c16"
+    runtime_card_style = getattr(runtime_card, "style", None)
+    if runtime_card_style is not None:
+        runtime_card_style.background = "linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%)"
+        runtime_card_style.border = "2px solid #b88444"
+        runtime_card_style.boxShadow = "0 12px 28px rgba(77, 45, 14, 0.12)"
+        runtime_card_style.color = "#6a3c16"
 
     host = getattr(window.location, "host", "")
     path_name = getattr(window.location, "pathname", "")
@@ -1032,12 +955,6 @@ def replay_cowboy_debug_animations() -> None:
         "attempt-4",
         "attempt-5",
         "attempt-6",
-        "attempt-7",
-        "attempt-8",
-        "attempt-9",
-        "attempt-10",
-        "attempt-11",
-        "attempt-12",
     ]
     for art_id in art_ids:
         art = cowboy_debug_grid._dom_element.querySelector(f"[data-debug-art='{art_id}']")
@@ -1049,6 +966,7 @@ def replay_cowboy_debug_animations() -> None:
         computed = window.getComputedStyle(art)
         background = computed.getPropertyValue("background-image") if computed is not None else ""
         border = computed.getPropertyValue("border-top-width") if computed is not None else ""
+        animation_name = computed.getPropertyValue("animation-name") if computed is not None else ""
         stage_background = ""
         if stage is not None:
             stage_background = window.getComputedStyle(stage).getPropertyValue("background-image")
@@ -1061,6 +979,7 @@ def replay_cowboy_debug_animations() -> None:
         meta.textContent = (
             f"box: {round(rect.width, 1)} x {round(rect.height, 1)}\n"
             f"client: {art.clientWidth} x {art.clientHeight}\n"
+            f"animation-name: {animation_name or '-'}\n"
             f"card background: {background or '-'}\n"
             f"card border width: {border or '-'}\n"
             f"stage background: {stage_background or '-'}\n"
