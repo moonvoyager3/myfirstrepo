@@ -106,65 +106,216 @@ def select_checkpoint_question_ids(
     return chosen[:count]
 
 
+def question_priority_breakdown(
+    state: dict,
+    now_ms: int,
+    question_id: int,
+    recent_question_ids: list[int],
+) -> dict:
+    attempts = int(state.get("attempts", 0) or 0)
+    due_at = int(state.get("due_at", 0) or 0)
+    mastery = float(state.get("mastery", 0.0) or 0.0)
+    knowledge = float(state.get("knowledge", 0.0) or 0.0)
+    meta_learning = float(state.get("meta_learning", 0.0) or 0.0)
+    difficulty = float(state.get("difficulty", 0.5) or 0.5)
+    last_answer_ms = int(state.get("last_answer_ms", 0) or 0)
+    consecutive_wrong = int(state.get("consecutive_wrong", 0) or 0)
+    overdue_minutes = max(0.0, (now_ms - due_at) / 60_000) if due_at else 0.5
+    base_priority = 0.85 - (0.15 * (question_id % 7) / 7) if attempts == 0 else (
+        min(2.5, overdue_minutes * 0.08)
+        + ((1.0 - mastery) * 1.4)
+        + ((1.0 - knowledge) * 0.9)
+        + (max(0.0, 0.55 - meta_learning) * 1.3)
+        + (difficulty * 0.45)
+        + (consecutive_wrong * 0.25)
+        + (0.18 if last_answer_ms > 14_000 else 0.0)
+    )
+    recent_penalty = 0.0
+    if recent_question_ids:
+        if question_id == recent_question_ids[-1]:
+            recent_penalty = -2.0
+        elif question_id in recent_question_ids[-3:]:
+            recent_penalty = -0.7
+    wrong_confidence_bonus = 0.0
+    last_confidence = None
+    if bool(state.get("last_result_correct", False)) is False and attempts > 0:
+        if state.get("confidence_history"):
+            last_confidence = int(state["confidence_history"][-1])
+            wrong_confidence_bonus = 0.75 if last_confidence >= 2 else 0.35
+    total_priority = base_priority + recent_penalty + wrong_confidence_bonus
+    return {
+        "question_id": question_id,
+        "attempts": attempts,
+        "due_at": due_at,
+        "due_in_seconds": round((due_at - now_ms) / 1000, 1) if due_at else None,
+        "mastery": round(mastery, 4),
+        "knowledge": round(knowledge, 4),
+        "meta_learning": round(meta_learning, 4),
+        "difficulty": round(difficulty, 4),
+        "consecutive_wrong": consecutive_wrong,
+        "last_result_correct": bool(state.get("last_result_correct", False)),
+        "last_confidence": last_confidence,
+        "is_in_recent_last_1": bool(recent_question_ids and question_id == recent_question_ids[-1]),
+        "is_in_recent_last_3": question_id in recent_question_ids[-3:],
+        "overdue_component": round(min(2.5, overdue_minutes * 0.08), 4) if attempts > 0 else 0.0,
+        "mastery_component": round(((1.0 - mastery) * 1.4), 4) if attempts > 0 else 0.0,
+        "knowledge_component": round(((1.0 - knowledge) * 0.9), 4) if attempts > 0 else 0.0,
+        "meta_component": round((max(0.0, 0.55 - meta_learning) * 1.3), 4) if attempts > 0 else 0.0,
+        "difficulty_component": round((difficulty * 0.45), 4) if attempts > 0 else 0.0,
+        "wrong_streak_component": round((consecutive_wrong * 0.25), 4) if attempts > 0 else 0.0,
+        "slow_answer_component": round((0.18 if last_answer_ms > 14_000 else 0.0), 4) if attempts > 0 else 0.0,
+        "recent_penalty": round(recent_penalty, 4),
+        "wrong_confidence_bonus": round(wrong_confidence_bonus, 4),
+        "priority": round(total_priority, 4),
+    }
+
+
+def _choose_next_question_core(
+    progress: dict,
+    scope_question_ids: list[int],
+    now_ms: int,
+    recent_question_ids: list[int] | None = None,
+    *,
+    capture_diagnostics: bool = False,
+):
+    recent_question_ids = recent_question_ids or []
+    diagnostics = {
+        "scope_question_ids_input": list(scope_question_ids or []),
+        "recent_question_ids": list(recent_question_ids),
+        "sticky_ids": [],
+        "unseen_question_ids": [],
+        "engaged_question_ids": [],
+        "candidate_question_ids": [],
+        "candidate_count": 0,
+        "selection_branch": "",
+        "unseen_pick_probability": None,
+        "random_roll": None,
+        "selected_from_branch": None,
+        "selected_next_question_id": None,
+        "priority_table": [],
+        "selection_failure_reason": "",
+        "scope_was_empty": not bool(scope_question_ids),
+        "candidate_was_empty": False,
+        "all_candidates_filtered": False,
+        "best_priority_was_none": False,
+        "exception_during_selection": "",
+    }
+    if not scope_question_ids:
+        diagnostics["selection_failure_reason"] = "empty_scope"
+        return None, diagnostics
+
+    try:
+        unseen_question_ids: list[int] = []
+        engaged_question_ids: list[int] = []
+        sticky_ids = sticky_question_ids(recent_question_ids)
+        diagnostics["sticky_ids"] = sorted(sticky_ids)
+
+        for question_id in scope_question_ids:
+            state = question_state(progress, question_id)
+            attempts = int(state.get("attempts", 0) or 0)
+            if attempts == 0 and question_id not in recent_question_ids[-3:]:
+                unseen_question_ids.append(question_id)
+            else:
+                engaged_question_ids.append(question_id)
+
+        if sticky_ids:
+            unseen_question_ids = [question_id for question_id in unseen_question_ids if question_id not in sticky_ids]
+            cooled_engaged = [question_id for question_id in engaged_question_ids if question_id not in sticky_ids]
+            if cooled_engaged:
+                engaged_question_ids = cooled_engaged
+            elif len(recent_question_ids) >= STICKY_REPEAT_COOLDOWN:
+                engaged_question_ids = [question_id for question_id in scope_question_ids if question_id not in recent_question_ids[-1:]]
+            else:
+                engaged_question_ids = [question_id for question_id in engaged_question_ids]
+
+        diagnostics["unseen_question_ids"] = list(unseen_question_ids)
+        diagnostics["engaged_question_ids"] = list(engaged_question_ids)
+
+        if unseen_question_ids and not engaged_question_ids:
+            selected = random.choice(unseen_question_ids)
+            diagnostics["selection_branch"] = "unseen_only"
+            diagnostics["selected_from_branch"] = "unseen_only"
+            diagnostics["selected_next_question_id"] = selected
+            return selected, diagnostics
+
+        if unseen_question_ids and engaged_question_ids:
+            unseen_ratio = len(unseen_question_ids) / max(1, len(scope_question_ids))
+            unseen_pick_probability = clamp(0.35 + (0.40 * unseen_ratio), 0.35, 0.75)
+            diagnostics["unseen_pick_probability"] = round(unseen_pick_probability, 4)
+            random_roll = random.random()
+            diagnostics["random_roll"] = round(random_roll, 4)
+            if random_roll < unseen_pick_probability:
+                selected = random.choice(unseen_question_ids)
+                diagnostics["selection_branch"] = "mixed_random_unseen"
+                diagnostics["selected_from_branch"] = "mixed_random_unseen"
+                diagnostics["selected_next_question_id"] = selected
+                return selected, diagnostics
+
+        best_question_id = None
+        best_priority = None
+        candidate_question_ids = engaged_question_ids if engaged_question_ids else list(scope_question_ids)
+        diagnostics["candidate_question_ids"] = list(candidate_question_ids)
+        diagnostics["candidate_count"] = len(candidate_question_ids)
+        diagnostics["selection_branch"] = "priority_pick"
+        diagnostics["candidate_was_empty"] = not bool(candidate_question_ids)
+        diagnostics["all_candidates_filtered"] = not bool(candidate_question_ids) and bool(scope_question_ids)
+
+        for question_id in candidate_question_ids:
+            state = question_state(progress, question_id)
+            breakdown = question_priority_breakdown(
+                state,
+                now_ms,
+                question_id,
+                recent_question_ids,
+            )
+            diagnostics["priority_table"].append(breakdown)
+            priority = breakdown["priority"]
+            if best_priority is None or priority > best_priority:
+                best_priority = priority
+                best_question_id = question_id
+
+        diagnostics["best_priority_was_none"] = best_priority is None
+        diagnostics["selected_next_question_id"] = best_question_id
+        if best_question_id is None:
+            diagnostics["selection_failure_reason"] = "no_best_question_found"
+        return best_question_id, diagnostics
+    except Exception as exc:
+        diagnostics["exception_during_selection"] = f"{type(exc).__name__}: {exc}"
+        diagnostics["selection_failure_reason"] = "exception"
+        return None, diagnostics
+
+
 def choose_next_question(
     progress: dict,
     scope_question_ids: list[int],
     now_ms: int,
     recent_question_ids: list[int] | None = None,
 ) -> int | None:
-    if not scope_question_ids:
-        return None
+    selected, _diagnostics = _choose_next_question_core(
+        progress,
+        scope_question_ids,
+        now_ms,
+        recent_question_ids,
+        capture_diagnostics=False,
+    )
+    return selected
 
-    recent_question_ids = recent_question_ids or []
-    unseen_question_ids: list[int] = []
-    engaged_question_ids: list[int] = []
-    sticky_ids = sticky_question_ids(recent_question_ids)
 
-    for question_id in scope_question_ids:
-        state = question_state(progress, question_id)
-        attempts = int(state.get("attempts", 0) or 0)
-        if attempts == 0 and question_id not in recent_question_ids[-3:]:
-            unseen_question_ids.append(question_id)
-        else:
-            engaged_question_ids.append(question_id)
-
-    if sticky_ids:
-        unseen_question_ids = [question_id for question_id in unseen_question_ids if question_id not in sticky_ids]
-        cooled_engaged = [question_id for question_id in engaged_question_ids if question_id not in sticky_ids]
-        if cooled_engaged:
-            engaged_question_ids = cooled_engaged
-        elif len(recent_question_ids) >= STICKY_REPEAT_COOLDOWN:
-            engaged_question_ids = [question_id for question_id in scope_question_ids if question_id not in recent_question_ids[-1:]]
-        else:
-            engaged_question_ids = [question_id for question_id in engaged_question_ids]
-
-    if unseen_question_ids and not engaged_question_ids:
-        return random.choice(unseen_question_ids)
-
-    if unseen_question_ids and engaged_question_ids:
-        unseen_ratio = len(unseen_question_ids) / max(1, len(scope_question_ids))
-        unseen_pick_probability = clamp(0.35 + (0.40 * unseen_ratio), 0.35, 0.75)
-        if random.random() < unseen_pick_probability:
-            return random.choice(unseen_question_ids)
-
-    best_question_id = None
-    best_priority = None
-
-    candidate_question_ids = engaged_question_ids if engaged_question_ids else scope_question_ids
-
-    for question_id in candidate_question_ids:
-        state = question_state(progress, question_id)
-        priority = question_priority(
-            state,
-            now_ms,
-            question_id,
-            recent_question_ids,
-        )
-        if best_priority is None or priority > best_priority:
-            best_priority = priority
-            best_question_id = question_id
-
-    return best_question_id
+def choose_next_question_diagnostics(
+    progress: dict,
+    scope_question_ids: list[int],
+    now_ms: int,
+    recent_question_ids: list[int] | None = None,
+) -> dict:
+    selected, diagnostics = _choose_next_question_core(
+        progress,
+        scope_question_ids,
+        now_ms,
+        recent_question_ids,
+        capture_diagnostics=True,
+    )
+    diagnostics["selected_next_question_id"] = selected
+    return diagnostics
 
 
 def update_after_response(
@@ -243,15 +394,19 @@ def update_after_response(
     state["meta_learning"] = clamp(state["meta_learning"] + meta_delta)
     state["difficulty"] = clamp(state["difficulty"] + difficulty_delta)
     user_grit = update_user_grit(progress, grit_delta, now_ms)
+    stability_delta = ((0.17 * recall_bonus) if is_correct else -0.06) + (0.04 * confidence_scaled)
     state["stability"] = clamp(
-        state["stability"] + ((0.17 * recall_bonus) if is_correct else -0.06) + (0.04 * confidence_scaled),
+        state["stability"] + stability_delta,
         0.05,
         5.0,
     )
+    knowledge_component = 0.6 * state["knowledge"]
+    meta_component = 0.25 * state["meta_learning"]
+    difficulty_component = 0.15 * (1.0 - state["difficulty"])
     state["mastery"] = clamp(
-        (0.6 * state["knowledge"])
-        + (0.25 * state["meta_learning"])
-        + (0.15 * (1.0 - state["difficulty"]))
+        knowledge_component
+        + meta_component
+        + difficulty_component
     )
     state["last_result_correct"] = bool(is_correct)
 
@@ -268,14 +423,30 @@ def update_after_response(
 
     return {
         "mastery_delta": round(state["mastery"] - previous_mastery, 4),
+        "previous_mastery": round(previous_mastery, 4),
         "knowledge": state["knowledge"],
+        "knowledge_delta": round(knowledge_delta, 4),
         "grit": user_grit,
+        "grit_delta": round(grit_delta, 4),
         "meta_learning": state["meta_learning"],
+        "meta_delta": round(meta_delta, 4),
         "mastery": state["mastery"],
         "difficulty": state["difficulty"],
+        "difficulty_delta": round(difficulty_delta, 4),
+        "stability": state["stability"],
+        "stability_delta": round(stability_delta, 4),
+        "confidence_scaled": round(confidence_scaled, 4),
+        "speed_factor": round(speed_factor, 4),
+        "mismatch": round(mismatch, 4),
+        "recall_bonus": round(recall_bonus, 4),
+        "knowledge_component": round(knowledge_component, 4),
+        "meta_component": round(meta_component, 4),
+        "difficulty_component": round(difficulty_component, 4),
         "due_at": state["due_at"],
+        "next_interval_ms": max(0, int(state["due_at"] - now_ms)),
         "recovered_question": recovered_question,
         "first_attempt_ever": previous_attempts == 0,
+        "previous_attempts": previous_attempts,
     }
 
 

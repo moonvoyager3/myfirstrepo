@@ -1,6 +1,8 @@
 import asyncio
+import hashlib
 import html
 import importlib
+import inspect
 import json
 import random
 import sys
@@ -193,6 +195,8 @@ quiz_help_message = web.page["quiz-help-message"]
 quiz_help_dismiss_button = web.page["quiz-help-dismiss-btn"]
 learner_debug_panel = web.page["learner-debug-panel"]
 learner_debug_content = web.page["learner-debug-content"]
+learner_debug_download_button = web.page["learner-debug-download-btn"]
+learner_debug_copy_button = web.page["learner-debug-copy-btn"]
 learner_debug_popout_button = web.page["learner-debug-popout-btn"]
 learner_debug_hide_button = web.page["learner-debug-hide-btn"]
 learner_debug_reopen_button = web.page["learner-debug-reopen-btn"]
@@ -200,6 +204,7 @@ learner_debug_reopen_button = web.page["learner-debug-reopen-btn"]
 
 quiz_index: dict = {}
 question_cache: dict[int, Question] = {}
+question_load_tasks: dict[int, asyncio.Task] = {}
 question_bank_index: dict[int, dict[str, str]] = {}
 question_ids_by_area: dict[str, list[int]] = {}
 session_question_ids: list[int] = []
@@ -248,6 +253,7 @@ learner_summary_payload: dict = {}
 learner_pending_next_question_id: int | None = None
 learner_prefetched_question_id: int | None = None
 learner_pending_recommendation: dict | None = None
+learner_session_end_context: dict = {}
 learner_guidance_visible = False
 learner_guidance_kind = ""
 learner_guidance_shown_kinds: set[str] = set()
@@ -261,6 +267,10 @@ learner_debug_panel_visible = False
 learner_debug_unlocked = False
 learner_debug_unlock_buffer = ""
 learner_debug_previous_values: dict[str, str] = {}
+learner_debug_event_log: list[dict] = []
+learner_debug_report_text = ""
+learner_debug_checkpoint_completion_captured = False
+learner_debug_session_end_details: dict = {}
 learner_generator_avatar_id = "cat_smile"
 learner_generator_avatar_bg_id = "peach"
 
@@ -507,9 +517,14 @@ def learner_checkpoint_progress_chip(counts: dict[str, int], target: int, displa
     return f"{attempted}/{target} attempted • {ready_text} • {baseline_text}"
 
 
-def learner_checkpoint_completion() -> tuple[bool, str]:
+def learner_checkpoint_completion_details() -> dict[str, object]:
+    details = {
+        "complete": False,
+        "kind": "",
+        "message": "",
+    }
     if learner_scheduler_module is None or not learner_checkpoint_question_ids:
-        return False, ""
+        return details
 
     counts = learner_checkpoint_counts()
     total = counts["total"]
@@ -535,28 +550,42 @@ def learner_checkpoint_completion() -> tuple[bool, str]:
     baseline_completion_ratio = (
         1.0 if baseline_needed <= 0 else (newly_baseline_count / baseline_needed)
     )
-    average_mastery_gain = (
-        learner_checkpoint_average_mastery(learner_checkpoint_question_ids)
-        - learner_checkpoint_baseline_average_mastery
-    )
     attempt_count = len(learner_interactions)
 
     if attempt_count < 5:
-        return False, ""
-
-    if not all_attempted:
-        return False, ""
+        return details
 
     if all_last_attempts_correct and ready_completion_ratio >= 0.8:
-        return True, "You have this session's set of questions ready for now. Your progress has been saved to your Quiz Passport."
+        if not all_attempted:
+            return details
+        return {
+            "complete": True,
+            "kind": "ready_completion",
+            "message": "You have this session's set of questions ready for now. Your progress has been saved to your Quiz Passport.",
+        }
 
     if all_last_attempts_correct and baseline_completion_ratio >= 1.0:
-        return True, "Every question in this session's set has reached a solid baseline. Your progress has been saved to your Quiz Passport."
+        if not all_attempted:
+            return details
+        return {
+            "complete": True,
+            "kind": "baseline_completion",
+            "message": "Every question in this session's set has reached a solid baseline. Your progress has been saved to your Quiz Passport.",
+        }
 
-    if attempt_count > 30 and average_mastery_gain >= 0.3:
-        return True, "You made strong progress across this session's set. Your progress has been saved to your Quiz Passport."
+    if attempt_count > 45:
+        return {
+            "complete": True,
+            "kind": "long_session_escape_hatch",
+            "message": "You made strong progress across this session's set. Your progress has been saved to your Quiz Passport.",
+        }
 
-    return False, ""
+    return details
+
+
+def learner_checkpoint_completion() -> tuple[bool, str]:
+    details = learner_checkpoint_completion_details()
+    return bool(details.get("complete", False)), str(details.get("message", "") or "")
 
 
 def formatted_exception_text(exc_type, exc_value, exc_traceback) -> str:
@@ -804,6 +833,8 @@ def start_learner_debug_updates() -> None:
 
     stop_learner_debug_updates()
     if not learner_session_active or not learner_debug_unlocked:
+        learner_debug_download_button.classes.add("hidden")
+        learner_debug_copy_button.classes.add("hidden")
         hide_learner_debug_panel()
         return
 
@@ -1578,6 +1609,9 @@ def hide_learner_debug_panel() -> None:
     learner_debug_panel.classes.add("hidden")
     learner_debug_content.innerHTML = ""
     learner_debug_reopen_button.classes.add("hidden")
+    learner_debug_download_button.classes.add("hidden")
+    learner_debug_download_button.classes.add("hidden")
+    learner_debug_copy_button.classes.add("hidden")
     learner_debug_previous_values = {}
 
 
@@ -1611,6 +1645,25 @@ def show_learner_debug_panel_in_page() -> None:
         learner_debug_reopen_button.classes.add("hidden")
 
 
+def reset_learner_debug_capture_state() -> None:
+    global learner_debug_event_log, learner_debug_report_text, learner_debug_checkpoint_completion_captured
+    global learner_debug_previous_values, learner_debug_session_end_details, learner_session_end_context
+
+    learner_debug_event_log = []
+    learner_debug_report_text = ""
+    learner_debug_checkpoint_completion_captured = False
+    learner_debug_previous_values = {}
+    learner_debug_session_end_details = {}
+    learner_session_end_context = {}
+    learner_debug_download_button.classes.add("hidden")
+    learner_debug_copy_button.classes.add("hidden")
+
+
+def learner_debug_is_open() -> bool:
+    popup_open = learner_debug_popup is not None and not learner_debug_popup.closed
+    return learner_debug_unlocked and (learner_debug_panel_visible or popup_open)
+
+
 def reset_learner_debug_unlock() -> None:
     global learner_debug_unlocked, learner_debug_unlock_buffer, learner_debug_panel_visible
 
@@ -1619,6 +1672,8 @@ def reset_learner_debug_unlock() -> None:
     learner_debug_panel_visible = False
     learner_debug_panel.classes.add("hidden")
     learner_debug_reopen_button.classes.add("hidden")
+    learner_debug_download_button.classes.add("hidden")
+    learner_debug_copy_button.classes.add("hidden")
 
 
 def unlock_learner_debug_controls() -> None:
@@ -1840,6 +1895,10 @@ def render_learner_debug_panel(current_question_id: int | None = None) -> None:
     global learner_debug_previous_values
 
     if not learner_session_active or learner_scheduler_module is None or learner_storage_module is None:
+        if learner_debug_report_text and learner_debug_unlocked:
+            learner_debug_download_button.classes.discard("hidden")
+            learner_debug_copy_button.classes.discard("hidden")
+            return
         hide_learner_debug_panel()
         return
 
@@ -1969,6 +2028,7 @@ def render_learner_debug_panel(current_question_id: int | None = None) -> None:
         ("selected_confidence", str(learner_selected_confidence if learner_selected_confidence is not None else "-")),
         ("answer_locked", str(learner_answer_locked)),
         ("interaction_count", str(interaction_count)),
+        ("attempt_count", str(interaction_count)),
         ("recent_window_size", str(window_size)),
         ("checkpoint_ready", f"{checkpoint_progress}/{checkpoint_target}"),
         ("checkpoint_set_size", str(checkpoint_target)),
@@ -2001,8 +2061,7 @@ def render_learner_debug_panel(current_question_id: int | None = None) -> None:
         ("checkpoint_ready_ratio_ge_0_8", str(checkpoint_ready_completion_ratio >= 0.8)),
         ("checkpoint_baseline_completion_ratio", f"{checkpoint_baseline_completion_ratio:.3f}"),
         ("checkpoint_all_remaining_baseline_done", str(checkpoint_baseline_completion_ratio >= 1.0)),
-        ("checkpoint_attempts_gt_30", str(interaction_count > 30)),
-        ("checkpoint_mastery_gain_ge_0_3", str(checkpoint_average_mastery_gain >= 0.3)),
+        ("checkpoint_attempts_gt_45", str(interaction_count > 45)),
         ("checkpoint_complete", str(checkpoint_complete)),
     ]
     if checkpoint_completion_message:
@@ -2089,6 +2148,8 @@ def render_learner_debug_panel(current_question_id: int | None = None) -> None:
 
     content = "".join(html_sections)
     learner_debug_content.innerHTML = content
+    learner_debug_download_button.classes.add("hidden")
+    learner_debug_copy_button.classes.add("hidden")
     learner_debug_previous_values = current_values
     if learner_debug_unlocked and learner_debug_panel_visible:
         learner_debug_panel.classes.discard("hidden")
@@ -2465,6 +2526,240 @@ def learner_window_stats(window: list[dict]) -> dict:
     }
 
 
+def learner_debug_recent_windows(interactions: list[dict]) -> list[dict]:
+    if learner_scheduler_module is None:
+        return []
+    windows: list[dict] = []
+    for window_size in learner_scheduler_module.RECOMMENDATION_WINDOW_SIZES:
+        if len(interactions) < window_size:
+            continue
+        stats = dict(learner_window_stats(interactions[-window_size:]))
+        stats["window_size"] = window_size
+        stats["take_break_signal"] = learner_take_break_signal(stats)
+        stats["diminishing_returns_signal"] = learner_diminishing_returns_signal(stats)
+        stats["strong_low_yield_signal"] = learner_strong_low_yield_signal(stats)
+        windows.append(stats)
+    return windows
+
+
+def learner_debug_question_state_snapshot(question_id: int, now_ms: int, recent_question_ids: list[int] | None = None) -> dict:
+    if learner_scheduler_module is None:
+        return {}
+    state = learner_scheduler_module.question_state(learner_progress, question_id)
+    attempts = int(state.get("attempts", 0) or 0)
+    correct_attempts = int(state.get("correct_attempts", 0) or 0)
+    due_at = int(state.get("due_at", 0) or 0)
+    last_seen_at = int(state.get("last_seen_at", 0) or 0)
+    updated_at = int(state.get("updated_at", 0) or 0)
+    recent_question_ids = recent_question_ids or [item.get("question_id") for item in learner_interactions[-3:]]
+    confidence_history = state.get("confidence_history", [])
+    if not isinstance(confidence_history, list):
+        confidence_history = []
+    return {
+        "knowledge": round(float(state.get("knowledge", 0.0) or 0.0), 4),
+        "meta_learning": round(float(state.get("meta_learning", 0.0) or 0.0), 4),
+        "mastery": round(float(state.get("mastery", 0.0) or 0.0), 4),
+        "stability": round(float(state.get("stability", 0.0) or 0.0), 4),
+        "difficulty": round(float(state.get("difficulty", 0.0) or 0.0), 4),
+        "attempts": attempts,
+        "correct_attempts": correct_attempts,
+        "attempt_accuracy": round((correct_attempts / attempts), 4) if attempts else 0.0,
+        "consecutive_correct": int(state.get("consecutive_correct", 0) or 0),
+        "consecutive_wrong": int(state.get("consecutive_wrong", 0) or 0),
+        "last_result_correct": bool(state.get("last_result_correct", False)),
+        "last_answer_ms": int(state.get("last_answer_ms", 0) or 0),
+        "last_seen_at": last_seen_at,
+        "updated_at": updated_at,
+        "last_seen_delta_s": round((now_ms - last_seen_at) / 1000, 1) if last_seen_at > 0 else None,
+        "updated_delta_s": round((now_ms - updated_at) / 1000, 1) if updated_at > 0 else None,
+        "due_at": due_at,
+        "due_in_seconds": round((due_at - now_ms) / 1000, 1) if due_at > 0 else None,
+        "due_in_minutes": round((due_at - now_ms) / 60000, 2) if due_at > 0 else None,
+        "is_ready": bool(learner_scheduler_module.is_ready(state)),
+        "is_mastered": bool(learner_scheduler_module.is_mastered(state)),
+        "computed_priority": round(
+            learner_scheduler_module.question_priority(state, now_ms, question_id, recent_question_ids),
+            4,
+        ),
+        "confidence_history_tail": confidence_history[-8:],
+    }
+
+
+def learner_debug_checkpoint_snapshot(interaction_count_override: int | None = None) -> dict:
+    if learner_scheduler_module is None or not learner_checkpoint_question_ids:
+        return {
+            "total": 0,
+            "complete": False,
+            "message": "",
+        }
+
+    counts = learner_checkpoint_counts()
+    total = counts["total"]
+    attempted_count = counts["attempted"]
+    ready_needed = counts["ready_needed"]
+    baseline_needed = counts["baseline_needed"]
+    mastered_needed = counts["mastered_needed"]
+    newly_ready_count = counts["newly_ready"]
+    newly_baseline_count = counts["newly_baseline"]
+    newly_mastered_count = counts["newly_mastered"]
+    checkpoint_average_mastery = learner_checkpoint_average_mastery(learner_checkpoint_question_ids)
+    checkpoint_average_mastery_gain = checkpoint_average_mastery - learner_checkpoint_baseline_average_mastery
+    all_last_attempts_correct = all(
+        bool(
+            learner_scheduler_module.question_state(learner_progress, question_id).get("last_result_correct", False)
+        )
+        for question_id in learner_checkpoint_question_ids
+    ) if learner_checkpoint_question_ids else False
+    checkpoint_display_progress, checkpoint_counts, checkpoint_display_mode = learner_checkpoint_display_progress()
+    attempt_count = interaction_count_override if interaction_count_override is not None else len(learner_interactions)
+    ready_completion_ratio = 1.0 if ready_needed <= 0 else (newly_ready_count / ready_needed)
+    baseline_completion_ratio = 1.0 if baseline_needed <= 0 else (newly_baseline_count / baseline_needed)
+    completion_details = learner_checkpoint_completion_details()
+    complete = bool(completion_details.get("complete", False))
+    message = str(completion_details.get("message", "") or "")
+    return {
+        "question_ids": list(learner_checkpoint_question_ids),
+        "display_mode": checkpoint_display_mode,
+        "display_progress": round(checkpoint_display_progress, 4),
+        "total": total,
+        "attempted": attempted_count,
+        "ready": counts["ready"],
+        "mastery_ge_0_4": counts["mastery_04"],
+        "mastered": counts["mastered"],
+        "initial_ready": len(learner_checkpoint_initial_ready_question_ids),
+        "initial_baseline": len(learner_checkpoint_initial_baseline_question_ids),
+        "initial_mastered": len(learner_checkpoint_initial_mastered_question_ids),
+        "ready_needed": ready_needed,
+        "baseline_needed": baseline_needed,
+        "mastered_needed": mastered_needed,
+        "newly_ready": newly_ready_count,
+        "newly_baseline": newly_baseline_count,
+        "newly_mastered": newly_mastered_count,
+        "average_mastery": round(checkpoint_average_mastery, 4),
+        "baseline_average_mastery": round(learner_checkpoint_baseline_average_mastery, 4),
+        "average_mastery_gain": round(checkpoint_average_mastery_gain, 4),
+        "interaction_count": attempt_count,
+        "min_attempts_5": attempt_count >= 5,
+        "all_attempted": attempted_count == total if total else False,
+        "all_last_attempts_correct": all_last_attempts_correct,
+        "ready_completion_ratio": round(ready_completion_ratio, 4),
+        "ready_ratio_ge_0_8": ready_completion_ratio >= 0.8,
+        "baseline_completion_ratio": round(baseline_completion_ratio, 4),
+        "baseline_ratio_ge_1_0": baseline_completion_ratio >= 1.0,
+        "attempts_gt_45": attempt_count > 45,
+        "completion_kind": str(completion_details.get("kind", "") or ""),
+        "complete": complete,
+        "message": message,
+    }
+
+
+def learner_debug_record_event(
+    question: Question,
+    selected_answer: str,
+    is_correct: bool,
+    confidence_value: int,
+    response_ms: int,
+    interaction: dict,
+    update_result: dict,
+    recommendation: dict | None,
+    checkpoint_before: dict,
+    checkpoint_after: dict,
+    windows_before: list[dict],
+    windows_after: list[dict],
+    state_before: dict,
+    now_ms: int,
+    initial_scheduler_recommendation: dict | None = None,
+    post_gate_recommendation: dict | None = None,
+    next_question_selection: dict | None = None,
+    final_end_reason: str = "",
+) -> None:
+    global learner_debug_checkpoint_completion_captured, learner_debug_session_end_details
+
+    event = {
+        "sequence": len(learner_debug_event_log) + 1,
+        "timestamp_ms": now_ms,
+        "question_id": question.question_id,
+        "question_type": question.question_type,
+        "question_text": question.text,
+        "selected_answer": selected_answer,
+        "selected_answer_text": answer_text(question, selected_answer),
+        "correct_answers": list(question.correct_answers),
+        "correct_answer_text": answer_text(question, question.answer),
+        "is_correct": bool(is_correct),
+        "confidence": int(confidence_value),
+        "response_ms": int(response_ms),
+        "interaction": dict(interaction),
+        "update_breakdown": dict(update_result),
+        "question_state_before": state_before,
+        "question_state_after": learner_debug_question_state_snapshot(
+            question.question_id,
+            now_ms,
+            [item.get("question_id") for item in learner_interactions[-3:]],
+        ),
+        "windows_before": windows_before,
+        "windows_after": windows_after,
+        "checkpoint_before": checkpoint_before,
+        "checkpoint_after": checkpoint_after,
+        "checkpoint_completion_transition": (not checkpoint_before.get("complete", False)) and checkpoint_after.get("complete", False),
+        "initial_scheduler_recommendation": dict(initial_scheduler_recommendation or {}),
+        "post_gate_recommendation": dict(post_gate_recommendation or {}),
+        "recommendation": dict(recommendation or {}),
+        "next_question_selection": dict(next_question_selection or {}),
+        "final_end_reason": final_end_reason,
+    }
+    learner_debug_event_log.append(event)
+    learner_debug_session_end_details = {
+        "initial_scheduler_recommendation": dict(initial_scheduler_recommendation or {}),
+        "post_gate_recommendation": dict(post_gate_recommendation or {}),
+        "final_recommendation": dict(recommendation or {}),
+        "next_question_selection": dict(next_question_selection or {}),
+        "final_end_reason": final_end_reason,
+    }
+    if event["checkpoint_completion_transition"]:
+        learner_debug_checkpoint_completion_captured = True
+
+
+def learner_debug_summary_report_payload(summary: dict, recommendation: dict | None, session_metrics: dict) -> dict:
+    end_details = dict(learner_debug_session_end_details or {})
+    last_event = learner_debug_event_log[-1] if learner_debug_event_log else {}
+    return {
+        "summary": summary,
+        "recommendation": recommendation or {},
+        "initial_scheduler_recommendation": end_details.get("initial_scheduler_recommendation", last_event.get("initial_scheduler_recommendation", {})),
+        "post_gate_recommendation": end_details.get("post_gate_recommendation", last_event.get("post_gate_recommendation", {})),
+        "final_recommendation": end_details.get("final_recommendation", recommendation or {}),
+        "next_question_selection": end_details.get("next_question_selection", last_event.get("next_question_selection", {})),
+        "final_end_reason": end_details.get("final_end_reason", last_event.get("final_end_reason", "")),
+        "scheduler_runtime_diagnostics": learner_scheduler_runtime_diagnostics(),
+        "summary_next_step_diagnostics": learner_summary_next_step_diagnostics(summary, recommendation, session_metrics),
+        "session_metrics": session_metrics,
+        "final_checkpoint_snapshot": learner_debug_checkpoint_snapshot(),
+        "captured_checkpoint_completion": learner_debug_checkpoint_completion_captured,
+        "event_log": learner_debug_event_log,
+    }
+
+
+def render_learner_debug_summary_report(summary: dict, recommendation: dict | None, session_metrics: dict) -> None:
+    global learner_debug_report_text, learner_debug_previous_values, learner_debug_panel_visible
+
+    payload = learner_debug_summary_report_payload(summary, recommendation, session_metrics)
+    learner_debug_report_text = json.dumps(payload, indent=2)
+    content = (
+        '<section class="learner-debug-section learner-debug-report">'
+        '<div class="learner-debug-section-title">Checkpoint Completion Investigation Report</div>'
+        f'<pre class="learner-debug-report-pre">{escape(learner_debug_report_text)}</pre>'
+        '</section>'
+    )
+    learner_debug_content.innerHTML = content
+    learner_debug_previous_values = {}
+    learner_debug_panel_visible = True
+    learner_debug_download_button.classes.discard("hidden")
+    learner_debug_copy_button.classes.discard("hidden")
+    learner_debug_panel.classes.discard("hidden")
+    learner_debug_reopen_button.classes.discard("hidden")
+    update_learner_debug_popup(content)
+
+
 def learner_take_break_signal(stats: dict) -> bool:
     return (
         stats["avg_response_ms"] > 20_000
@@ -2516,6 +2811,63 @@ def learner_due_now_count(scope_question_ids: list[int], now_ms: int) -> int:
     return due_now_count
 
 
+def learner_scheduler_runtime_diagnostics() -> dict:
+    if learner_scheduler_module is None:
+        return {}
+    diagnostics = {
+        "module_file": getattr(learner_scheduler_module, "__file__", ""),
+        "choose_next_question_function_id": id(getattr(learner_scheduler_module, "choose_next_question", None)),
+    }
+    try:
+        source = inspect.getsource(learner_scheduler_module.choose_next_question)
+        diagnostics["choose_next_question_source_hash"] = hashlib.sha1(source.encode("utf-8")).hexdigest()
+        diagnostics["choose_next_question_source_lines"] = len(source.splitlines())
+    except Exception as exc:
+        diagnostics["choose_next_question_source_error"] = f"{type(exc).__name__}: {exc}"
+    return diagnostics
+
+
+def learner_summary_next_step_diagnostics(summary: dict, recommendation: dict | None, session_metrics: dict) -> dict:
+    recommendation = recommendation or {}
+    feedback = summary.get("session_feedback", {}) if isinstance(summary, dict) else {}
+    next_step = feedback.get("next_step", {}) if isinstance(feedback, dict) else {}
+    latest_window = session_metrics.get("latest_window", {})
+    strong_low_yield_all = False
+    if learner_scheduler_module is not None:
+        strong_low_yield_all = (
+            session_metrics.get("interaction_count", 0) >= learner_scheduler_module.RECOMMENDATION_WINDOW_SIZES[-1]
+            and session_metrics.get("strong_low_yield_window_count", 0) == len(session_metrics.get("recent_windows", []))
+            and len(session_metrics.get("recent_windows", [])) == len(learner_scheduler_module.RECOMMENDATION_WINDOW_SIZES)
+            and latest_window.get("avg_mastery_gain", 0.0) < 0.012
+        )
+    mostly_due_later = False
+    scope_question_count = session_metrics.get("scope_question_count", 0)
+    if scope_question_count:
+        mostly_due_later = session_metrics.get("due_now_count", 0) <= max(1, scope_question_count // 10)
+    why_not_come_back_later = ""
+    if recommendation.get("kind") != "come_back_later":
+        why_not_come_back_later = f"final recommendation kind was {recommendation.get('kind', '<none>')}"
+    elif not recommendation.get("end_session"):
+        why_not_come_back_later = "come_back_later did not survive as an end-session recommendation"
+    return {
+        "chosen_next_step": dict(next_step or {}),
+        "summary_recommendation_kind": recommendation.get("kind", ""),
+        "summary_recommendation_end_session": bool(recommendation.get("end_session", False)),
+        "strong_low_yield_all": strong_low_yield_all,
+        "weak_window_count": session_metrics.get("weak_window_count", 0),
+        "strong_low_yield_window_count": session_metrics.get("strong_low_yield_window_count", 0),
+        "mostly_due_later": mostly_due_later,
+        "accuracy": session_metrics.get("accuracy", 0.0),
+        "session_mastery_gain": session_metrics.get("session_mastery_gain", 0.0),
+        "recent_grit": session_metrics.get("recent_grit", 0.0),
+        "why_next_step_was_take_break": (
+            "summary selected Take a Break because strong low-yield or weak-window conditions still held"
+            if next_step.get("kind") == "take_break" else ""
+        ),
+        "why_not_come_back_later": why_not_come_back_later,
+    }
+
+
 def learner_summary_feedback(summary: dict, recommendation: dict | None, session_metrics: dict) -> dict:
     recommendation = recommendation or {}
     if summary.get("percent_learned", 0) >= 100:
@@ -2548,9 +2900,20 @@ def learner_summary_feedback(summary: dict, recommendation: dict | None, session
     due_now_count = session_metrics["due_now_count"]
     scope_question_count = session_metrics["scope_question_count"]
     latest_window = session_metrics["latest_window"]
+    end_context = dict(learner_session_end_context or {})
+    checkpoint_completion_reason = end_context.get("checkpoint_completion_reason", "")
+    initial_kind = ((end_context.get("initial_scheduler_recommendation") or {}).get("kind") or recommendation.get("kind") or "")
+    final_kind = ((end_context.get("final_recommendation") or {}).get("kind") or recommendation.get("kind") or "")
+    prefer_come_back_later = (
+        initial_kind == "come_back_later"
+        and final_kind == "checkpoint_reached"
+        and checkpoint_completion_reason == "long_session_escape_hatch"
+    )
 
     if recommendation.get("kind") == "checkpoint_reached":
-        if newly_ready >= 1:
+        if checkpoint_completion_reason == "long_session_escape_hatch":
+            base_message = "This session reached the long-session checkpoint limit. Your progress has been saved to your Quiz Passport."
+        elif newly_ready >= 1:
             base_message = "Checkpoint complete. Your progress has been saved to your Quiz Passport."
         elif session_metrics["newly_baseline"] >= 1:
             base_message = "Checkpoint complete. You built a solid foundation on this session's questions."
@@ -2633,7 +2996,10 @@ def learner_summary_feedback(summary: dict, recommendation: dict | None, session
         positive_messages.append("Steady session: your pace and accuracy stayed consistent.")
 
     if not positive_messages:
-        positive_messages.append("You made steady progress on this session's questions.")
+        if prefer_come_back_later or (recommendation.get("kind") == "come_back_later" and recommendation.get("end_session")):
+            positive_messages.append("You showed a lot of persistence by sticking with this session even as it got tougher.")
+        else:
+            positive_messages.append("You made steady progress on this session's questions.")
 
     deduped_messages: list[str] = []
     for message in positive_messages:
@@ -2655,7 +3021,13 @@ def learner_summary_feedback(summary: dict, recommendation: dict | None, session
         "kind": "keep_this_pace",
     }
 
-    if (
+    if prefer_come_back_later or (recommendation.get("kind") == "come_back_later" and recommendation.get("end_session")):
+        next_step = {
+            "title": "Come Back Later",
+            "message": ((end_context.get("initial_scheduler_recommendation") or {}).get("message") or recommendation.get("message") or "You seem to be hitting sustained diminishing returns. This is a good place to pause and come back later, when the next session is more likely to pay off."),
+            "kind": "come_back_later",
+        }
+    elif (
         strong_low_yield_all
         or (
             weak_window_count >= 2
@@ -2795,8 +3167,87 @@ def on_learner_guidance_dismiss_click(event) -> None:
     hide_learner_guidance()
 
 
+async def copy_text_to_clipboard(text: str, success_message: str, empty_message: str) -> None:
+    if not text:
+        show_toast(empty_message)
+        return
+
+    try:
+        clipboard = getattr(window.navigator, "clipboard", None)
+        if clipboard is not None and hasattr(clipboard, "writeText"):
+            await clipboard.writeText(text)
+        else:
+            raise RuntimeError("Clipboard API unavailable")
+    except Exception:
+        try:
+            textarea = document.createElement("textarea")
+            textarea.value = text
+            textarea.setAttribute("readonly", "true")
+            textarea.style.position = "fixed"
+            textarea.style.opacity = "0"
+            textarea.style.left = "-9999px"
+            document.body.appendChild(textarea)
+            textarea.select()
+            document.execCommand("copy")
+            document.body.removeChild(textarea)
+        except Exception:
+            show_toast("Copy failed on this device.")
+            return
+
+    show_toast(success_message)
+
+
+def learner_debug_report_filename() -> str:
+    now = window.Date.new()
+    timestamp = (
+        f"{now.getFullYear():04d}-"
+        f"{int(now.getMonth()) + 1:02d}-"
+        f"{int(now.getDate()):02d}_"
+        f"{int(now.getHours()):02d}-"
+        f"{int(now.getMinutes()):02d}-"
+        f"{int(now.getSeconds()):02d}"
+    )
+    scope = learner_scope_name or "all"
+    safe_scope = "".join(ch.lower() if ch.isalnum() else "_" for ch in scope).strip("_") or "all"
+    return f"{timestamp}_{safe_scope}_learner_debug_report.json"
+
+
+def download_text_payload(text: str, filename: str, empty_message: str) -> None:
+    if not text:
+        show_toast(empty_message)
+        return
+    anchor = document.createElement("a")
+    anchor.setAttribute(
+        "href",
+        "data:application/json;charset=utf-8," + quote(text),
+    )
+    anchor.setAttribute("download", filename)
+    anchor.style.display = "none"
+    document.body.appendChild(anchor)
+    anchor.click()
+    document.body.removeChild(anchor)
+
+
 def on_learner_debug_popout_click(event) -> None:
     open_learner_debug_popup()
+
+
+def on_learner_debug_download_click(event) -> None:
+    download_text_payload(
+        learner_debug_report_text,
+        learner_debug_report_filename(),
+        "There is no learner debug report to download right now.",
+    )
+
+
+def on_learner_debug_copy_click(event) -> None:
+    asyncio.create_task(
+        copy_text_to_clipboard(
+            learner_debug_report_text,
+            "Learner debug report copied to clipboard.",
+            "There is no learner debug report to copy right now.",
+        )
+    )
 
 
 def on_learner_debug_hide_click(event) -> None:
@@ -2869,6 +3320,7 @@ async def start_learner_session(scope_name: str, restore_payload: dict | None = 
     learner_checkpoint_display_mode_for_session = "ready"
     learner_session_active = True
     reset_learner_debug_unlock()
+    reset_learner_debug_capture_state()
     hide_learner_guidance()
     if not restore_payload:
         learner_guidance_kind = ""
@@ -3115,7 +3567,7 @@ async def maybe_restore_learner_session() -> bool:
 
 async def handle_learner_confidence(confidence_value: int) -> None:
     global learner_answer_locked, learner_pending_next_question_id, learner_pending_recommendation
-    global learner_selected_confidence
+    global learner_selected_confidence, learner_session_end_context
 
     if (
         not learner_session_active
@@ -3131,6 +3583,8 @@ async def handle_learner_confidence(confidence_value: int) -> None:
     started_at_ms = int(learner_question_started_at_ms or now_ms)
     response_ms = max(0, now_ms - started_at_ms)
     is_correct = response_is_correct(question, learner_selected_answer)
+    debug_was_open = learner_debug_is_open()
+    state_before = learner_debug_question_state_snapshot(question_id, now_ms) if debug_was_open else {}
 
     update_result = learner_scheduler_module.update_after_response(
         learner_progress,
@@ -3140,6 +3594,8 @@ async def handle_learner_confidence(confidence_value: int) -> None:
         response_ms,
         now_ms,
     )
+    checkpoint_before = learner_debug_checkpoint_snapshot(len(learner_interactions)) if debug_was_open else {}
+    windows_before = learner_debug_recent_windows(learner_interactions) if debug_was_open else []
     interaction = {
         "question_id": question_id,
         "selected_answer": learner_selected_answer,
@@ -3153,7 +3609,6 @@ async def handle_learner_confidence(confidence_value: int) -> None:
         "first_attempt_ever": bool(update_result.get("first_attempt_ever")),
     }
     learner_interactions.append(interaction)
-    learner_interactions[:] = learner_interactions[-20:]
     learner_checkpoint_attempted_question_ids.add(question_id)
     save_learner_progress()
 
@@ -3171,28 +3626,100 @@ async def handle_learner_confidence(confidence_value: int) -> None:
         learner_checkpoint_question_ids,
         now_ms,
     )
+    initial_scheduler_recommendation = dict(recommendation or {})
     checkpoint_progress, checkpoint_target = learner_checkpoint_status()
-    checkpoint_reached, checkpoint_message = learner_checkpoint_completion()
+    checkpoint_completion = learner_checkpoint_completion_details()
+    checkpoint_reached = bool(checkpoint_completion.get("complete", False))
+    checkpoint_message = str(checkpoint_completion.get("message", "") or "")
+    checkpoint_counts = learner_checkpoint_counts()
+    checkpoint_attempted_count = checkpoint_counts.get("attempted", 0)
+    checkpoint_attempt_ratio = (
+        checkpoint_attempted_count / checkpoint_target
+        if checkpoint_target
+        else 0.0
+    )
+    recent_question_ids = [item.get("question_id") for item in learner_interactions[-3:]]
+    checkpoint_completion_reason = str(checkpoint_completion.get("kind", "") or "")
     next_question_id = None
+    final_end_reason = "continue_session"
     if checkpoint_reached:
         recommendation = {
             "kind": "checkpoint_reached",
             "message": checkpoint_message,
             "end_session": True,
         }
+        final_end_reason = f"checkpoint_reached:{checkpoint_completion_reason or 'unknown'}"
+    elif recommendation.get("kind") == "come_back_later" and (
+        len(learner_interactions) < 30
+        or checkpoint_attempt_ratio < 0.8
+    ):
+        recommendation = {
+            "kind": "take_break",
+            "message": "You may be hitting diminishing returns. You can keep going, but a short break might help the next stretch feel easier.",
+            "end_session": False,
+        }
     elif not recommendation.get("end_session"):
-        next_question_id = learner_scheduler_module.choose_next_question(
+        next_question_id = None
+
+    post_gate_recommendation = dict(recommendation or {})
+    if not recommendation.get("end_session") and hasattr(learner_scheduler_module, "choose_next_question_diagnostics"):
+        next_question_selection = learner_scheduler_module.choose_next_question_diagnostics(
             learner_progress,
             learner_checkpoint_question_ids,
             now_ms,
-            [item.get("question_id") for item in learner_interactions[-3:]],
+            recent_question_ids,
         )
+        next_question_id = next_question_selection.get("selected_next_question_id")
+        next_question_selection["selection_attempted"] = True
+    else:
+        next_question_selection = {
+            "checkpoint_question_ids_at_selection_time": list(learner_checkpoint_question_ids),
+            "checkpoint_question_count_at_selection_time": len(learner_checkpoint_question_ids),
+            "recent_question_ids": list(recent_question_ids),
+            "selected_next_question_id": next_question_id,
+            "selection_attempted": not bool(recommendation.get("end_session")),
+        }
 
     if next_question_id is None and not recommendation.get("end_session"):
         recommendation = {
             "message": "You've learned everything currently due in this area.",
             "end_session": True,
         }
+        final_end_reason = "no_next_question_available"
+    elif recommendation.get("end_session"):
+        final_end_reason = str(recommendation.get("kind") or "recommendation_end_session")
+
+    learner_session_end_context = {
+        "initial_scheduler_recommendation": dict(initial_scheduler_recommendation or {}),
+        "post_gate_recommendation": dict(post_gate_recommendation or {}),
+        "final_recommendation": dict(recommendation or {}),
+        "final_end_reason": final_end_reason,
+        "checkpoint_completion_reason": checkpoint_completion_reason,
+        "checkpoint_attempt_ratio": checkpoint_attempt_ratio,
+        "interaction_count": len(learner_interactions),
+    }
+
+    if debug_was_open:
+        learner_debug_record_event(
+            question,
+            learner_selected_answer,
+            is_correct,
+            confidence_value,
+            response_ms,
+            interaction,
+            update_result,
+            recommendation,
+            checkpoint_before,
+            learner_debug_checkpoint_snapshot(len(learner_interactions)),
+            windows_before,
+            learner_debug_recent_windows(learner_interactions),
+            state_before,
+            now_ms,
+            initial_scheduler_recommendation=initial_scheduler_recommendation,
+            post_gate_recommendation=post_gate_recommendation,
+            next_question_selection=next_question_selection,
+            final_end_reason=final_end_reason,
+        )
 
     learner_answer_locked = True
     learner_selected_confidence = confidence_value
@@ -3207,7 +3734,7 @@ async def handle_learner_confidence(confidence_value: int) -> None:
 
 async def end_learner_session(recommendation: dict | None = None) -> None:
     global learner_session_active, learner_selected_answer, learner_answer_locked
-    global learner_summary_payload
+    global learner_summary_payload, learner_session_end_context
     global learner_checkpoint_question_ids, learner_checkpoint_baseline_average_mastery
     global learner_checkpoint_attempted_question_ids, learner_checkpoint_initial_ready_question_ids
     global learner_checkpoint_initial_baseline_question_ids, learner_checkpoint_initial_mastered_question_ids
@@ -3219,6 +3746,8 @@ async def end_learner_session(recommendation: dict | None = None) -> None:
 
     if learner_mode_module is None:
         return
+
+    preserve_debug_for_summary = learner_debug_is_open()
 
     update_session_elapsed_time()
     stop_timer_updates()
@@ -3307,9 +3836,11 @@ async def end_learner_session(recommendation: dict | None = None) -> None:
     learner_checkpoint_initial_baseline_question_ids = set()
     learner_checkpoint_initial_mastered_question_ids = set()
     learner_checkpoint_display_mode_for_session = "ready"
-    hide_learner_debug_panel()
-    close_learner_debug_popup()
-    reset_learner_debug_unlock()
+    if not preserve_debug_for_summary:
+        hide_learner_debug_panel()
+        close_learner_debug_popup()
+        reset_learner_debug_unlock()
+        reset_learner_debug_capture_state()
     clear_learner_session_draft()
     save_learner_progress()
 
@@ -3322,6 +3853,8 @@ async def end_learner_session(recommendation: dict | None = None) -> None:
     learner_summary_payload = {"summary": summary, "recommendation": recommendation or {}}
     render_learner_summary(summary, recommendation)
     show_screen("learner-summary")
+    if preserve_debug_for_summary and learner_debug_event_log:
+        render_learner_debug_summary_report(summary, recommendation, session_metrics)
 
 
 async def leave_learner_session_to_hub() -> None:
@@ -3352,15 +3885,13 @@ async def leave_learner_session_to_hub() -> None:
     hide_learner_debug_panel()
     close_learner_debug_popup()
     reset_learner_debug_unlock()
+    reset_learner_debug_capture_state()
     clear_learner_session_draft()
     save_learner_progress()
     await enter_learner_hub()
 
 
-async def load_question(question_id: int) -> Question:
-    if question_id in question_cache:
-        return question_cache[question_id]
-
+async def _fetch_question(question_id: int) -> Question:
     payload = await fetch_json(QUESTION_PATH_TEMPLATE.format(question_id=question_id))
     indexed_metadata = question_bank_index.get(question_id, {})
     metadata = question_metadata_from_payload(payload, indexed_metadata)
@@ -3388,6 +3919,23 @@ async def load_question(question_id: int) -> Question:
     )
     question_cache[question_id] = question
     return question
+
+
+async def load_question(question_id: int) -> Question:
+    if question_id in question_cache:
+        return question_cache[question_id]
+
+    existing_task = question_load_tasks.get(question_id)
+    if existing_task is not None:
+        return await asyncio.shield(existing_task)
+
+    task = asyncio.create_task(_fetch_question(question_id))
+    question_load_tasks[question_id] = task
+    try:
+        return await asyncio.shield(task)
+    finally:
+        if question_load_tasks.get(question_id) is task:
+            question_load_tasks.pop(question_id, None)
 
 
 async def _run_learner_question_prefetch(question_id: int) -> None:
@@ -4319,34 +4867,11 @@ def on_next_click(event) -> None:
 
 
 async def copy_question_to_clipboard() -> None:
-    text = current_question_copy_text()
-    if not text:
-        show_toast("There is no question to copy right now.")
-        return
-
-    try:
-        clipboard = getattr(window.navigator, "clipboard", None)
-        if clipboard is not None and hasattr(clipboard, "writeText"):
-            await clipboard.writeText(text)
-        else:
-            raise RuntimeError("Clipboard API unavailable")
-    except Exception:
-        try:
-            textarea = document.createElement("textarea")
-            textarea.value = text
-            textarea.setAttribute("readonly", "true")
-            textarea.style.position = "fixed"
-            textarea.style.opacity = "0"
-            textarea.style.left = "-9999px"
-            document.body.appendChild(textarea)
-            textarea.select()
-            document.execCommand("copy")
-            document.body.removeChild(textarea)
-        except Exception:
-            show_toast("Copy failed on this device.")
-            return
-
-    show_toast("Question copied to clipboard.")
+    await copy_text_to_clipboard(
+        current_question_copy_text(),
+        "Question copied to clipboard.",
+        "There is no question to copy right now.",
+    )
 
 
 def on_copy_question_click(event) -> None:
@@ -4479,17 +5004,29 @@ def on_learner_hub_back_home_click(event) -> None:
 
 
 def on_learner_summary_return_hub_click(event) -> None:
+    hide_learner_debug_panel()
+    close_learner_debug_popup()
+    reset_learner_debug_unlock()
+    reset_learner_debug_capture_state()
     asyncio.create_task(enter_learner_hub())
 
 
 def on_learner_summary_continue_click(event) -> None:
     if not learner_scope_name:
+        hide_learner_debug_panel()
+        close_learner_debug_popup()
+        reset_learner_debug_unlock()
+        reset_learner_debug_capture_state()
         asyncio.create_task(enter_learner_hub())
         return
     asyncio.create_task(start_learner_session(learner_scope_name))
 
 
 def on_learner_summary_home_click(event) -> None:
+    hide_learner_debug_panel()
+    close_learner_debug_popup()
+    reset_learner_debug_unlock()
+    reset_learner_debug_capture_state()
     show_screen("home")
 
 
@@ -4895,6 +5432,8 @@ learner_summary_return_hub_button.on_click.add_listener(on_learner_summary_retur
 learner_summary_home_button.on_click.add_listener(on_learner_summary_home_click)
 learner_guidance_dismiss_button.on_click.add_listener(on_learner_guidance_dismiss_click)
 quiz_help_dismiss_button.on_click.add_listener(on_quiz_help_dismiss_click)
+learner_debug_download_button.on_click.add_listener(on_learner_debug_download_click)
+learner_debug_copy_button.on_click.add_listener(on_learner_debug_copy_click)
 learner_debug_popout_button.on_click.add_listener(on_learner_debug_popout_click)
 learner_debug_hide_button.on_click.add_listener(on_learner_debug_hide_click)
 learner_debug_reopen_button.on_click.add_listener(on_learner_debug_reopen_click)
