@@ -4550,6 +4550,77 @@ def refresh_results_table() -> None:
     render_results_table(rows)
 
 
+def handle_qna_tab_action(target) -> bool:
+    if target is None:
+        return False
+
+    if getattr(target, "nodeType", None) == 3:
+        target = getattr(target, "parentElement", None)
+    if target is None:
+        return False
+
+    image_target = None
+    filter_target = None
+    metadata_toggle_target = None
+    if hasattr(target, "closest"):
+        try:
+            image_target = target.closest("[data-image-src]")
+        except Exception:
+            image_target = None
+        try:
+            filter_target = target.closest("[data-filter]")
+        except Exception:
+            filter_target = None
+        try:
+            metadata_toggle_target = target.closest("[data-toggle-qna-metadata='true']")
+        except Exception:
+            metadata_toggle_target = None
+
+    image_src = (
+        image_target.getAttribute("data-image-src")
+        if image_target is not None and hasattr(image_target, "getAttribute")
+        else (
+            target.getAttribute("data-image-src")
+            if hasattr(target, "getAttribute")
+            else None
+        )
+    )
+    if image_src:
+        show_lightbox(image_src)
+        return True
+
+    filter_name = (
+        filter_target.getAttribute("data-filter")
+        if filter_target is not None and hasattr(filter_target, "getAttribute")
+        else (
+            target.getAttribute("data-filter")
+            if hasattr(target, "getAttribute")
+            else None
+        )
+    )
+    if filter_name in {"all", "correct", "wrong"}:
+        global results_filter
+        results_filter = filter_name
+        refresh_results_table()
+        return True
+
+    toggle_metadata = (
+        metadata_toggle_target.getAttribute("data-toggle-qna-metadata")
+        if metadata_toggle_target is not None and hasattr(metadata_toggle_target, "getAttribute")
+        else (
+            target.getAttribute("data-toggle-qna-metadata")
+            if hasattr(target, "getAttribute")
+            else None
+        )
+    )
+    if toggle_metadata == "true":
+        set_results_show_metadata(not results_show_metadata)
+        refresh_results_table()
+        return True
+
+    return False
+
+
 def available_question_ids_for_session() -> list[int]:
     if not advanced_options_enabled:
         return list(quiz_index["question_ids"])
@@ -5046,6 +5117,12 @@ def on_qna_tab_click(event) -> None:
     show_results_tab("qna")
 
 
+def on_qna_content_click(event) -> None:
+    if handle_qna_tab_action(getattr(event, "target", None)):
+        event.preventDefault()
+        event.stopPropagation()
+
+
 def on_advanced_options_toggle(event) -> None:
     global advanced_options_enabled, selected_knowledge_areas
 
@@ -5270,16 +5347,12 @@ def on_document_click(event) -> None:
     target = getattr(event, "target", None)
     if target is None:
         return
-
-    image_src = target.getAttribute("data-image-src") if hasattr(target, "getAttribute") else None
-    if image_src:
-        show_lightbox(image_src)
+    if getattr(target, "nodeType", None) == 3:
+        target = getattr(target, "parentElement", None)
+    if target is None:
         return
 
-    filter_name = target.getAttribute("data-filter") if hasattr(target, "getAttribute") else None
-    if filter_name in {"all", "correct", "wrong"}:
-        results_filter = filter_name
-        refresh_results_table()
+    if handle_qna_tab_action(target):
         return
 
     learner_scope = (
@@ -5302,16 +5375,6 @@ def on_document_click(event) -> None:
         except Exception:
             return
         asyncio.create_task(handle_learner_confidence(confidence_value))
-        return
-
-    toggle_metadata = (
-        target.getAttribute("data-toggle-qna-metadata")
-        if hasattr(target, "getAttribute")
-        else None
-    )
-    if toggle_metadata == "true":
-        set_results_show_metadata(not results_show_metadata)
-        refresh_results_table()
         return
 
     if target.id in {"lightbox-close-btn", "image-lightbox"}:
@@ -5439,6 +5502,7 @@ learner_debug_hide_button.on_click.add_listener(on_learner_debug_hide_click)
 learner_debug_reopen_button.on_click.add_listener(on_learner_debug_reopen_click)
 stats_tab_button.on_click.add_listener(on_stats_tab_click)
 qna_tab_button.on_click.add_listener(on_qna_tab_click)
+qna_tab.on_click.add_listener(on_qna_content_click)
 advanced_options_toggle.on_click.add_listener(on_advanced_options_toggle)
 question_metadata_toggle.on_click.add_listener(on_question_metadata_toggle)
 lightbox_close_button.on_click.add_listener(lambda event: hide_lightbox())
