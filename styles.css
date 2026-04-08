@@ -82,10 +82,37 @@ input {
     animation: loader-cowboy-bounce 0.7s ease-out, loader-cowboy-spin 2.8s linear infinite;
 }
 
-.question-transition-loader-art img {
+.question-transition-loader-art svg {
     width: 100%;
     height: auto;
     display: block;
+    overflow: visible;
+}
+
+.question-transition-loader-art .lasso-loop,
+.question-transition-loader-art .lasso-line,
+.question-transition-loader-art .rider-head,
+.question-transition-loader-art .hat-brim,
+.question-transition-loader-art .hat-top,
+.question-transition-loader-art .rider-body,
+.question-transition-loader-art .rider-arm,
+.question-transition-loader-art .horse-back,
+.question-transition-loader-art .horse-neck,
+.question-transition-loader-art .horse-head,
+.question-transition-loader-art .horse-body,
+.question-transition-loader-art .tail,
+.question-transition-loader-art .leg,
+.question-transition-loader-art .ground {
+    fill: none;
+    stroke: #71451f;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 6;
+}
+
+.question-transition-loader-art .lasso-loop,
+.question-transition-loader-art .lasso-line {
+    stroke: #cc8d2a;
 }
 
 .question-transition-loader-title {
