@@ -224,6 +224,7 @@ toast_clear_task: asyncio.Task | None = None
 timer_task: asyncio.Task | None = None
 learner_debug_task: asyncio.Task | None = None
 cursor_hide_task: asyncio.Task | None = None
+learner_prefetch_task: asyncio.Task | None = None
 learner_modules_loaded = False
 learner_storage_module = None
 learner_scheduler_module = None
@@ -245,6 +246,7 @@ learner_selected_answer: str | None = None
 learner_question_started_at_ms: float | None = None
 learner_summary_payload: dict = {}
 learner_pending_next_question_id: int | None = None
+learner_prefetched_question_id: int | None = None
 learner_pending_recommendation: dict | None = None
 learner_guidance_visible = False
 learner_guidance_kind = ""
@@ -3196,6 +3198,9 @@ async def handle_learner_confidence(confidence_value: int) -> None:
     learner_selected_confidence = confidence_value
     learner_pending_next_question_id = next_question_id
     learner_pending_recommendation = recommendation
+    queue_learner_question_prefetch(
+        None if recommendation.get("end_session") else learner_pending_next_question_id
+    )
     save_learner_session_draft()
     await render_current_question()
 
@@ -3207,6 +3212,7 @@ async def end_learner_session(recommendation: dict | None = None) -> None:
     global learner_checkpoint_attempted_question_ids, learner_checkpoint_initial_ready_question_ids
     global learner_checkpoint_initial_baseline_question_ids, learner_checkpoint_initial_mastered_question_ids
     global learner_checkpoint_display_mode_for_session
+    global learner_prefetch_task, learner_prefetched_question_id
     global learner_pending_next_question_id, learner_pending_recommendation
     global learner_selected_confidence
     global multi_select_focus_key
@@ -3283,6 +3289,10 @@ async def end_learner_session(recommendation: dict | None = None) -> None:
         "scope_question_count": len(learner_scope_question_ids or all_question_ids()),
     }
     learner_session_active = False
+    if learner_prefetch_task is not None and not learner_prefetch_task.done():
+        learner_prefetch_task.cancel()
+    learner_prefetch_task = None
+    learner_prefetched_question_id = None
     hide_learner_guidance()
     learner_selected_answer = None
     learner_answer_locked = False
@@ -3378,6 +3388,38 @@ async def load_question(question_id: int) -> Question:
     )
     question_cache[question_id] = question
     return question
+
+
+async def _run_learner_question_prefetch(question_id: int) -> None:
+    global learner_prefetched_question_id
+
+    try:
+        await load_question(question_id)
+        learner_prefetched_question_id = question_id
+    except asyncio.CancelledError:
+        raise
+    except Exception:
+        # Prefetch should never interrupt learner flow.
+        learner_prefetched_question_id = None
+
+
+def queue_learner_question_prefetch(question_id: int | None) -> None:
+    global learner_prefetch_task, learner_prefetched_question_id
+
+    if learner_prefetch_task is not None and not learner_prefetch_task.done():
+        learner_prefetch_task.cancel()
+    learner_prefetch_task = None
+
+    if question_id is None:
+        learner_prefetched_question_id = None
+        return
+
+    if learner_prefetched_question_id == question_id or question_id in question_cache:
+        learner_prefetched_question_id = question_id
+        return
+
+    learner_prefetched_question_id = None
+    learner_prefetch_task = asyncio.create_task(_run_learner_question_prefetch(question_id))
 
 
 async def prefetch_upcoming_questions() -> None:
