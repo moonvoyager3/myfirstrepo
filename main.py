@@ -573,7 +573,7 @@ def learner_checkpoint_completion_details() -> dict[str, object]:
             "message": "Every question in this session's set has reached a solid baseline. Your progress has been saved to your Quiz Passport.",
         }
 
-    if attempt_count > 45:
+    if attempt_count > 60:
         return {
             "complete": True,
             "kind": "long_session_escape_hatch",
@@ -2061,7 +2061,7 @@ def render_learner_debug_panel(current_question_id: int | None = None) -> None:
         ("checkpoint_ready_ratio_ge_0_8", str(checkpoint_ready_completion_ratio >= 0.8)),
         ("checkpoint_baseline_completion_ratio", f"{checkpoint_baseline_completion_ratio:.3f}"),
         ("checkpoint_all_remaining_baseline_done", str(checkpoint_baseline_completion_ratio >= 1.0)),
-        ("checkpoint_attempts_gt_45", str(interaction_count > 45)),
+        ("checkpoint_attempts_gt_60", str(interaction_count > 60)),
         ("checkpoint_complete", str(checkpoint_complete)),
     ]
     if checkpoint_completion_message:
@@ -2646,7 +2646,7 @@ def learner_debug_checkpoint_snapshot(interaction_count_override: int | None = N
         "ready_ratio_ge_0_8": ready_completion_ratio >= 0.8,
         "baseline_completion_ratio": round(baseline_completion_ratio, 4),
         "baseline_ratio_ge_1_0": baseline_completion_ratio >= 1.0,
-        "attempts_gt_45": attempt_count > 45,
+        "attempts_gt_60": attempt_count > 60,
         "completion_kind": str(completion_details.get("kind", "") or ""),
         "complete": complete,
         "message": message,
