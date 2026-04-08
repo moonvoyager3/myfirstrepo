@@ -207,6 +207,7 @@ cowboy_debug_diagnostics = web.page["cowboy-debug-diagnostics"]
 cowboy_debug_grid = web.page["cowboy-debug-grid"]
 cowboy_debug_refresh_button = web.page["cowboy-debug-refresh-btn"]
 cowboy_debug_replay_button = web.page["cowboy-debug-replay-btn"]
+cowboy_debug_trigger_loader_button = web.page["cowboy-debug-trigger-loader-btn"]
 cowboy_debug_copy_button = web.page["cowboy-debug-copy-btn"]
 cowboy_debug_home_button = web.page["cowboy-debug-home-btn"]
 
@@ -5419,6 +5420,22 @@ def on_cowboy_debug_replay_click(event) -> None:
     replay_cowboy_debug_animations()
 
 
+async def preview_real_cowboy_loader() -> None:
+    loader_request_id = begin_question_transition_loader()
+    if question_transition_loader_task is not None and not question_transition_loader_task.done():
+        question_transition_loader_task.cancel()
+    question_transition_loader.classes.discard("hidden")
+    question_transition_loader.setAttribute("aria-hidden", "false")
+    try:
+        await asyncio.sleep(1.6)
+    finally:
+        end_question_transition_loader(loader_request_id)
+
+
+def on_cowboy_debug_trigger_loader_click(event) -> None:
+    asyncio.create_task(preview_real_cowboy_loader())
+
+
 def on_cowboy_debug_copy_click(event) -> None:
     diagnostics = cowboy_debug_diagnostics.textContent or ""
     meta_blocks = cowboy_debug_grid._dom_element.querySelectorAll("[data-debug-meta]")
@@ -5837,6 +5854,7 @@ qna_tab_button.on_click.add_listener(on_qna_tab_click)
 qna_tab.on_click.add_listener(on_qna_content_click)
 cowboy_debug_refresh_button.on_click.add_listener(on_cowboy_debug_refresh_click)
 cowboy_debug_replay_button.on_click.add_listener(on_cowboy_debug_replay_click)
+cowboy_debug_trigger_loader_button.on_click.add_listener(on_cowboy_debug_trigger_loader_click)
 cowboy_debug_copy_button.on_click.add_listener(on_cowboy_debug_copy_click)
 cowboy_debug_home_button.on_click.add_listener(on_cowboy_debug_home_click)
 advanced_options_toggle.on_click.add_listener(on_advanced_options_toggle)

@@ -23,15 +23,15 @@
 
         <div id="question-transition-loader" class="question-transition-loader hidden" aria-live="polite" aria-hidden="true">
             <div class="question-transition-loader-backdrop" style="position:absolute;inset:0;background:radial-gradient(circle at top, rgba(255, 242, 211, 0.4), transparent 45%), rgba(20, 16, 9, 0.18);backdrop-filter:blur(2px);"></div>
-            <div class="question-transition-loader-card" style="position:relative;width:min(24rem, calc(100vw - 2rem));padding:1.25rem 1.25rem 1.1rem;border:2px solid #b88444;background:linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%);box-shadow:0 18px 42px rgba(77, 45, 14, 0.18);text-align:center;">
-                <div class="question-transition-loader-art" aria-hidden="true">
+            <div class="question-transition-loader-card" style="position:relative;display:inline-block;background:linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%);border:2px solid #b88444;box-shadow:0 18px 42px rgba(77, 45, 14, 0.18);padding:0.9rem 1.1rem 1rem;text-align:center;">
+                <div class="question-transition-loader-art" aria-hidden="true" style="position:relative;">
                     <img
                         src="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20240%20180%27%3E%3Cg%20fill%3D%27none%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20stroke-width%3D%276%27%3E%3Ccircle%20cx%3D%27164%27%20cy%3D%2742%27%20r%3D%2724%27%20stroke%3D%27%23cc8d2a%27/%3E%3Cpath%20d%3D%27M144%2056%20C134%2064%2C%20126%2072%2C%20122%2090%27%20stroke%3D%27%23cc8d2a%27/%3E%3Ccircle%20cx%3D%27112%27%20cy%3D%2748%27%20r%3D%2712%27%20stroke%3D%27%2371451f%27/%3E%3Cpath%20d%3D%27M92%2040%20C103%2034%2C%20121%2034%2C%20132%2040%27%20stroke%3D%27%2371451f%27/%3E%3Cpath%20d%3D%27M103%2038%20L107%2026%20L121%2026%20L124%2038%27%20stroke%3D%27%2371451f%27/%3E%3Cpath%20d%3D%27M112%2060%20L116%2084%20L128%2096%27%20stroke%3D%27%2371451f%27/%3E%3Cpath%20d%3D%27M113%2066%20L132%2074%27%20stroke%3D%27%2371451f%27/%3E%3Cpath%20d%3D%27M68%2098%20C88%2076%2C%20132%2076%2C%20160%2094%27%20stroke%3D%27%2371451f%27/%3E%3Cpath%20d%3D%27M160%2094%20C172%2082%2C%20182%2082%2C%20192%2090%27%20stroke%3D%27%2371451f%27/%3E%3Cpath%20d%3D%27M192%2090%20C204%2092%2C%20208%20102%2C%20202%20112%20C194%20118%2C%20182%20116%2C%20178%20108%27%20stroke%3D%27%2371451f%27/%3E%3Cpath%20d%3D%27M66%2098%20C58%20118%2C%2058%20132%2C%2076%20136%20L160%20136%20C174%20132%2C%20178%20116%2C%20172%20102%27%20stroke%3D%27%2371451f%27/%3E%3Cpath%20d%3D%27M66%20100%20C52%20102%2C%2048%20114%2C%2054%20126%27%20stroke%3D%27%2371451f%27/%3E%3Cpath%20d%3D%27M86%20136%20L80%20166%27%20stroke%3D%27%2371451f%27/%3E%3Cpath%20d%3D%27M112%20136%20L108%20168%27%20stroke%3D%27%2371451f%27/%3E%3Cpath%20d%3D%27M146%20136%20L150%20168%27%20stroke%3D%27%2371451f%27/%3E%3Cpath%20d%3D%27M168%20134%20L176%20166%27%20stroke%3D%27%2371451f%27/%3E%3Cpath%20d%3D%27M34%20168%20H208%27%20stroke%3D%27%2371451f%27/%3E%3C/g%3E%3C/svg%3E"
                         alt="Rider on horseback with lasso"
-                        style="width:min(13rem, 60vw);height:auto;display:block;margin:0 auto 0.7rem;transform-origin:center;animation:loader-cowboy-bounce 0.7s ease-out, loader-cowboy-spin 2.8s linear infinite;">
+                        style="width:12.5rem;max-width:min(12.5rem, 70vw);height:auto;display:block;margin:0 auto;transform-origin:center;animation:loader-cowboy-bounce 0.7s ease-out, loader-cowboy-spin 2.8s linear infinite;">
                 </div>
-                <p class="question-transition-loader-title" style="margin:0;font-size:1.15rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</p>
-                <p class="question-transition-loader-copy" style="margin:0.45rem auto 0;max-width:19rem;color:#7a5938;">The next question is still riding in from the server.</p>
+                <p class="question-transition-loader-title" style="margin:0.55rem 0 0;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-align:center;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</p>
+                <p class="question-transition-loader-copy" style="margin:0.45rem auto 0;max-width:17rem;color:#7a5938;text-align:center;">The next question is still riding in from the server.</p>
             </div>
         </div>
 
@@ -133,6 +133,7 @@
                         <div class="cowboy-debug-actions">
                             <button id="cowboy-debug-refresh-btn" class="ui button" type="button">Refresh Diagnostics</button>
                             <button id="cowboy-debug-replay-btn" class="ui primary button" type="button">Replay Animations</button>
+                            <button id="cowboy-debug-trigger-loader-btn" class="ui orange button" type="button">Trigger Real Loader</button>
                             <button id="cowboy-debug-copy-btn" class="ui button" type="button">Copy Diagnostics</button>
                             <button id="cowboy-debug-home-btn" class="ui olive button" type="button">Back To Home</button>
                         </div>
