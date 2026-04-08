@@ -81,6 +81,7 @@ page_loader_text = web.page["page-loader-text"]
 question_transition_loader = web.page["question-transition-loader"]
 
 home_screen = web.page["home-screen"]
+cowboy_debug_screen = web.page["cowboy-debug-screen"]
 quiz_screen = web.page["quiz-screen"]
 learner_confirm_screen = web.page["learner-confirm-screen"]
 learner_passport_screen = web.page["learner-passport-screen"]
@@ -202,6 +203,12 @@ learner_debug_copy_button = web.page["learner-debug-copy-btn"]
 learner_debug_popout_button = web.page["learner-debug-popout-btn"]
 learner_debug_hide_button = web.page["learner-debug-hide-btn"]
 learner_debug_reopen_button = web.page["learner-debug-reopen-btn"]
+cowboy_debug_diagnostics = web.page["cowboy-debug-diagnostics"]
+cowboy_debug_grid = web.page["cowboy-debug-grid"]
+cowboy_debug_refresh_button = web.page["cowboy-debug-refresh-btn"]
+cowboy_debug_replay_button = web.page["cowboy-debug-replay-btn"]
+cowboy_debug_copy_button = web.page["cowboy-debug-copy-btn"]
+cowboy_debug_home_button = web.page["cowboy-debug-home-btn"]
 
 
 quiz_index: dict = {}
@@ -277,6 +284,7 @@ learner_debug_checkpoint_completion_captured = False
 learner_debug_session_end_details: dict = {}
 learner_generator_avatar_id = "cat_smile"
 learner_generator_avatar_bg_id = "peach"
+home_debug_unlock_buffer = ""
 
 
 def learner_checkpoint_target(scope_question_count: int) -> int:
@@ -754,6 +762,245 @@ def end_question_transition_loader(request_id: int) -> None:
     hide_question_transition_loader()
 
 
+def cowboy_loader_data_uri() -> str:
+    return (
+        "data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20240%20180%27%3E"
+        "%3Cg%20fill%3D%27none%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%20stroke-width%3D%276%27%3E"
+        "%3Ccircle%20cx%3D%27164%27%20cy%3D%2742%27%20r%3D%2724%27%20stroke%3D%27%23cc8d2a%27/%3E"
+        "%3Cpath%20d%3D%27M144%2056%20C134%2064%2C%20126%2072%2C%20122%2090%27%20stroke%3D%27%23cc8d2a%27/%3E"
+        "%3Ccircle%20cx%3D%27112%27%20cy%3D%2748%27%20r%3D%2712%27%20stroke%3D%27%2371451f%27/%3E"
+        "%3Cpath%20d%3D%27M92%2040%20C103%2034%2C%20121%2034%2C%20132%2040%27%20stroke%3D%27%2371451f%27/%3E"
+        "%3Cpath%20d%3D%27M103%2038%20L107%2026%20L121%2026%20L124%2038%27%20stroke%3D%27%2371451f%27/%3E"
+        "%3Cpath%20d%3D%27M112%2060%20L116%2084%20L128%2096%27%20stroke%3D%27%2371451f%27/%3E"
+        "%3Cpath%20d%3D%27M113%2066%20L132%2074%27%20stroke%3D%27%2371451f%27/%3E"
+        "%3Cpath%20d%3D%27M68%2098%20C88%2076%2C%20132%2076%2C%20160%2094%27%20stroke%3D%27%2371451f%27/%3E"
+        "%3Cpath%20d%3D%27M160%2094%20C172%2082%2C%20182%2082%2C%20192%2090%27%20stroke%3D%27%2371451f%27/%3E"
+        "%3Cpath%20d%3D%27M192%2090%20C204%2092%2C%20208%20102%2C%20202%20112%20C194%20118%2C%20182%20116%2C%20178%20108%27%20stroke%3D%27%2371451f%27/%3E"
+        "%3Cpath%20d%3D%27M66%2098%20C58%20118%2C%2058%20132%2C%2076%20136%20L160%20136%20C174%20132%2C%20178%20116%2C%20172%20102%27%20stroke%3D%27%2371451f%27/%3E"
+        "%3Cpath%20d%3D%27M66%20100%20C52%20102%2C%2048%20114%2C%2054%20126%27%20stroke%3D%27%2371451f%27/%3E"
+        "%3Cpath%20d%3D%27M86%20136%20L80%20166%27%20stroke%3D%27%2371451f%27/%3E"
+        "%3Cpath%20d%3D%27M112%20136%20L108%20168%27%20stroke%3D%27%2371451f%27/%3E"
+        "%3Cpath%20d%3D%27M146%20136%20L150%20168%27%20stroke%3D%27%2371451f%27/%3E"
+        "%3Cpath%20d%3D%27M168%20134%20L176%20166%27%20stroke%3D%27%2371451f%27/%3E"
+        "%3Cpath%20d%3D%27M34%20168%20H208%27%20stroke%3D%27%2371451f%27/%3E%3C/g%3E%3C/svg%3E"
+    )
+
+
+def cowboy_debug_cards_html() -> str:
+    data_uri = cowboy_loader_data_uri()
+    inline_style = (
+        "width:min(9.5rem,70%);margin:0 auto;display:block;"
+        "animation:loader-cowboy-bounce 0.7s ease-out, loader-cowboy-spin 2.8s linear infinite;"
+        "transform-origin:center;"
+    )
+    return (
+        f"""
+        <article class="cowboy-debug-card">
+            <h3>Attempt 1</h3>
+            <p>Current production approach: data-URI image animated on a wrapper.</p>
+            <div class="cowboy-debug-stage">
+                <div class="cowboy-debug-loader">
+                    <div class="cowboy-debug-loader-card">
+                        <div class="cowboy-debug-art is-animated" data-debug-art="attempt-1">
+                            <img src="{data_uri}" alt="Cowboy loader">
+                        </div>
+                        <p class="cowboy-debug-loader-title">Hold on cowboy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cowboy-debug-meta" data-debug-meta="attempt-1"></div>
+        </article>
+        <article class="cowboy-debug-card">
+            <h3>Attempt 2</h3>
+            <p>Same data-URI image, but the animation is applied directly inline on the image element.</p>
+            <div class="cowboy-debug-stage">
+                <div class="cowboy-debug-loader">
+                    <div class="cowboy-debug-loader-card">
+                        <img data-debug-art="attempt-2" src="{data_uri}" alt="Cowboy loader" style="{inline_style}">
+                        <p class="cowboy-debug-loader-title">Hold on cowboy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cowboy-debug-meta" data-debug-meta="attempt-2"></div>
+        </article>
+        <article class="cowboy-debug-card">
+            <h3>Attempt 3</h3>
+            <p>Inline SVG markup animated on the wrapper to see if the host breaks SVG-in-DOM specifically.</p>
+            <div class="cowboy-debug-stage">
+                <div class="cowboy-debug-loader">
+                    <div class="cowboy-debug-loader-card">
+                        <div class="cowboy-debug-art is-animated" data-debug-art="attempt-3">
+                            <svg viewBox="0 0 240 180" role="img" aria-label="Cowboy loader">
+                                <circle class="lasso-loop" cx="164" cy="42" r="24"></circle>
+                                <path class="lasso-line" d="M144 56 C134 64, 126 72, 122 90"></path>
+                                <circle class="rider-head" cx="112" cy="48" r="12"></circle>
+                                <path class="hat-brim" d="M92 40 C103 34, 121 34, 132 40"></path>
+                                <path class="hat-top" d="M103 38 L107 26 L121 26 L124 38"></path>
+                                <path class="rider-body" d="M112 60 L116 84 L128 96"></path>
+                                <path class="rider-arm" d="M113 66 L132 74"></path>
+                                <path class="horse-back" d="M68 98 C88 76, 132 76, 160 94"></path>
+                                <path class="horse-neck" d="M160 94 C172 82, 182 82, 192 90"></path>
+                                <path class="horse-head" d="M192 90 C204 92, 208 102, 202 112 C194 118, 182 116, 178 108"></path>
+                                <path class="horse-body" d="M66 98 C58 118, 58 132, 76 136 L160 136 C174 132, 178 116, 172 102"></path>
+                                <path class="tail" d="M66 100 C52 102, 48 114, 54 126"></path>
+                                <path class="leg" d="M86 136 L80 166"></path>
+                                <path class="leg" d="M112 136 L108 168"></path>
+                                <path class="leg" d="M146 136 L150 168"></path>
+                                <path class="leg" d="M168 134 L176 166"></path>
+                                <path class="ground" d="M34 168 H208"></path>
+                            </svg>
+                        </div>
+                        <p class="cowboy-debug-loader-title">Hold on cowboy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cowboy-debug-meta" data-debug-meta="attempt-3"></div>
+        </article>
+        <article class="cowboy-debug-card">
+            <h3>Attempt 4</h3>
+            <p>CSS background image instead of an img element, animated on the box.</p>
+            <div class="cowboy-debug-stage">
+                <div class="cowboy-debug-loader">
+                    <div class="cowboy-debug-loader-card">
+                        <div class="cowboy-debug-art is-background is-animated" data-debug-art="attempt-4" style="background-image:url('{data_uri}');"></div>
+                        <p class="cowboy-debug-loader-title">Hold on cowboy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cowboy-debug-meta" data-debug-meta="attempt-4"></div>
+        </article>
+        <article class="cowboy-debug-card">
+            <h3>Attempt 5</h3>
+            <p>Canvas-drawn cowboy with JavaScript rotation, bypassing SVG and image rendering entirely.</p>
+            <div class="cowboy-debug-stage">
+                <div class="cowboy-debug-loader">
+                    <div class="cowboy-debug-loader-card">
+                        <div class="cowboy-debug-art is-animated" data-debug-art="attempt-5">
+                            <canvas data-debug-canvas="attempt-5" width="240" height="180"></canvas>
+                        </div>
+                        <p class="cowboy-debug-loader-title">Hold on cowboy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cowboy-debug-meta" data-debug-meta="attempt-5"></div>
+        </article>
+        <article class="cowboy-debug-card">
+            <h3>Attempt 6</h3>
+            <p>Text/emoji fallback with CSS-only animation to test whether the host breaks only media sizing.</p>
+            <div class="cowboy-debug-stage">
+                <div class="cowboy-debug-loader">
+                    <div class="cowboy-debug-loader-card">
+                        <div class="cowboy-debug-art is-emoji is-animated" data-debug-art="attempt-6">🤠</div>
+                        <p class="cowboy-debug-loader-title">Hold on cowboy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cowboy-debug-meta" data-debug-meta="attempt-6"></div>
+        </article>
+        """
+    )
+
+
+def draw_cowboy_canvas(canvas) -> None:
+    context = canvas.getContext("2d")
+    if context is None:
+        return
+    context.clearRect(0, 0, canvas.width, canvas.height)
+    context.lineWidth = 6
+    context.lineCap = "round"
+    context.lineJoin = "round"
+
+    def stroke_path(color: str, commands: list[tuple[str, tuple[float, ...]]]) -> None:
+        context.beginPath()
+        context.strokeStyle = color
+        for index, (command, values) in enumerate(commands):
+            if command == "moveTo":
+                context.moveTo(values[0], values[1])
+            elif command == "lineTo":
+                context.lineTo(values[0], values[1])
+            elif command == "bezierCurveTo":
+                context.bezierCurveTo(*values)
+            elif command == "arc":
+                context.arc(*values)
+        context.stroke()
+
+    stroke_path("#cc8d2a", [("arc", (164, 42, 24, 0, 6.283185307179586)), ("moveTo", (144, 56)), ("bezierCurveTo", (134, 64, 126, 72, 122, 90))])
+    stroke_path("#71451f", [("arc", (112, 48, 12, 0, 6.283185307179586))])
+    stroke_path("#71451f", [("moveTo", (92, 40)), ("bezierCurveTo", (103, 34, 121, 34, 132, 40))])
+    stroke_path("#71451f", [("moveTo", (103, 38)), ("lineTo", (107, 26)), ("lineTo", (121, 26)), ("lineTo", (124, 38))])
+    stroke_path("#71451f", [("moveTo", (112, 60)), ("lineTo", (116, 84)), ("lineTo", (128, 96))])
+    stroke_path("#71451f", [("moveTo", (113, 66)), ("lineTo", (132, 74))])
+    stroke_path("#71451f", [("moveTo", (68, 98)), ("bezierCurveTo", (88, 76, 132, 76, 160, 94))])
+    stroke_path("#71451f", [("moveTo", (160, 94)), ("bezierCurveTo", (172, 82, 182, 82, 192, 90))])
+    stroke_path("#71451f", [("moveTo", (192, 90)), ("bezierCurveTo", (204, 92, 208, 102, 202, 112)), ("bezierCurveTo", (194, 118, 182, 116, 178, 108))])
+    stroke_path("#71451f", [("moveTo", (66, 98)), ("bezierCurveTo", (58, 118, 58, 132, 76, 136)), ("lineTo", (160, 136)), ("bezierCurveTo", (174, 132, 178, 116, 172, 102))])
+    stroke_path("#71451f", [("moveTo", (66, 100)), ("bezierCurveTo", (52, 102, 48, 114, 54, 126))])
+    stroke_path("#71451f", [("moveTo", (86, 136)), ("lineTo", (80, 166))])
+    stroke_path("#71451f", [("moveTo", (112, 136)), ("lineTo", (108, 168))])
+    stroke_path("#71451f", [("moveTo", (146, 136)), ("lineTo", (150, 168))])
+    stroke_path("#71451f", [("moveTo", (168, 134)), ("lineTo", (176, 166))])
+    stroke_path("#71451f", [("moveTo", (34, 168)), ("lineTo", (208, 168))])
+
+
+def refresh_cowboy_debug_screen() -> None:
+    cowboy_debug_grid.innerHTML = cowboy_debug_cards_html()
+    canvas = cowboy_debug_grid._dom_element.querySelector("[data-debug-canvas='attempt-5']")
+    if canvas is not None:
+        draw_cowboy_canvas(canvas)
+
+    host = getattr(window.location, "host", "")
+    path_name = getattr(window.location, "pathname", "")
+    styles_supported = hasattr(window, "getComputedStyle")
+    diagnostics_lines = [
+        f"host: {host}",
+        f"path: {path_name}",
+        f"userAgent: {window.navigator.userAgent}",
+        f"devicePixelRatio: {window.devicePixelRatio}",
+        f"screen: {window.innerWidth}x{window.innerHeight}",
+        f"computedStyle: {styles_supported}",
+        "Use Replay Animations after the page settles to compare each attempt side by side.",
+    ]
+    cowboy_debug_diagnostics.textContent = "\n".join(diagnostics_lines)
+    replay_cowboy_debug_animations()
+    window.setTimeout(create_proxy(lambda: replay_cowboy_debug_animations()), 120)
+
+
+def replay_cowboy_debug_animations() -> None:
+    art_ids = ["attempt-1", "attempt-2", "attempt-3", "attempt-4", "attempt-5", "attempt-6"]
+    for art_id in art_ids:
+        art = cowboy_debug_grid._dom_element.querySelector(f"[data-debug-art='{art_id}']")
+        meta = cowboy_debug_grid._dom_element.querySelector(f"[data-debug-meta='{art_id}']")
+        if art is None or meta is None:
+            continue
+        class_list = getattr(art, "classList", None)
+        if class_list and class_list.contains("is-animated"):
+            class_list.remove("is-animated")
+            _ = art.offsetWidth
+            class_list.add("is-animated")
+        rect = art.getBoundingClientRect()
+        computed = window.getComputedStyle(art)
+        transform = computed.getPropertyValue("transform") if computed is not None else ""
+        animation_name = computed.getPropertyValue("animation-name") if computed is not None else ""
+        extra = ""
+        if art.tagName.lower() == "img":
+            extra = (
+                f"natural: {getattr(art, 'naturalWidth', 0)}x{getattr(art, 'naturalHeight', 0)}\n"
+                f"client: {art.clientWidth}x{art.clientHeight}\n"
+            )
+        meta.textContent = (
+            f"box: {round(rect.width, 1)} x {round(rect.height, 1)}\n"
+            f"client: {art.clientWidth} x {art.clientHeight}\n"
+            f"animation-name: {animation_name or '-'}\n"
+            f"transform: {transform or '-'}\n"
+            f"{extra}"
+        ).strip()
+
+
+def show_cowboy_debug_screen() -> None:
+    refresh_cowboy_debug_screen()
+    show_screen("cowboy-debug")
+
+
 def format_elapsed_time(total_seconds: int) -> str:
     hours = total_seconds // 3600
     minutes = (total_seconds % 3600) // 60
@@ -888,6 +1135,7 @@ def start_learner_debug_updates() -> None:
 def show_screen(name: str) -> None:
     for screen_name, screen in {
         "home": home_screen,
+        "cowboy-debug": cowboy_debug_screen,
         "quiz": quiz_screen,
         "learner-confirm": learner_confirm_screen,
         "learner-passport": learner_passport_screen,
@@ -5172,6 +5420,38 @@ def on_qna_content_click(event) -> None:
         event.stopPropagation()
 
 
+def on_cowboy_debug_refresh_click(event) -> None:
+    refresh_cowboy_debug_screen()
+
+
+def on_cowboy_debug_replay_click(event) -> None:
+    replay_cowboy_debug_animations()
+
+
+def on_cowboy_debug_copy_click(event) -> None:
+    diagnostics = cowboy_debug_diagnostics.textContent or ""
+    meta_blocks = cowboy_debug_grid._dom_element.querySelectorAll("[data-debug-meta]")
+    parts = [diagnostics]
+    for meta in meta_blocks:
+        card = meta.closest(".cowboy-debug-card") if hasattr(meta, "closest") else None
+        title = ""
+        if card is not None:
+            header = card.querySelector("h3")
+            title = header.textContent if header is not None else ""
+        parts.append(f"{title}\n{meta.textContent or ''}".strip())
+    asyncio.create_task(
+        copy_text_to_clipboard(
+            "\n\n".join(part for part in parts if part),
+            "Cowboy debug diagnostics copied to clipboard.",
+            "There are no cowboy debug diagnostics to copy right now.",
+        )
+    )
+
+
+def on_cowboy_debug_home_click(event) -> None:
+    show_screen("home")
+
+
 def on_advanced_options_toggle(event) -> None:
     global advanced_options_enabled, selected_knowledge_areas
 
@@ -5201,7 +5481,7 @@ def on_question_metadata_toggle(event) -> None:
 def on_keydown(event) -> None:
     global learner_selected_answer, learner_answer_locked
     global learner_selected_confidence
-    global learner_debug_unlock_buffer, multi_select_focus_key
+    global learner_debug_unlock_buffer, multi_select_focus_key, home_debug_unlock_buffer
 
     if learner_guidance_visible:
         return
@@ -5222,10 +5502,22 @@ def on_keydown(event) -> None:
     if tag_name in {"input", "textarea", "select"}:
         return
 
+    key = (getattr(event, "key", "") or "").lower()
+    if "hidden" not in home_screen.classes and key:
+        unlock_code = "qwertyuiop"
+        if len(key) == 1 and key.isalpha():
+            home_debug_unlock_buffer = (home_debug_unlock_buffer + key)[-len(unlock_code):]
+            if home_debug_unlock_buffer == unlock_code:
+                event.preventDefault()
+                home_debug_unlock_buffer = ""
+                show_cowboy_debug_screen()
+                return
+        elif key not in {"shift", "control", "alt", "meta"}:
+            home_debug_unlock_buffer = ""
+
     if not quiz_is_visible():
         return
 
-    key = (getattr(event, "key", "") or "").lower()
     question_id = session_question_ids[current_index] if session_question_ids else None
     question = question_cache.get(question_id) if question_id is not None else None
 
@@ -5552,6 +5844,10 @@ learner_debug_reopen_button.on_click.add_listener(on_learner_debug_reopen_click)
 stats_tab_button.on_click.add_listener(on_stats_tab_click)
 qna_tab_button.on_click.add_listener(on_qna_tab_click)
 qna_tab.on_click.add_listener(on_qna_content_click)
+cowboy_debug_refresh_button.on_click.add_listener(on_cowboy_debug_refresh_click)
+cowboy_debug_replay_button.on_click.add_listener(on_cowboy_debug_replay_click)
+cowboy_debug_copy_button.on_click.add_listener(on_cowboy_debug_copy_click)
+cowboy_debug_home_button.on_click.add_listener(on_cowboy_debug_home_click)
 advanced_options_toggle.on_click.add_listener(on_advanced_options_toggle)
 question_metadata_toggle.on_click.add_listener(on_question_metadata_toggle)
 lightbox_close_button.on_click.add_listener(lambda event: hide_lightbox())
