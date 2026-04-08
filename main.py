@@ -27,7 +27,8 @@ ADVANCED_OPTIONS_ENABLED_KEY = "quizurself_advanced_options_enabled_v1"
 ADVANCED_OPTIONS_AREAS_KEY = "quizurself_advanced_options_areas_v1"
 ADVANCED_OPTIONS_SHOW_TIMER_KEY = "quizurself_advanced_options_show_timer_v1"
 ADVANCED_OPTIONS_LEARNER_MODE_KEY = "quizurself_advanced_options_learner_mode_v1"
-PREFETCH_COUNT = 2
+PREFETCH_COUNT = 5
+QUESTION_TRANSITION_LOADER_DELAY_SECONDS = 0.18
 QUIZ_CURSOR_HIDE_DELAY_SECONDS = 2.0
 TWEMOJI_BASE_URL = "https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg"
 PASSPORT_AVATARS = [
@@ -77,6 +78,7 @@ status_text = web.page["status-text"]
 app_title = web.page["app-title"]
 app_subtitle = web.page["app-subtitle"]
 page_loader_text = web.page["page-loader-text"]
+question_transition_loader = web.page["question-transition-loader"]
 
 home_screen = web.page["home-screen"]
 quiz_screen = web.page["quiz-screen"]
@@ -230,6 +232,8 @@ timer_task: asyncio.Task | None = None
 learner_debug_task: asyncio.Task | None = None
 cursor_hide_task: asyncio.Task | None = None
 learner_prefetch_task: asyncio.Task | None = None
+question_transition_loader_task: asyncio.Task | None = None
+question_transition_loader_request_id = 0
 learner_modules_loaded = False
 learner_storage_module = None
 learner_scheduler_module = None
@@ -710,6 +714,44 @@ def hide_status() -> None:
 
 def hide_page_loader() -> None:
     page_loader.classes.add("hidden")
+
+
+def hide_question_transition_loader() -> None:
+    question_transition_loader.classes.add("hidden")
+    question_transition_loader.setAttribute("aria-hidden", "true")
+
+
+async def show_question_transition_loader_after_delay(request_id: int) -> None:
+    await asyncio.sleep(QUESTION_TRANSITION_LOADER_DELAY_SECONDS)
+    if request_id != question_transition_loader_request_id:
+        return
+    question_transition_loader.classes.discard("hidden")
+    question_transition_loader.setAttribute("aria-hidden", "false")
+
+
+def begin_question_transition_loader() -> int:
+    global question_transition_loader_task, question_transition_loader_request_id
+
+    question_transition_loader_request_id += 1
+    request_id = question_transition_loader_request_id
+    hide_question_transition_loader()
+    if question_transition_loader_task is not None and not question_transition_loader_task.done():
+        question_transition_loader_task.cancel()
+    question_transition_loader_task = asyncio.create_task(
+        show_question_transition_loader_after_delay(request_id)
+    )
+    return request_id
+
+
+def end_question_transition_loader(request_id: int) -> None:
+    global question_transition_loader_task
+
+    if request_id != question_transition_loader_request_id:
+        return
+    if question_transition_loader_task is not None and not question_transition_loader_task.done():
+        question_transition_loader_task.cancel()
+    question_transition_loader_task = None
+    hide_question_transition_loader()
 
 
 def format_elapsed_time(total_seconds: int) -> str:
@@ -4240,7 +4282,11 @@ async def render_current_question() -> None:
     global learner_question_started_at_ms
 
     question_id = session_question_ids[current_index]
-    question = await load_question(question_id)
+    loader_request_id = begin_question_transition_loader()
+    try:
+        question = await load_question(question_id)
+    finally:
+        end_question_transition_loader(loader_request_id)
     render_learner_debug_panel(question_id)
 
     total = len(session_question_ids)
@@ -4484,59 +4530,62 @@ async def render_results() -> None:
     update_session_elapsed_time()
     stop_timer_updates()
     hide_session_timer()
+    loader_request_id = begin_question_transition_loader()
+    try:
+        questions: list[Question] = []
+        for question_id in session_question_ids:
+            questions.append(await load_question(question_id))
 
-    questions: list[Question] = []
-    for question_id in session_question_ids:
-        questions.append(await load_question(question_id))
+        results_rows_data = []
+        correct_count = 0
 
-    results_rows_data = []
-    correct_count = 0
+        for row_number, question in enumerate(questions, start=1):
+            user_answer = answers.get(question.question_id)
+            points = 1 if response_is_correct(question, user_answer) else 0
+            correct_count += points
 
-    for row_number, question in enumerate(questions, start=1):
-        user_answer = answers.get(question.question_id)
-        points = 1 if response_is_correct(question, user_answer) else 0
-        correct_count += points
+            image_html = ""
+            if question.image:
+                image_html = (
+                    f'<img class="results-image" src="{escape(question.image)}" '
+                    f'data-image-src="{escape(question.image)}" '
+                    'alt="Question reference image">'
+                )
 
-        image_html = ""
-        if question.image:
-            image_html = (
-                f'<img class="results-image" src="{escape(question.image)}" '
-                f'data-image-src="{escape(question.image)}" '
-                'alt="Question reference image">'
+            results_rows_data.append(
+                {
+                    "row_number": row_number,
+                    "is_correct": points == 1,
+                    "question_html": f"{escape(question.text)}{image_html}",
+                    "user_answer": answer_text(question, user_answer),
+                    "correct_answer": answer_text(question, question.answer),
+                    "points": points,
+                    "metadata": {
+                        field["key"]: question_metadata_value(question, field["key"], field.get("empty_value", ""))
+                        for field in RESULTS_METADATA_FIELDS
+                    },
+                }
             )
 
-        results_rows_data.append(
-            {
-                "row_number": row_number,
-                "is_correct": points == 1,
-                "question_html": f"{escape(question.text)}{image_html}",
-                "user_answer": answer_text(question, user_answer),
-                "correct_answer": answer_text(question, question.answer),
-                "points": points,
-                "metadata": {
-                    field["key"]: question_metadata_value(question, field["key"], field.get("empty_value", ""))
-                    for field in RESULTS_METADATA_FIELDS
-                },
-            }
-        )
+        total = len(questions)
+        wrong_count = total - correct_count
+        percent = round((correct_count / total) * 100) if total else 0
+        results_filter = "all"
 
-    total = len(questions)
-    wrong_count = total - correct_count
-    percent = round((correct_count / total) * 100) if total else 0
-    results_filter = "all"
+        results_title.textContent = "Your score"
+        results_subtitle.textContent = "Review the questions below, then retry the same set or draw a new one."
+        score_value.textContent = f"{percent}%"
+        score_detail.textContent = f"{correct_count} / {total} correct"
 
-    results_title.textContent = "Your score"
-    results_subtitle.textContent = "Review the questions below, then retry the same set or draw a new one."
-    score_value.textContent = f"{percent}%"
-    score_detail.textContent = f"{correct_count} / {total} correct"
+        render_results_stats(percent, correct_count, wrong_count, total)
+        refresh_results_table()
 
-    render_results_stats(percent, correct_count, wrong_count, total)
-    refresh_results_table()
-
-    clear_draft_attempt()
-    show_results_tab("stats")
-    show_screen("results")
-    hide_status()
+        clear_draft_attempt()
+        show_results_tab("stats")
+        show_screen("results")
+        hide_status()
+    finally:
+        end_question_transition_loader(loader_request_id)
 
 
 def refresh_results_table() -> None:
