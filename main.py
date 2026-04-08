@@ -788,23 +788,18 @@ def cowboy_loader_data_uri() -> str:
 
 def cowboy_debug_cards_html() -> str:
     data_uri = cowboy_loader_data_uri()
-    inline_style = (
-        "width:min(9.5rem,70%);margin:0 auto;display:block;"
-        "animation:loader-cowboy-bounce 0.7s ease-out, loader-cowboy-spin 2.8s linear infinite;"
-        "transform-origin:center;"
-    )
+    image_style = "width:9.5rem;max-width:70%;margin:0 auto;display:block;"
+    text_html = '<p class="cowboy-debug-loader-title">Hold on cowboy</p>'
     return (
         f"""
         <article class="cowboy-debug-card">
             <h3>Attempt 1</h3>
-            <p>Current production approach: data-URI image animated on a wrapper.</p>
-            <div class="cowboy-debug-stage">
+            <p>Class-based background and text styling only, with the image using working inline sizing.</p>
+            <div class="cowboy-debug-stage" data-debug-stage="attempt-1">
                 <div class="cowboy-debug-loader">
-                    <div class="cowboy-debug-loader-card">
-                        <div class="cowboy-debug-art is-animated" data-debug-art="attempt-1">
-                            <img src="{data_uri}" alt="Cowboy loader">
-                        </div>
-                        <p class="cowboy-debug-loader-title">Hold on cowboy</p>
+                    <div class="cowboy-debug-loader-card" data-debug-art="attempt-1">
+                        <img src="{data_uri}" alt="Cowboy loader" style="{image_style}">
+                        {text_html}
                     </div>
                 </div>
             </div>
@@ -812,12 +807,12 @@ def cowboy_debug_cards_html() -> str:
         </article>
         <article class="cowboy-debug-card">
             <h3>Attempt 2</h3>
-            <p>Same data-URI image, but the animation is applied directly inline on the image element.</p>
-            <div class="cowboy-debug-stage">
+            <p>Inline background, border, shadow, and text colors directly on the card.</p>
+            <div class="cowboy-debug-stage" data-debug-stage="attempt-2">
                 <div class="cowboy-debug-loader">
-                    <div class="cowboy-debug-loader-card">
-                        <img data-debug-art="attempt-2" src="{data_uri}" alt="Cowboy loader" style="{inline_style}">
-                        <p class="cowboy-debug-loader-title">Hold on cowboy</p>
+                    <div class="cowboy-debug-loader-card" data-debug-art="attempt-2" style="border:2px solid #b88444;background:linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%);box-shadow:0 12px 28px rgba(77, 45, 14, 0.12);color:#6a3c16;">
+                        <img src="{data_uri}" alt="Cowboy loader" style="{image_style}">
+                        <p class="cowboy-debug-loader-title" style="margin:0.55rem 0 0;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</p>
                     </div>
                 </div>
             </div>
@@ -825,32 +820,12 @@ def cowboy_debug_cards_html() -> str:
         </article>
         <article class="cowboy-debug-card">
             <h3>Attempt 3</h3>
-            <p>Inline SVG markup animated on the wrapper to see if the host breaks SVG-in-DOM specifically.</p>
-            <div class="cowboy-debug-stage">
+            <p>Inline stage background plus inline card background, testing whether the backdrop layer is the missing part.</p>
+            <div class="cowboy-debug-stage" data-debug-stage="attempt-3" style="background:radial-gradient(circle at top, rgba(255, 244, 217, 0.75), transparent 45%), #fff7ec;">
                 <div class="cowboy-debug-loader">
-                    <div class="cowboy-debug-loader-card">
-                        <div class="cowboy-debug-art is-animated" data-debug-art="attempt-3">
-                            <svg viewBox="0 0 240 180" role="img" aria-label="Cowboy loader">
-                                <circle class="lasso-loop" cx="164" cy="42" r="24"></circle>
-                                <path class="lasso-line" d="M144 56 C134 64, 126 72, 122 90"></path>
-                                <circle class="rider-head" cx="112" cy="48" r="12"></circle>
-                                <path class="hat-brim" d="M92 40 C103 34, 121 34, 132 40"></path>
-                                <path class="hat-top" d="M103 38 L107 26 L121 26 L124 38"></path>
-                                <path class="rider-body" d="M112 60 L116 84 L128 96"></path>
-                                <path class="rider-arm" d="M113 66 L132 74"></path>
-                                <path class="horse-back" d="M68 98 C88 76, 132 76, 160 94"></path>
-                                <path class="horse-neck" d="M160 94 C172 82, 182 82, 192 90"></path>
-                                <path class="horse-head" d="M192 90 C204 92, 208 102, 202 112 C194 118, 182 116, 178 108"></path>
-                                <path class="horse-body" d="M66 98 C58 118, 58 132, 76 136 L160 136 C174 132, 178 116, 172 102"></path>
-                                <path class="tail" d="M66 100 C52 102, 48 114, 54 126"></path>
-                                <path class="leg" d="M86 136 L80 166"></path>
-                                <path class="leg" d="M112 136 L108 168"></path>
-                                <path class="leg" d="M146 136 L150 168"></path>
-                                <path class="leg" d="M168 134 L176 166"></path>
-                                <path class="ground" d="M34 168 H208"></path>
-                            </svg>
-                        </div>
-                        <p class="cowboy-debug-loader-title">Hold on cowboy</p>
+                    <div class="cowboy-debug-loader-card" data-debug-art="attempt-3" style="border:2px solid #b88444;background:linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%);">
+                        <img src="{data_uri}" alt="Cowboy loader" style="{image_style}">
+                        <p class="cowboy-debug-loader-title" style="margin:0.55rem 0 0;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</p>
                     </div>
                 </div>
             </div>
@@ -858,12 +833,12 @@ def cowboy_debug_cards_html() -> str:
         </article>
         <article class="cowboy-debug-card">
             <h3>Attempt 4</h3>
-            <p>CSS background image instead of an img element, animated on the box.</p>
-            <div class="cowboy-debug-stage">
+            <p>JS-applied inline card styling after render, to test whether host strips styles at parse time but not runtime.</p>
+            <div class="cowboy-debug-stage" data-debug-stage="attempt-4">
                 <div class="cowboy-debug-loader">
-                    <div class="cowboy-debug-loader-card">
-                        <div class="cowboy-debug-art is-background is-animated" data-debug-art="attempt-4" style="background-image:url('{data_uri}');"></div>
-                        <p class="cowboy-debug-loader-title">Hold on cowboy</p>
+                    <div class="cowboy-debug-loader-card" data-debug-art="attempt-4" data-debug-inline-runtime="true">
+                        <img src="{data_uri}" alt="Cowboy loader" style="{image_style}">
+                        {text_html}
                     </div>
                 </div>
             </div>
@@ -871,14 +846,14 @@ def cowboy_debug_cards_html() -> str:
         </article>
         <article class="cowboy-debug-card">
             <h3>Attempt 5</h3>
-            <p>Canvas-drawn cowboy with JavaScript rotation, bypassing SVG and image rendering entirely.</p>
-            <div class="cowboy-debug-stage">
+            <p>Whole card rendered as one inline HTML block with all important background/text styles embedded.</p>
+            <div class="cowboy-debug-stage" data-debug-stage="attempt-5">
                 <div class="cowboy-debug-loader">
-                    <div class="cowboy-debug-loader-card">
-                        <div class="cowboy-debug-art is-animated" data-debug-art="attempt-5">
-                            <canvas data-debug-canvas="attempt-5" width="240" height="180"></canvas>
+                    <div class="cowboy-debug-loader-card" data-debug-art="attempt-5" style="background:#ffe6bf;border:2px solid #b88444;box-shadow:0 12px 28px rgba(77,45,14,0.12);">
+                        <div style="background:#fff7e8;padding:0.35rem;">
+                            <img src="{data_uri}" alt="Cowboy loader" style="{image_style}">
+                            <div style="margin-top:0.55rem;font:800 0.92rem/1.2 inherit;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</div>
                         </div>
-                        <p class="cowboy-debug-loader-title">Hold on cowboy</p>
                     </div>
                 </div>
             </div>
@@ -886,12 +861,12 @@ def cowboy_debug_cards_html() -> str:
         </article>
         <article class="cowboy-debug-card">
             <h3>Attempt 6</h3>
-            <p>Text/emoji fallback with CSS-only animation to test whether the host breaks only media sizing.</p>
-            <div class="cowboy-debug-stage">
+            <p>Plainest fallback: solid inline background color blocks with no gradients or shadows at all.</p>
+            <div class="cowboy-debug-stage" data-debug-stage="attempt-6" style="background:#f0dfc4;">
                 <div class="cowboy-debug-loader">
-                    <div class="cowboy-debug-loader-card">
-                        <div class="cowboy-debug-art is-emoji is-animated" data-debug-art="attempt-6">🤠</div>
-                        <p class="cowboy-debug-loader-title">Hold on cowboy</p>
+                    <div class="cowboy-debug-loader-card" data-debug-art="attempt-6" style="background:#ffe6bf;border:2px solid #b88444;">
+                        <img src="{data_uri}" alt="Cowboy loader" style="{image_style}">
+                        <p class="cowboy-debug-loader-title" style="margin:0.55rem 0 0;font-size:0.92rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#6a3c16;">Hold on cowboy</p>
                     </div>
                 </div>
             </div>
@@ -944,9 +919,12 @@ def draw_cowboy_canvas(canvas) -> None:
 
 def refresh_cowboy_debug_screen() -> None:
     cowboy_debug_grid.innerHTML = cowboy_debug_cards_html()
-    canvas = cowboy_debug_grid._dom_element.querySelector("[data-debug-canvas='attempt-5']")
-    if canvas is not None:
-        draw_cowboy_canvas(canvas)
+    runtime_card = cowboy_debug_grid._dom_element.querySelector("[data-debug-inline-runtime='true']")
+    if runtime_card is not None:
+        runtime_card.style.background = "linear-gradient(180deg, #fff7e8 0%, #ffe6bf 100%)"
+        runtime_card.style.border = "2px solid #b88444"
+        runtime_card.style.boxShadow = "0 12px 28px rgba(77, 45, 14, 0.12)"
+        runtime_card.style.color = "#6a3c16"
 
     host = getattr(window.location, "host", "")
     path_name = getattr(window.location, "pathname", "")
@@ -958,7 +936,7 @@ def refresh_cowboy_debug_screen() -> None:
         f"devicePixelRatio: {window.devicePixelRatio}",
         f"screen: {window.innerWidth}x{window.innerHeight}",
         f"computedStyle: {styles_supported}",
-        "Use Replay Animations after the page settles to compare each attempt side by side.",
+        "Use Replay Animations to remeasure the six background/text repair attempts side by side.",
     ]
     cowboy_debug_diagnostics.textContent = "\n".join(diagnostics_lines)
     replay_cowboy_debug_animations()
@@ -970,17 +948,16 @@ def replay_cowboy_debug_animations() -> None:
     for art_id in art_ids:
         art = cowboy_debug_grid._dom_element.querySelector(f"[data-debug-art='{art_id}']")
         meta = cowboy_debug_grid._dom_element.querySelector(f"[data-debug-meta='{art_id}']")
+        stage = cowboy_debug_grid._dom_element.querySelector(f"[data-debug-stage='{art_id}']")
         if art is None or meta is None:
             continue
-        class_list = getattr(art, "classList", None)
-        if class_list and class_list.contains("is-animated"):
-            class_list.remove("is-animated")
-            _ = art.offsetWidth
-            class_list.add("is-animated")
         rect = art.getBoundingClientRect()
         computed = window.getComputedStyle(art)
-        transform = computed.getPropertyValue("transform") if computed is not None else ""
-        animation_name = computed.getPropertyValue("animation-name") if computed is not None else ""
+        background = computed.getPropertyValue("background-image") if computed is not None else ""
+        border = computed.getPropertyValue("border-top-width") if computed is not None else ""
+        stage_background = ""
+        if stage is not None:
+            stage_background = window.getComputedStyle(stage).getPropertyValue("background-image")
         extra = ""
         if art.tagName.lower() == "img":
             extra = (
@@ -990,8 +967,9 @@ def replay_cowboy_debug_animations() -> None:
         meta.textContent = (
             f"box: {round(rect.width, 1)} x {round(rect.height, 1)}\n"
             f"client: {art.clientWidth} x {art.clientHeight}\n"
-            f"animation-name: {animation_name or '-'}\n"
-            f"transform: {transform or '-'}\n"
+            f"card background: {background or '-'}\n"
+            f"card border width: {border or '-'}\n"
+            f"stage background: {stage_background or '-'}\n"
             f"{extra}"
         ).strip()
 
