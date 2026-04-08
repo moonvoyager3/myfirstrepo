@@ -1,0 +1,40 @@
+{
+  "id": 358,
+  "question_type": "single_select_4orless",
+  "question": "Which set of conditions will result in the formation of thunderstorms?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Lifting force, dry air, and moderate cloud cover."
+    },
+    {
+      "key": "B",
+      "text": "Lifting force, moist air, and extensive cloud cover."
+    },
+    {
+      "key": "C",
+      "text": "High humidity, high temperature, and stable lapse rate."
+    },
+    {
+      "key": "D",
+      "text": "High humidity, lifting force, and unstable lapse rate."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 03",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

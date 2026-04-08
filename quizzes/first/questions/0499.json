@@ -1,0 +1,40 @@
+{
+  "id": 499,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following sources of information should you consult first when determining what maintenance should be performed on an sUAS or its components?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Local Best Practices"
+    },
+    {
+      "key": "B",
+      "text": "OEM Repair Guideline"
+    },
+    {
+      "key": "C",
+      "text": "CAAS safety manuals"
+    },
+    {
+      "key": "D",
+      "text": "In house engineers recommendation"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 03",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

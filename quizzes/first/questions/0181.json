@@ -1,0 +1,40 @@
+{
+  "id": 181,
+  "question_type": "single_select_4orless",
+  "question": "Which is the most appropriate part of the UA to affix the UA registration label?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Inside battery compartment"
+    },
+    {
+      "key": "B",
+      "text": "On outerside of UA body"
+    },
+    {
+      "key": "C",
+      "text": "On underside of UA body"
+    },
+    {
+      "key": "D",
+      "text": "On the propeller of your choice"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Permits, registration, and UAPL rules are being tested."
+}

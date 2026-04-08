@@ -1,0 +1,36 @@
+{
+  "id": 119,
+  "question_type": "single_select_4orless",
+  "question": "What could be a consequence of operating a small unmanned aircraft above its maximum allowable weight?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Shorter endurance."
+    },
+    {
+      "key": "B",
+      "text": "Increased maneuverability."
+    },
+    {
+      "key": "C",
+      "text": "Faster speed."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 05",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Operating above maximum weight affects stability and aircraft performance characteristics."
+}

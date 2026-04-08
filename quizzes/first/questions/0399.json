@@ -1,0 +1,40 @@
+{
+  "id": 399,
+  "question_type": "single_select_4orless",
+  "question": "What are psychoactive substances and why are they prohibited during UAS operations?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Psychoactive substances are self-medication to relieve oneself from tiredness and could be consumed under UAS operations."
+    },
+    {
+      "key": "B",
+      "text": "It is a drug to relieve all kinds of stress and depression and could be allowed during UAS operations."
+    },
+    {
+      "key": "C",
+      "text": "It is common medication to be taken before an UAS operations."
+    },
+    {
+      "key": "D",
+      "text": "The effects of medication will impair the UA pilot's ability to operate the UA safely and should not be consumed at any time during UAS operations."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 03 01",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Psychoactive substances prohibition."
+}

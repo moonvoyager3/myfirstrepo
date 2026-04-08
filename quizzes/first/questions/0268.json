@@ -1,0 +1,40 @@
+{
+  "id": 268,
+  "question_type": "single_select_4orless",
+  "question": "Class B UAPL allows the pilot to:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Operate specific UA models with a total weight exceeding 25kg."
+    },
+    {
+      "key": "B",
+      "text": "Operate specific UA models with a total weight not exceeding 25kg."
+    },
+    {
+      "key": "C",
+      "text": "Operate any UA within a specific category with a total weight not exceeding 25kg."
+    },
+    {
+      "key": "D",
+      "text": "Operate any UA within a specific category with a total weight exceeding 25kg."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 06 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 06 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Class B UAPL privileges question."
+}

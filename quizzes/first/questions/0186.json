@@ -1,0 +1,40 @@
+{
+  "id": 186,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is not accepted during the purchase of UA registration labels?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "FIN"
+    },
+    {
+      "key": "B",
+      "text": "NRIC"
+    },
+    {
+      "key": "C",
+      "text": "Passport"
+    },
+    {
+      "key": "D",
+      "text": "Student Pass"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Permits, registration, and UAPL rules are being tested."
+}

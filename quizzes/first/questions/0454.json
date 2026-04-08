@@ -1,0 +1,40 @@
+{
+  "id": 454,
+  "question_type": "single_select_4orless",
+  "question": "Which one of the following statements regarding workload management is true?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Effective workload management ensures essential operations are accomplished by planning, prioritizing, and sequencing tasks."
+    },
+    {
+      "key": "B",
+      "text": "As workload increases, attention should be devoted to cover several tasks at one time."
+    },
+    {
+      "key": "C",
+      "text": "When a work overload situation exists, a pilot needs to think quickly and make informed decisions."
+    },
+    {
+      "key": "D",
+      "text": "As experience is gained, a pilot learns to recognize future workload requirements and should delegate the tasks to a less experienced pilot to learn."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 04",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Workload management and CRM."
+}

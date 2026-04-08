@@ -1,0 +1,36 @@
+{
+  "id": 2,
+  "question_type": "single_select_4orless",
+  "question": "Unmanned aircraft means an aircraft that can be flown or used,",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "during search and rescue operations other than public."
+    },
+    {
+      "key": "B",
+      "text": "without a person on board to operate it."
+    },
+    {
+      "key": "C",
+      "text": "for hobby and recreational use when not certificated."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 01 01",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 01 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Definition of unmanned aircraft."
+}

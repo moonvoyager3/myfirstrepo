@@ -1,0 +1,36 @@
+{
+  "id": 140,
+  "question_type": "single_select_4orless",
+  "question": "What is the significance of a drone's \"yaw\" control?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "It controls the drone's ascent and descent."
+    },
+    {
+      "key": "B",
+      "text": "It rotates the drone around its vertical axis."
+    },
+    {
+      "key": "C",
+      "text": "It adjusts the drone's forward and backward movement."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 02 01",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Yaw control question."
+}

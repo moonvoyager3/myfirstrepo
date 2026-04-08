@@ -1,0 +1,40 @@
+{
+  "id": 86,
+  "question_type": "single_select_4orless",
+  "question": "What will happen when landing in Ground effect?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Induced Drag decrease and a decrease in lift coefficient will be incurred."
+    },
+    {
+      "key": "B",
+      "text": "Induced Drag remains and an increase in lift coefficient will be incurred."
+    },
+    {
+      "key": "C",
+      "text": "Induced Drag decrease and an increase in lift coefficient will be incurred."
+    },
+    {
+      "key": "D",
+      "text": "Induced Drag increase and a decrease in lift coefficient will be incurred."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 02",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

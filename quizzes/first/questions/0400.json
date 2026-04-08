@@ -1,0 +1,40 @@
+{
+  "id": 400,
+  "question_type": "single_select_4orless",
+  "question": "What are the conditions to operate a UAS under the influence of psychoactive substances?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "A UA operator is allowed to operate a UAS under the influence of psychoactive substances as long as he/she produces a letter from a designated doctor."
+    },
+    {
+      "key": "B",
+      "text": "A UA operator is allowed to operate a UAS under the influence of psychoactive substances as long as he/she does not endanger the safety of the UAS operations."
+    },
+    {
+      "key": "C",
+      "text": "A UA operator must not operate an unmanned aircraft, or be involved in the conduct of a flight involving an unmanned aircraft, if the person is under the influence of any psychoactive substance."
+    },
+    {
+      "key": "D",
+      "text": "All of the above."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 03 01",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "No operation under psychoactive substances."
+}

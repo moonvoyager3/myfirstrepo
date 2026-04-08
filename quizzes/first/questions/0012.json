@@ -1,0 +1,40 @@
+{
+  "id": 12,
+  "question_type": "single_select_4orless",
+  "question": "An UA Pilot is piloting his UA and the front of the UA is facing towards him. What mode should the UA pilot be flying in if he requires the drone to move closer to him as he applies the pitch-back control?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Headless mode"
+    },
+    {
+      "key": "B",
+      "text": "Orientation mode"
+    },
+    {
+      "key": "C",
+      "text": "Compass mode"
+    },
+    {
+      "key": "D",
+      "text": "GPS mode"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 01",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Remote controller headless mode."
+}

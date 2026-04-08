@@ -1,0 +1,40 @@
+{
+  "id": 225,
+  "question_type": "single_select_4orless",
+  "question": "Which one of the following is not a reason to de-register your UA?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "the UA is sold, or given, to another person."
+    },
+    {
+      "key": "B",
+      "text": "the UA is lost."
+    },
+    {
+      "key": "C",
+      "text": "the UA is not in usage for more than 1 year."
+    },
+    {
+      "key": "D",
+      "text": "the UA is damaged beyond repair."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 04 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 04 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Learn Anything Fast</title>
+        <meta id="page-meta-description" name="description" content="App for quiz practice and learning.">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css"
+        >
+        <link rel="stylesheet" href="https://pyscript.net/releases/2026.3.1/core.css">
+        <link rel="stylesheet" href="./styles.css">
+        <script type="module" src="https://pyscript.net/releases/2026.3.1/core.js"></script>
+    </head>
+    <body>
+        <div id="page-loader" class="page-loader">
+            <div class="ui active inverted dimmer">
+                <div id="page-loader-text" class="ui text loader">Loading quiz...</div>
+            </div>
+        </div>
+
+        <main class="ui container app-shell">
+            <section id="hero-section" class="ui segment">
+                <p class="section-kicker">Quiz practice</p>
+                <h1 id="app-title" class="ui header app-title">Quiz Practice</h1>
+                <p id="app-subtitle" class="app-subtitle">
+                    Random question sets, image support, and full answer review, all from a static
+                    site.
+                </p>
+            </section>
+
+            <section id="status-box" class="ui message hidden">
+                <div id="status-text">Loading...</div>
+            </section>
+
+            <section id="home-screen" class="screen">
+                <div class="ui segment home-screen-segment">
+                    <div class="home-mode-bar">
+                        <label class="advanced-toggle" for="advanced-options-toggle">
+                            <span class="advanced-toggle-label">Advanced options</span>
+                            <input id="advanced-options-toggle" type="checkbox">
+                        </label>
+                    </div>
+                    <div class="ui stackable grid home-grid">
+                        <div class="eleven wide column">
+                            <p class="section-kicker">Start Session</p>
+                            <h2 class="ui header">Choose how many random questions to answer</h2>
+                            <div class="ui form">
+                                <div class="field">
+                                    <label for="question-count">Questions this round</label>
+                                    <input
+                                        id="question-count"
+                                        type="number"
+                                        min="1"
+                                        max="500"
+                                        value="20"
+                                        inputmode="numeric"
+                                    >
+                                </div>
+                            </div>
+                            <div id="advanced-options" class="advanced-options hidden">
+                                <p class="advanced-options-title">Practice selected Knowledge Areas</p>
+                                <div id="knowledge-area-checkboxes" class="advanced-checkbox-list"></div>
+                                <div class="advanced-subsection">
+                                    <p class="advanced-options-title">Other options</p>
+                                    <div class="advanced-checkbox-list advanced-checkbox-list-compact">
+                                        <label class="advanced-checkbox-item" for="show-timer-toggle">
+                                            <input id="show-timer-toggle" type="checkbox">
+                                            <span>Show Timer</span>
+                                        </label>
+                                        <label class="advanced-checkbox-item" for="learner-mode-toggle">
+                                            <input id="learner-mode-toggle" type="checkbox">
+                                            <span>Learner Mode</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-start-action">
+                                <button id="start-quiz-btn" class="ui primary button">Start Random Quiz</button>
+                            </div>
+                            <div class="quick-guide">
+                                <p class="quick-guide-title">Quick guide</p>
+                                <p class="quick-guide-copy">
+                                    Keyboard shortcuts: <code>1-4</code> select answers,
+                                    <code>Left/Right</code> move between questions,
+                                    <code>Up/Down</code> move between options, and
+                                    <code>Enter</code> advances when an answer is selected.
+                                </p>
+                                <p class="quick-guide-copy">
+                                    Progress is saved automatically while a quiz is in progress,
+                                    so refreshing or reopening the page will restore your current
+                                    attempt.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="five wide column home-stat-column">
+                            <div class="ui statistic tiny home-statistic">
+                                <div id="total-question-count" class="value">500</div>
+                                <div id="total-question-count-label" class="label">questions available</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="quiz-screen" class="screen hidden">
+                <div class="ui segment">
+                    <div class="ui clearing basic segment top-summary">
+                        <div class="top-summary-left">
+                            <div class="ui left floated header" id="quiz-progress-text">Question 1 of 20</div>
+                            <div class="ui label" id="quiz-score-chip">0 answered</div>
+                        </div>
+                        <div class="top-summary-right">
+                            <div id="session-timer" class="session-timer hidden">00:00:00</div>
+                            <button id="learner-end-session-btn" class="ui button hidden" type="button">End Session</button>
+                        </div>
+                    </div>
+
+                    <div class="ui tiny indicating progress" id="quiz-progress">
+                        <div id="quiz-progress-bar" class="bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+
+                    <div class="ui segment">
+                        <div class="question-meta-header">
+                            <p id="question-id" class="question-id">Question 1</p>
+                            <button
+                                id="question-metadata-toggle"
+                                class="question-metadata-toggle hidden"
+                                type="button"
+                                aria-expanded="true"
+                                title="Show or hide syllabus details"
+                            >
+                                v
+                            </button>
+                        </div>
+                        <div id="question-metadata-panel" class="question-metadata-panel hidden"></div>
+                        <h2 id="question-text" class="ui header question-text"></h2>
+                        <div id="question-type-card" class="question-type-card hidden"></div>
+                        <div id="question-image-wrap" class="question-image-wrap hidden">
+                            <img id="question-image" alt="Question reference image">
+                        </div>
+                        <div id="question-options" class="ui vertical fluid menu question-options"></div>
+                        <div id="multi-select-indicator" class="multi-select-indicator-panel hidden"></div>
+                        <div id="learner-feedback" class="learner-feedback hidden"></div>
+                        <div id="learner-confidence-panel" class="learner-confidence-panel hidden">
+                            <p class="learner-confidence-title">How sure are you?</p>
+                            <div id="learner-confidence-buttons" class="ui tiny buttons learner-confidence-buttons"></div>
+                        </div>
+                    </div>
+
+                    <div id="quiz-footer" class="quiz-footer">
+                        <div id="quiz-nav-actions" class="quiz-nav-actions">
+                            <button id="previous-btn" class="ui button">Previous</button>
+                            <button id="next-btn" class="ui primary button">Next</button>
+                        </div>
+                        <button id="quit-attempt-btn" class="ui button quit-attempt-btn">Quit Attempt</button>
+                    </div>
+                </div>
+                <div class="quiz-utility-links">
+                    <a id="copy-question-link" class="quiz-utility-link" href="#">Copy question</a>
+                    <a id="quiz-help-link" class="quiz-utility-link" href="#">Help</a>
+                </div>
+            </section>
+
+            <section id="learner-confirm-screen" class="screen hidden">
+                <div class="ui segment">
+                    <p class="section-kicker">Learner Mode</p>
+                    <h2 class="ui header">Continue into Learner Mode?</h2>
+                    <p class="help-copy">
+                        Learner mode will discard the rest of the options and start in a separate
+                        window. Continue?
+                    </p>
+                    <div class="results-actions">
+                        <button id="learner-confirm-yes-btn" class="ui primary button">Yes</button>
+                        <button id="learner-confirm-no-btn" class="ui button">No</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="learner-passport-screen" class="screen hidden">
+                <div class="ui segment">
+                    <p class="section-kicker">Quiz Passport</p>
+                    <h2 class="ui header">Do you already have a Quiz Passport for this quiz?</h2>
+                    <p class="help-copy">
+                        Upload your Quiz Passport to continue your learner progress, or start fresh
+                        to create a new passport for this quiz.
+                    </p>
+
+                    <div class="learner-hub-actions">
+                        <button id="learner-use-current-passport-btn" class="ui button hidden">Use Current Quiz Passport</button>
+                        <label class="ui primary button" for="learner-progress-file">Upload Quiz Passport</label>
+                        <input id="learner-progress-file" type="file" accept=".json,application/json" class="hidden">
+                        <button id="learner-start-fresh-btn" class="ui button">Start Fresh</button>
+                    </div>
+
+                    <div id="learner-import-status" class="ui small message hidden"></div>
+                </div>
+            </section>
+
+            <section id="learner-generator-screen" class="screen hidden">
+                <div class="ui segment learner-generator-card">
+                    <p class="section-kicker">Passport Generator</p>
+                    <h2 class="ui header">Let's make your Quiz Passport</h2>
+                    <p class="help-copy">
+                        Pick the name you'd like to see in learner mode. We'll use it to welcome
+                        you back and name your downloaded Quiz Passport.
+                    </p>
+
+                    <div class="learner-generator-panel">
+                        <div class="learner-generator-badge">UAPL Quiz Passport</div>
+                        <div class="learner-generator-preview">
+                            <div id="learner-generator-avatar-frame" class="learner-avatar-frame">
+                                <img id="learner-generator-avatar-preview" class="learner-generator-avatar-preview" alt="Selected cat avatar">
+                            </div>
+                            <div>
+                                <p id="learner-generator-avatar-name" class="learner-generator-avatar-name">Sunny Cat</p>
+                                <p class="learner-generator-avatar-copy">Choose the cat avatar that should appear on your Quiz Passport.</p>
+                            </div>
+                        </div>
+                        <p class="learner-generator-copy">
+                            Your passport will track your learning progress across every Knowledge
+                            Area and stay ready for download whenever you need it.
+                        </p>
+
+                        <label class="learner-generator-label" for="learner-username-input">Username</label>
+                        <input
+                            id="learner-username-input"
+                            class="learner-generator-input"
+                            type="text"
+                            maxlength="40"
+                            placeholder="Pilot Ava"
+                            autocomplete="nickname"
+                        >
+                        <p class="learner-generator-hint">
+                            Leave it blank if you want to use the default name: <strong>User</strong>.
+                        </p>
+
+                        <p class="learner-generator-label">Avatar</p>
+                        <div id="learner-avatar-options" class="learner-avatar-options"></div>
+
+                        <p class="learner-generator-label">Background</p>
+                        <div id="learner-avatar-bg-options" class="learner-avatar-bg-options"></div>
+                    </div>
+
+                    <div class="results-actions">
+                        <button id="learner-generate-passport-btn" class="ui primary button">Create Quiz Passport</button>
+                        <button id="learner-generator-back-btn" class="ui button">Back</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="learner-hub-screen" class="screen hidden">
+                <div class="ui segment">
+                    <div class="ui stackable two column grid">
+                        <div class="twelve wide column">
+                            <p class="section-kicker">Learner Mode</p>
+                            <div class="learner-hub-identity">
+                                <div id="learner-hub-avatar-frame" class="learner-avatar-frame">
+                                    <img id="learner-hub-avatar" class="learner-hub-avatar" alt="Learner avatar">
+                                </div>
+                                <div>
+                                    <h2 id="learner-hub-title" class="ui header">Welcome User! Choose what to learn next</h2>
+                                    <p id="learner-hub-copy" class="help-copy">
+                                        Your Quiz Passport is active. Choose a Knowledge Area to keep
+                                        learning, or take on all Knowledge Areas together.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="four wide column learner-hub-overall-column">
+                            <div id="learner-hub-overall" class="ui statistic tiny learner-hub-overall">
+                                <div class="value">0%</div>
+                                <div class="label">overall progress</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="learner-hub-actions">
+                        <button id="learner-download-progress-btn" class="ui button">Download Quiz Passport</button>
+                        <button id="learner-hub-back-home-btn" class="ui olive button">Back To Home</button>
+                    </div>
+
+                    <div id="learner-hub-progress" class="learner-hub-progress"></div>
+                </div>
+            </section>
+
+            <section id="quit-confirm-screen" class="screen hidden">
+                <div class="ui segment">
+                    <p id="quit-confirm-kicker" class="section-kicker">Quit Attempt</p>
+                    <h2 id="quit-confirm-title" class="ui header">Are you sure?</h2>
+                    <p id="quit-confirm-copy" class="help-copy">
+                        If you quit this attempt, your saved draft and current progress will be cleared
+                        and you will return to the home page.
+                    </p>
+                    <div class="results-actions">
+                        <button id="confirm-quit-btn" class="ui red button">Yes, Quit Attempt</button>
+                        <button id="cancel-quit-btn" class="ui button">Cancel</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="learner-summary-screen" class="screen hidden">
+                <div class="ui segment">
+                    <div class="ui stackable two column grid">
+                        <div class="ten wide column">
+                            <p class="section-kicker">Learner Session Complete</p>
+                            <h2 id="learner-summary-title" class="ui header">You have reached 0% learning progress in this area</h2>
+                            <p id="learner-summary-subtitle" class="help-copy"></p>
+                            <div id="learner-summary-positive-section" class="learner-summary-section hidden">
+                                <p class="learner-summary-section-title">What Went Well</p>
+                                <div id="learner-summary-positive-list" class="learner-summary-message-list"></div>
+                            </div>
+                            <div id="learner-summary-next-step-section" class="learner-summary-section hidden">
+                                <p class="learner-summary-section-title">Recommended Next Step</p>
+                                <div class="learner-summary-next-step-card">
+                                    <p id="learner-summary-next-step-title" class="learner-summary-next-step-title"></p>
+                                    <p id="learner-summary-next-step-message" class="learner-summary-next-step-message"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="six wide column learner-summary-stat-column">
+                            <div class="ui statistic">
+                                <div id="learner-summary-value" class="value">0%</div>
+                                <div id="learner-summary-detail" class="label">Learning progress</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="learner-summary-stats-grid" class="ui four stackable statistics mini"></div>
+
+                    <div class="results-actions">
+                        <button id="learner-summary-download-btn" class="ui primary button">Download Quiz Passport</button>
+                        <button id="learner-summary-continue-btn" class="ui teal button">Continue Learning</button>
+                        <button id="learner-summary-return-hub-btn" class="ui button">Return To Learner Hub</button>
+                        <button id="learner-summary-home-btn" class="ui olive button">Back To Home</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="results-screen" class="screen hidden">
+                <div class="ui segment">
+                    <div class="ui stackable two column grid">
+                        <div class="ten wide column">
+                            <p class="section-kicker">Session Complete</p>
+                            <h2 id="results-title" class="ui header">Your score</h2>
+                            <p id="results-subtitle" class="help-copy"></p>
+                        </div>
+                        <div class="six wide column right aligned">
+                            <div class="ui statistic">
+                                <div id="score-value" class="value">0%</div>
+                                <div id="score-detail" class="label">0 / 0 correct</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui top attached tabular menu">
+                        <button id="stats-tab-btn" class="item active" type="button">Stats</button>
+                        <button id="qna-tab-btn" class="item" type="button">QNA</button>
+                    </div>
+
+                    <div id="stats-tab" class="ui bottom attached active tab segment">
+                        <div id="results-stats-grid" class="ui four stackable statistics mini"></div>
+                    </div>
+
+                    <div id="qna-tab" class="ui bottom attached tab segment hidden"></div>
+
+                    <div class="results-actions">
+                        <button id="retry-same-btn" class="ui primary button">Try Same Questions Again</button>
+                        <button id="retry-new-btn" class="ui button">Try New Random Set</button>
+                        <button id="back-home-btn" class="ui olive button">Back To Home</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div id="image-lightbox" class="image-lightbox hidden">
+            <div class="image-lightbox-backdrop"></div>
+            <div class="image-lightbox-content">
+                <button id="lightbox-close-btn" class="ui button">Close</button>
+                <img id="lightbox-image" alt="Expanded question image">
+            </div>
+        </div>
+
+        <div id="toast-notification" class="toast-notification hidden"></div>
+
+        <aside id="learner-debug-panel" class="learner-debug-panel hidden">
+            <div class="learner-debug-header">
+                <p class="learner-debug-title">Learner Debug</p>
+                <div class="learner-debug-actions">
+                    <button id="learner-debug-popout-btn" class="ui mini button" type="button">Pop Out</button>
+                    <button id="learner-debug-hide-btn" class="ui mini button" type="button">Hide</button>
+                </div>
+            </div>
+            <div id="learner-debug-content" class="learner-debug-content"></div>
+        </aside>
+
+        <button id="learner-debug-reopen-btn" class="ui mini button learner-debug-reopen hidden" type="button">Show Debug</button>
+
+        <div id="learner-guidance-modal" class="learner-guidance-modal hidden">
+            <div class="learner-guidance-backdrop"></div>
+            <div class="learner-guidance-content">
+                <p class="section-kicker">Learner Mode Tip</p>
+                <h3 id="learner-guidance-title" class="ui header">Use the confidence scale to match what you really know</h3>
+                <p id="learner-guidance-message" class="help-copy"></p>
+                <button id="learner-guidance-dismiss-btn" class="ui primary button" type="button">Got it</button>
+            </div>
+        </div>
+
+        <div id="quiz-help-modal" class="learner-guidance-modal hidden">
+            <div class="learner-guidance-backdrop"></div>
+            <div class="learner-guidance-content">
+                <p class="section-kicker">Quiz Help</p>
+                <h3 id="quiz-help-title" class="ui header">Keyboard shortcuts and tips</h3>
+                <div id="quiz-help-message" class="help-copy quiz-help-message"></div>
+                <button id="quiz-help-dismiss-btn" class="ui primary button" type="button">Close</button>
+            </div>
+        </div>
+
+        <footer class="site-disclaimer">
+            This quiz service and its contents are provided on an "as is" and "as available" basis,
+            without warranties of any kind. To the fullest extent permitted by Singapore law, we do
+            not warrant that the service will be uninterrupted, error-free, secure, accurate,
+            complete, or fit for any particular purpose, and we are not responsible for any loss,
+            damage, delay, error, omission, or failure arising from or in connection with its use.
+            By continuing to be on this site, you are agreeing that you are doing so at your own risk.
+            
+        </footer>
+
+        <script type="py" src="./main.py" config="./pyscript.json"></script>
+    </body>
+</html>

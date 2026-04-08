@@ -1,0 +1,40 @@
+{
+  "id": 8,
+  "question_type": "single_select_4orless",
+  "question": "David would like to purchase a long-endurance UAV for agricultural missions. Which of the following platforms would you advise him not to purchase?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "A COTS quadcopter"
+    },
+    {
+      "key": "B",
+      "text": "A fixed-wing UAV"
+    },
+    {
+      "key": "C",
+      "text": "A hybrid fuel-electric UAV"
+    },
+    {
+      "key": "D",
+      "text": "All of the above"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 01 03",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 01 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

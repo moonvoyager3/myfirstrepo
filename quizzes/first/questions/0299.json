@@ -1,0 +1,40 @@
+{
+  "id": 299,
+  "question_type": "single_select_4orless",
+  "question": "How does the Light Detection and Ranging (LIDAR) system work?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Emission of a pulsed laser beam and reflection time of the signal is measured."
+    },
+    {
+      "key": "B",
+      "text": "Sending a sound wave to detect obstacles."
+    },
+    {
+      "key": "C",
+      "text": "Through monovision sensing."
+    },
+    {
+      "key": "D",
+      "text": "Using a laser guidance system."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 01 04",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 01 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "LIDAR operating principle."
+}

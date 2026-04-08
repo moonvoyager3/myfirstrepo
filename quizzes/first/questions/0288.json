@@ -1,0 +1,40 @@
+{
+  "id": 288,
+  "question_type": "single_select_4orless",
+  "question": "What are the possible symptoms for GPS signal loss?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "UA drifts and does not remain in hovering position"
+    },
+    {
+      "key": "B",
+      "text": "Requires constant inputs to transmitter to keep UA position"
+    },
+    {
+      "key": "C",
+      "text": "Audio or visual alerts from transmitter or UA"
+    },
+    {
+      "key": "D",
+      "text": "All of the above"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 01 02",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "GPS signal loss is a GNSS/navigation issue."
+}

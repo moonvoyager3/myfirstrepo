@@ -1,0 +1,40 @@
+{
+  "id": 394,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is the correct daytime visual scanning technique?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Maintain your focus on the UA and use your peripheral vision to scan small segments of the sky."
+    },
+    {
+      "key": "B",
+      "text": "Get a visual observer to scan with a binocular."
+    },
+    {
+      "key": "C",
+      "text": "A series of short regularly spaced eye movements scanning segments of the sky."
+    },
+    {
+      "key": "D",
+      "text": "Continuously scan the sky from right to left."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 02 02",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

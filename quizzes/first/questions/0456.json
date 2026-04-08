@@ -1,0 +1,36 @@
+{
+  "id": 456,
+  "question_type": "single_select_4orless",
+  "question": "Identify the hazardous attitude or characteristic a remote pilot displays while taking risks in order to impress others?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Impulsivity"
+    },
+    {
+      "key": "B",
+      "text": "Invulnerability"
+    },
+    {
+      "key": "C",
+      "text": "Macho"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 05",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Macho hazardous attitude."
+}

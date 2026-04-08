@@ -1,0 +1,40 @@
+{
+  "id": 247,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is true for CAAS Operator Permit?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Required for recreational purpose using a UA of total mass under 25kg"
+    },
+    {
+      "key": "B",
+      "text": "Required for educational purpose using a UA of total mass under 7kg"
+    },
+    {
+      "key": "C",
+      "text": "A Class 1 Activity Permit is not valid without a UA Operator Permit"
+    },
+    {
+      "key": "D",
+      "text": "Not required for beyond visual line-of-sight UA operations."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Operator permit conditions are being tested."
+}

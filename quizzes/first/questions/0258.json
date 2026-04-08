@@ -1,0 +1,36 @@
+{
+  "id": 258,
+  "question_type": "single_select_4orless",
+  "question": "After receiving the UAPL, how often must you complete proficiency check requirements?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Once every year"
+    },
+    {
+      "key": "B",
+      "text": "Once every 4 years"
+    },
+    {
+      "key": "C",
+      "text": "Once every 2 years"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 06 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 06 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "UAPL proficiency check interval."
+}

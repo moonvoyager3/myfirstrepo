@@ -1,0 +1,40 @@
+{
+  "id": 67,
+  "question_type": "single_select_4orless",
+  "question": "In a straight and level flight, thrust is used to oppose?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Weight"
+    },
+    {
+      "key": "B",
+      "text": "Lift and drag"
+    },
+    {
+      "key": "C",
+      "text": "Lift"
+    },
+    {
+      "key": "D",
+      "text": "Drag"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 01",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Thrust is one of the four forces of flight."
+}

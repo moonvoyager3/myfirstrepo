@@ -1,0 +1,40 @@
+{
+  "id": 170,
+  "question_type": "single_select_4orless",
+  "question": "How many registration labels can a Singapore citizen or permanent resident purchase?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Up to 3 labels"
+    },
+    {
+      "key": "B",
+      "text": "Up to 4 labels"
+    },
+    {
+      "key": "C",
+      "text": "Up to 5 labels"
+    },
+    {
+      "key": "D",
+      "text": "No limit"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Permits, registration, and UAPL rules are being tested."
+}

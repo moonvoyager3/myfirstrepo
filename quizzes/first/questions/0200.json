@@ -1,0 +1,40 @@
+{
+  "id": 200,
+  "question_type": "single_select_4orless",
+  "question": "What is highlighted on the map?",
+  "image": "./quizzes/first/assets/question-images/page_0498_img_1.png",
+  "options": [
+    {
+      "key": "A",
+      "text": "Danger Areas"
+    },
+    {
+      "key": "B",
+      "text": "Protected Areas"
+    },
+    {
+      "key": "C",
+      "text": "Prohibited Areas"
+    },
+    {
+      "key": "D",
+      "text": "Restricted Areas"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 03 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Map-highlighted protected-area question."
+}

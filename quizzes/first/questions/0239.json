@@ -1,0 +1,40 @@
+{
+  "id": 239,
+  "question_type": "single_select_4orless",
+  "question": "An Activity Permit Class 2 is required to operate an UA:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "At a mass of 7kg or less for purposes that are recreational or educational in nature, and the UA is to be operated higher than 200ft above mean sea level."
+    },
+    {
+      "key": "B",
+      "text": "At any mass for purposes that are not recreational or educational in nature."
+    },
+    {
+      "key": "C",
+      "text": "At a mass of between 7kg and 25kg if it is to be operated indoors for purposes that are business in nature."
+    },
+    {
+      "key": "D",
+      "text": "At a mass of 1.5kg or less for purposes that are recreational or educational in nature, and the UA is to be operated less than 200ft above ground level."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

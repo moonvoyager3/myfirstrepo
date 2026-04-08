@@ -1,0 +1,36 @@
+{
+  "id": 155,
+  "question_type": "single_select_4orless",
+  "question": "A UA must be operated in a manner which:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "does not endanger the life or property of another."
+    },
+    {
+      "key": "B",
+      "text": "requires more than one visual observer."
+    },
+    {
+      "key": "C",
+      "text": "never exceeds 200 feet AMSL."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 01 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 01 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Operate without endangering life or property."
+}

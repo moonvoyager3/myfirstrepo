@@ -1,0 +1,40 @@
+{
+  "id": 379,
+  "question_type": "single_select_4orless",
+  "question": "After some alcoholic beverages, you are required to operate a UA the next day. You ____",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "must not operate the UA as if your alcohol level is more than 0.1mg."
+    },
+    {
+      "key": "B",
+      "text": "must not operate any UA within 8 hours of consuming any alcoholic beverage."
+    },
+    {
+      "key": "C",
+      "text": "must ensure that your visual observer has not consumed any alcoholic beverages in the previous 12 hours."
+    },
+    {
+      "key": "D",
+      "text": "may act as a crewmember other than the PIC."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 02 01",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Human-factors/physiology topics are being tested."
+}

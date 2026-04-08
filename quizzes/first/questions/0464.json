@@ -1,0 +1,40 @@
+{
+  "id": 464,
+  "question_type": "single_select_4orless",
+  "question": "What is the antidote when a pilot has a hazardous attitude, such as \"Resignation\"?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "What is the use"
+    },
+    {
+      "key": "B",
+      "text": "Someone else is responsible"
+    },
+    {
+      "key": "C",
+      "text": "Nothing will happen"
+    },
+    {
+      "key": "D",
+      "text": "I am not helpless"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 05",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Hazardous-attitude antidotes and neutralization."
+}

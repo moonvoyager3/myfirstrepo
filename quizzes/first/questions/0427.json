@@ -1,0 +1,36 @@
+{
+  "id": 427,
+  "question_type": "single_select_4orless",
+  "question": "Which category of PAVE can cause pilots to ignore all of the other risk categories?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "themselves, the pilot."
+    },
+    {
+      "key": "B",
+      "text": "The external pressures of the flight."
+    },
+    {
+      "key": "C",
+      "text": "The risks involving the environment."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 01 02",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "PAVE risk checklist question."
+}

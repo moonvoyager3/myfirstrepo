@@ -1,0 +1,40 @@
+{
+  "id": 428,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is not part of the CAAS risk assessment format?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Airworthiness of the UA"
+    },
+    {
+      "key": "B",
+      "text": "Required Type of Operations"
+    },
+    {
+      "key": "C",
+      "text": "Area of Operations"
+    },
+    {
+      "key": "D",
+      "text": "Profile of pilot and crew"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 01 02",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Risk assessment format."
+}

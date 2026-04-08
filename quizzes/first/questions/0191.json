@@ -1,0 +1,40 @@
+{
+  "id": 191,
+  "question_type": "single_select_4orless",
+  "question": "Which of these UA operation is not considered as non-recreation or non-education purpose?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "An organiser conducting competitive UA races."
+    },
+    {
+      "key": "B",
+      "text": "A volunteer using a UA to take photographs and videos for a charity event."
+    },
+    {
+      "key": "C",
+      "text": "An individual who took aerial photographs using his UA and use them for marketing purpose, regardless of whether there are any monetary exchanges."
+    },
+    {
+      "key": "D",
+      "text": "An individual flying a UA higher than 200 feet above mean sea level for aerial photography for personal collection."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Purpose-based UA operations question."
+}

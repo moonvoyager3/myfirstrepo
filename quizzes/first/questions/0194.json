@@ -1,0 +1,40 @@
+{
+  "id": 194,
+  "question_type": "single_select_4orless",
+  "question": "Which one of the following is the maximum visual line of sight (VLOS) distance between the UA pilot and the UA according to the CAAS Air Navigation Act (ANA 101) guideline?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "200m"
+    },
+    {
+      "key": "B",
+      "text": "300m"
+    },
+    {
+      "key": "C",
+      "text": "400m"
+    },
+    {
+      "key": "D",
+      "text": "500m"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Maximum VLOS distance is part of ANR-101 operating rules."
+}

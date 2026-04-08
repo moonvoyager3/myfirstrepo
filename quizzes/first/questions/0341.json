@@ -1,0 +1,36 @@
+{
+  "id": 341,
+  "question_type": "single_select_4orless",
+  "question": "What is density altitude?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "The height above the standard datum plane."
+    },
+    {
+      "key": "B",
+      "text": "The altitude read directly from the altimeter."
+    },
+    {
+      "key": "C",
+      "text": "The pressure altitude corrected for nonstandard temperature."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 02",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Density altitude definition."
+}

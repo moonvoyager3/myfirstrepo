@@ -1,0 +1,36 @@
+{
+  "id": 365,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following weather conditions would most likely affect the stability and performance of a drone?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Light rain"
+    },
+    {
+      "key": "B",
+      "text": "Overcast skies"
+    },
+    {
+      "key": "C",
+      "text": "Strong winds"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 04",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Weather and stability/performance question."
+}

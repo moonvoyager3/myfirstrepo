@@ -1,0 +1,40 @@
+{
+  "id": 79,
+  "question_type": "single_select_4orless",
+  "question": "Approximately how many wingspan of an UA above ground does it take for ground effect to take place?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "One-quarter of wingspan"
+    },
+    {
+      "key": "B",
+      "text": "Half of wingspan"
+    },
+    {
+      "key": "C",
+      "text": "One-whole of wingspan"
+    },
+    {
+      "key": "D",
+      "text": "Two wingspan"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 02",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

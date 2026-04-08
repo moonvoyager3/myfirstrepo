@@ -1,0 +1,40 @@
+{
+  "id": 444,
+  "question_type": "single_select_4orless",
+  "question": "Which one of the following is / are part of good decision-making process? I. Detect the fact that a change has occurred (or is needed). II. Developing risk assessment skills. III. Evaluate the effect of your action on the needed change. IV. Identifying personal and crew attitudes.",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "I and II"
+    },
+    {
+      "key": "B",
+      "text": "II and III"
+    },
+    {
+      "key": "C",
+      "text": "I, II and IV"
+    },
+    {
+      "key": "D",
+      "text": "All of the above"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 02",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Decision making steps."
+}

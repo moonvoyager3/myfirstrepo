@@ -1,0 +1,40 @@
+{
+  "id": 91,
+  "question_type": "single_select_4orless",
+  "question": "Describe the main causes of stall:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Flow separation and, accordingly, lift loss beyond the angle of attack of maximum lift."
+    },
+    {
+      "key": "B",
+      "text": "Air pressure moves from high to low."
+    },
+    {
+      "key": "C",
+      "text": "Air pressure separates from high and meets at the lower end."
+    },
+    {
+      "key": "D",
+      "text": "Air pressure travels from low to higher aerofoil."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 03",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Stall causes and recovery are explicit syllabus content."
+}

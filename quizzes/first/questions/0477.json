@@ -1,0 +1,40 @@
+{
+  "id": 477,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is part of the Pre-flight check of the UA? I. Ensure that all control links between the CS and the small UA are working properly. II. Ensure that all necessary documentation is available for inspection. III. Ensure there is sufficient power to continue controlled flight operations to a normal landing. IV. Conduct an assessment of the operating environment.",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "I, II and III"
+    },
+    {
+      "key": "B",
+      "text": "I, III and IV"
+    },
+    {
+      "key": "C",
+      "text": "II, III and IV"
+    },
+    {
+      "key": "D",
+      "text": "All of the above"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Pre-flight checks."
+}

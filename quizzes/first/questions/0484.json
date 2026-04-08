@@ -1,0 +1,36 @@
+{
+  "id": 484,
+  "question_type": "single_select_4orless",
+  "question": "In any drone flight emergency, the general #1 rule is to:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "land the aircraft as soon as possible."
+    },
+    {
+      "key": "B",
+      "text": "regain visual line-of-sight and approach the landing zone."
+    },
+    {
+      "key": "C",
+      "text": "maintain aircraft control."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 02",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Emergency handling: keep the aircraft under control."
+}

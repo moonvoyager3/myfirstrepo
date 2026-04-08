@@ -1,0 +1,40 @@
+{
+  "id": 193,
+  "question_type": "single_select_4orless",
+  "question": "Which one of the following flight(s) is considered neither a \"recreation purpose\" nor \"education purpose\"? I. A volunteer using a UA to take photographs and videos for a charity event. II. A company's public communications department using a UA to take event photographs III. An individual flying a UA higher than 200 feet above mean sea level for aerial photography for personal collection. IV. Students of a public educational institute showcasing their UA as part of a school event that is not open to the public.",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "I and II"
+    },
+    {
+      "key": "B",
+      "text": "II and IV"
+    },
+    {
+      "key": "C",
+      "text": "I, II and III"
+    },
+    {
+      "key": "D",
+      "text": "All of the above"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

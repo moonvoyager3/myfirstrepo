@@ -1,0 +1,40 @@
+{
+  "id": 223,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is true for registration of UA?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Does not require the label to be affixed on the UA."
+    },
+    {
+      "key": "B",
+      "text": "Affix label permanently with clear visibility of the unique identification number."
+    },
+    {
+      "key": "C",
+      "text": "Affix label on the propeller of the UA."
+    },
+    {
+      "key": "D",
+      "text": "Affix label permanently on the underside with poor access."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 04 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 04 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

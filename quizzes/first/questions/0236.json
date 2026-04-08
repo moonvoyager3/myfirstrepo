@@ -1,0 +1,32 @@
+{
+  "id": 236,
+  "question_type": "single_select_4orless",
+  "question": "A recreational UA user does not require a class 2 activity permit when flying a 1.5kg UA above 200ft AMSL at the indicated outdoor location shown on the map?",
+  "image": "./quizzes/first/assets/question-images/page_0325_img_1.png",
+  "options": [
+    {
+      "key": "A",
+      "text": "True"
+    },
+    {
+      "key": "B",
+      "text": "False"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Class 2 activity permit requirement."
+}

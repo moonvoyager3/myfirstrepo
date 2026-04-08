@@ -1,0 +1,40 @@
+{
+  "id": 55,
+  "question_type": "single_select_4orless",
+  "question": "Why is it important to check the radio frequency of a self-built UA?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Ensure that appropriate Center of Gravity is applied."
+    },
+    {
+      "key": "B",
+      "text": "Ensure no loose wires can come into contact with the spinning propellers."
+    },
+    {
+      "key": "C",
+      "text": "Prevent radio systems from being interfered with or interfering with other radio equipment."
+    },
+    {
+      "key": "D",
+      "text": "Ensure all screws securely fastened and applied with cable tie if necessary."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 03",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Radio frequency is part of the command-and-control link."
+}

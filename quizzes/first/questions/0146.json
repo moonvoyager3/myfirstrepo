@@ -1,0 +1,40 @@
+{
+  "id": 146,
+  "question_type": "single_select_4orless",
+  "question": "An aeroplane's primary flight control surface for controlling roll is?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Ailerons"
+    },
+    {
+      "key": "B",
+      "text": "Rudder"
+    },
+    {
+      "key": "C",
+      "text": "Propeller or motor"
+    },
+    {
+      "key": "D",
+      "text": "Elevator"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 02 02",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Roll control surface question."
+}

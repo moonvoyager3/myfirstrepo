@@ -1,0 +1,36 @@
+{
+  "id": 112,
+  "question_type": "single_select_4orless",
+  "question": "In weight and balance calculations, arm is:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "the distance between items."
+    },
+    {
+      "key": "B",
+      "text": "the distance from the datum line to the item."
+    },
+    {
+      "key": "C",
+      "text": "weight times moment."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 05",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Arm definition in weight and balance."
+}

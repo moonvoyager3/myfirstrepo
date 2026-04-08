@@ -1,0 +1,40 @@
+{
+  "id": 445,
+  "question_type": "single_select_4orless",
+  "question": "'Completion Bias' sets in when you have begun a flight and have completed some or most of a particular mission. This is a contributing factor to:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Mission-itis"
+    },
+    {
+      "key": "B",
+      "text": "Get-Home-Itis"
+    },
+    {
+      "key": "C",
+      "text": "Aero-itis"
+    },
+    {
+      "key": "D",
+      "text": "Pressure-itis"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 03",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Completion bias mindset."
+}

@@ -1,0 +1,36 @@
+{
+  "id": 220,
+  "question_type": "single_select_4orless",
+  "question": "When would a UA owner not be permitted to register it?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "The owner is below 16 years of age."
+    },
+    {
+      "key": "B",
+      "text": "The owner does not know how to operate the UA."
+    },
+    {
+      "key": "C",
+      "text": "All UA owners must register their UA."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 04 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 04 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Age restriction on registration."
+}

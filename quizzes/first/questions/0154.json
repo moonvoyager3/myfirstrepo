@@ -1,0 +1,35 @@
+{
+  "id": 154,
+  "question_type": "single_select_4orless",
+  "question": "Maximum endurance is obtained at the point of minimum power to maintain the aircraft,",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "in a long range descent."
+    },
+    {
+      "key": "B",
+      "text": "at its slowest possible indicated airspeed."
+    },
+    {
+      "key": "C",
+      "text": "in steady, level flight."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": null,
+  "metadata": {
+    "knowledge_area": "Principles of Flight"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 0.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Maximum endurance and minimum power."
+}

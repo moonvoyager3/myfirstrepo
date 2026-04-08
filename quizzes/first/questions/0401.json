@@ -1,0 +1,40 @@
+{
+  "id": 401,
+  "question_type": "single_select_4orless",
+  "question": "Consumption of alcohol will",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "improve judgement"
+    },
+    {
+      "key": "B",
+      "text": "be less susceptible to disorientation"
+    },
+    {
+      "key": "C",
+      "text": "more likely to cause hypoxia"
+    },
+    {
+      "key": "D",
+      "text": "improve reaction time"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 03 02",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 03 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Alcohol impairs operations through intoxication effects."
+}

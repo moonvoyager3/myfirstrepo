@@ -1,0 +1,40 @@
+{
+  "id": 134,
+  "question_type": "single_select_4orless",
+  "question": "An UA aeroplane control pitch around the:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Lateral Axis"
+    },
+    {
+      "key": "B",
+      "text": "Rotational axis"
+    },
+    {
+      "key": "C",
+      "text": "Longitudinal axis"
+    },
+    {
+      "key": "D",
+      "text": "Vertical axis"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 02 01",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

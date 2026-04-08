@@ -1,0 +1,40 @@
+{
+  "id": 58,
+  "question_type": "single_select_4orless",
+  "question": "What precautions should a remote pilot in command take to prevent possible in-flight emergencies when using lithium-based batteries?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Follow the manufacturer's recommendations for safe battery handling."
+    },
+    {
+      "key": "B",
+      "text": "Allow the battery to charge overnight."
+    },
+    {
+      "key": "C",
+      "text": "Store the batteries in a freezer to allow proper recharging."
+    },
+    {
+      "key": "D",
+      "text": "Allow the battery to charge until it reaches a minimum temperature of 100°C."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 04",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Battery handling precautions reduce in-flight emergencies."
+}

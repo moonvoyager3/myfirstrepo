@@ -1,0 +1,40 @@
+{
+  "id": 5,
+  "question_type": "single_select_4orless",
+  "question": "How does a multirotor perform yaw control?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Increase motor thrust of diagonal motors"
+    },
+    {
+      "key": "B",
+      "text": "Decrease motor thrust of all motors"
+    },
+    {
+      "key": "C",
+      "text": "Increase propeller pitch"
+    },
+    {
+      "key": "D",
+      "text": "Increase motor thrust of all motors"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 01 02",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Multirotor yaw control is part of operating principles."
+}

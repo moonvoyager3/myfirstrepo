@@ -1,0 +1,40 @@
+{
+  "id": 156,
+  "question_type": "single_select_4orless",
+  "question": "Prohibited photography over protected areas is not considered an offence if:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Only part of the protected area is taken using the photographic equipment on board the UA."
+    },
+    {
+      "key": "B",
+      "text": "Proven that part of the protected area or whole area photograph taken was not intentionally but due to weather conditions or other unavoidable cause."
+    },
+    {
+      "key": "C",
+      "text": "There was no photographic equipment on the UA."
+    },
+    {
+      "key": "D",
+      "text": "The person not the operator of the UA took the picture."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 01 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 01 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Question tests protected-area photography provisions under the Act."
+}

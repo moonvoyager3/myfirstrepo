@@ -1,0 +1,36 @@
+{
+  "id": 110,
+  "question_type": "single_select_4orless",
+  "question": "If the center of gravity on an aircraft is too far aft (rearward), what is the likely result?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "The aircraft will have difficulty recovering from a stalled position."
+    },
+    {
+      "key": "B",
+      "text": "The aircraft will not be able to maintain a constant turn."
+    },
+    {
+      "key": "C",
+      "text": "The aircraft will have increased airspeed."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 05",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Aft CG stability question."
+}

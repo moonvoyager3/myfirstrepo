@@ -1,0 +1,40 @@
+{
+  "id": 180,
+  "question_type": "single_select_4orless",
+  "question": "When flying without any valid permit, which of the following rules must be observed? I. Keep the UA within sight at all times. II. Never fly the UA dangerously or along any roads III. Fly the UA outside of restricted, danger, protected or prohibited areas IV. Never drop any item or discharge any substance from the UA.",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "I and III"
+    },
+    {
+      "key": "B",
+      "text": "II, III and IV"
+    },
+    {
+      "key": "C",
+      "text": "I, II and IV"
+    },
+    {
+      "key": "D",
+      "text": "All of the above"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 205,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is required for a recreational UA user operating a UA (Less than 1.5kg) within 5km of any airport or military airbases?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "CAAS Class 2 Activity Permit"
+    },
+    {
+      "key": "B",
+      "text": "CAAS Operator Permit"
+    },
+    {
+      "key": "C",
+      "text": "CAAS UA Pilot License"
+    },
+    {
+      "key": "D",
+      "text": "CAAS Class 1 Activity Permit"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 03 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Flying near airports or military airbases is an airspace restriction issue."
+}

@@ -1,0 +1,81 @@
+{
+  "knowledge_areas": [
+    "General UAS Knowledge",
+    "Principles of Flight",
+    "Air Law",
+    "Navigation and Meteorology",
+    "Human Factors",
+    "Safety and Operations"
+  ],
+  "syllabus_catalog": {
+    "General UAS Knowledge": {
+      "010 01 01": "Define what is an Unmanned Aircraft System (UAS) and Unmanned Aircraft (UA).",
+      "010 01 02": "Describe the different categories of UA and their operating principles: aeroplane, rotorcraft, multi-rotor, helicopter, powered-lift, airship.",
+      "010 01 03": "Examine various applications of UAS and compare the suitability of each UA category for those applications.",
+      "010 02 01": "Identify the major systems of UAS and explain how the systems integrate with each other: power and electrical, propulsion, flight control and navigation, command and control, and ground control.",
+      "010 02 02": "Describe the functions of the different UAS components under each major system and compare differences across categories of UA.",
+      "010 02 03": "Describe the operation of the UAS C2 link, including radio-line-of-sight, radio interference, and loss link.",
+      "010 02 04": "Identify failed or damaged components such as failed servos, propeller damage, and bloated batteries."
+    },
+    "Principles of Flight": {
+      "020 01 01": "Identify the four forces of flight: lift, weight, thrust, and drag.",
+      "020 01 02": "Describe aerofoil interaction with airflow, including lift generation, angle of attack, and ground effect.",
+      "020 01 03": "Describe aerodynamic stall, including causes, symptoms, and stall recovery.",
+      "020 01 04": "Describe aerodynamic spin, including stages of spins and spin recovery.",
+      "020 01 05": "Describe aerodynamic stability, including centre of gravity, centre of pressure, static stability, and dynamic stability.",
+      "020 02 01": "List the axes of motion and describe how an aircraft changes its attitude: pitch, roll, and yaw.",
+      "020 02 02": "Describe the function of the main control surfaces and the directions of deflection with respect to the axes of motion: ailerons, elevator, rudder.",
+      "020 02 03": "Explain the purpose of trimming the aircraft."
+    },
+    "Air Law": {
+      "030 01 01": "Identify the provisions in the Air Navigation Act relevant to UAS operations, including dangerous materials, discharge, dangerous activity, flying without safety requirements, trespassing at aerodromes, and dangerous flying.",
+      "030 01 02": "State the penalties for contravening Air Navigation Act provisions relating to UAS operations.",
+      "030 02 01": "Summarise the provisions in ANR-101, including operational purposes, registration, permits, UAPL requirements, and UA basic training.",
+      "030 02 02": "State the penalties for contravening ANR-101 provisions relating to UAS operations.",
+      "030 03 01": "Identify Singapore airspace restrictions using OneMap and compare regulatory requirements for aerodromes, danger areas, protected areas, prohibited areas, restricted areas, and temporary restricted areas.",
+      "030 04 01": "Describe the UA registration and de-registration processes.",
+      "030 05 01": "Describe the permit application process.",
+      "030 05 02": "Identify the UA Operator Permit and Activity Permit conditions applicable to the UA pilot.",
+      "030 06 01": "State the requirements for the issuance and maintenance of a UAPL.",
+      "030 06 02": "State the associated UAPL classes, categories, and ratings."
+    },
+    "Navigation and Meteorology": {
+      "040 01 01": "Describe the systems used in basic navigation: UTM map projection, latitude, and longitude.",
+      "040 01 02": "Describe the concept of GNSS, including basic principles of operation, common errors, and factors affecting accuracy.",
+      "040 01 03": "Explain navigation systems and methods of improving position accuracy, including GPS, GLONASS, BeiDou, Galileo, LADGNSS, DGNSS, RTK, and WARTK.",
+      "040 01 04": "Describe other forms of guidance systems, their operating principles, and pros and cons: infra-red, vision-based, ultrasound, and LIDAR.",
+      "040 02 01": "State atmospheric properties and describe their effects on UA performance: pressure, temperature, density, and humidity.",
+      "040 02 02": "Define basic altimetry terms: height, elevation, altitude, AMSL, and AGL.",
+      "040 02 03": "Describe the characteristics of cloud types such as cumulus and cumulonimbus.",
+      "040 02 04": "Describe the different types of winds and their impact on UA ground speed: headwind, tailwind, and crosswind.",
+      "040 02 05": "State the different means to obtain reliable weather information, including Meteorological Services Singapore and METAR."
+    },
+    "Human Factors": {
+      "050 01 01": "Understand the ICAO SHELL model.",
+      "050 02 01": "Identify vision-related phenomena affecting UAS operations and describe how to overcome them: autokinesis, disorientation, spatial disorientation, and sun-blindness.",
+      "050 02 02": "Describe correct visual scanning techniques.",
+      "050 03 01": "Know the prohibition of use of psychoactive substances during UAS operations.",
+      "050 03 02": "Describe the effects of intoxication on UAS operations.",
+      "050 03 03": "Describe the effects of medications on UAS operations.",
+      "050 04 01": "Identify the causes of fatigue.",
+      "050 04 02": "Describe the effects of fatigue on UAS operations.",
+      "050 04 03": "Describe fatigue management techniques.",
+      "050 05 01": "Identify the causes of stress.",
+      "050 05 02": "Describe the effects of stress on UAS operations.",
+      "050 05 03": "Describe stress management techniques."
+    },
+    "Safety and Operations": {
+      "060 01 01": "Describe risk and hazard.",
+      "060 01 02": "Identify risks and hazards using the five risk elements, PAVE model, and IMSAFE checklist.",
+      "060 01 03": "Apply the general steps to perform risk assessment.",
+      "060 02 01": "Describe the importance of maintaining situation awareness.",
+      "060 02 02": "Describe sound aeronautical decision making using the five decision-making subject areas, DECIDE model, and the 3 Ps.",
+      "060 02 03": "Describe the dangers of Get-Home-Itis and Completion Bias mindsets on UAS operations.",
+      "060 02 04": "Describe crew resource management and how it contributes to safety of UAS operations.",
+      "060 02 05": "Identify the five hazardous attitudes that may impact safety: anti-authority, impulsivity, invulnerability, macho, and resignation.",
+      "060 03 01": "List the common phases of flight and describe the checks conducted or considerations for each phase, including flight planning, contingency planning, pre-flight, in-flight, and post-flight.",
+      "060 03 02": "Explain the importance of contingency and emergency procedures and describe common handling procedures for loss of GNSS, low power, loss of C2 link, loss of orientation or control, stall, and fly-away.",
+      "060 03 03": "Explain the importance of maintenance, including the difference between maintenance and flight checks, following OEM guidelines, and keeping a maintenance log."
+    }
+  }
+}

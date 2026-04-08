@@ -1,0 +1,36 @@
+{
+  "id": 347,
+  "question_type": "single_select_4orless",
+  "question": "If an unstable air mass is forced upward, what type of clouds can be expected?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Clouds with considerable vertical development and associated turbulence."
+    },
+    {
+      "key": "B",
+      "text": "Cumulus clouds with little vertical development."
+    },
+    {
+      "key": "C",
+      "text": "Stratus clouds with considerable associated turbulence."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 03",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Unstable air and cloud type question."
+}

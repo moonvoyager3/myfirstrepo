@@ -1,0 +1,40 @@
+{
+  "id": 245,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is required if a student intends to conduct an outdoor test flight for an 8kg UA built for a final year project?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "CAAS Operator Permit"
+    },
+    {
+      "key": "B",
+      "text": "CAAS Class 1 Activity Permit"
+    },
+    {
+      "key": "C",
+      "text": "CAAS UA Pilot License"
+    },
+    {
+      "key": "D",
+      "text": "All of the above"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "The question combines operator permit, activity permit, and UAPL conditions."
+}

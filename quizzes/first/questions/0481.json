@@ -1,0 +1,40 @@
+{
+  "id": 481,
+  "question_type": "single_select_4orless",
+  "question": "Who is responsible for determining the performance of an unmanned aircraft during UA operations?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Remote pilot-in-command"
+    },
+    {
+      "key": "B",
+      "text": "Owner or operator"
+    },
+    {
+      "key": "C",
+      "text": "Customer"
+    },
+    {
+      "key": "D",
+      "text": "Manufacturer"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Pilot responsibility for determining aircraft performance fits flight-planning and operational checks."
+}

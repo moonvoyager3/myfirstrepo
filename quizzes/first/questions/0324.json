@@ -1,0 +1,36 @@
+{
+  "id": 324,
+  "question_type": "single_select_4orless",
+  "question": "What is the effect of high altitude on drone performance?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Enhanced stability and control."
+    },
+    {
+      "key": "B",
+      "text": "Reduced battery life and lift."
+    },
+    {
+      "key": "C",
+      "text": "Increased speed and maneuverability."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 01",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "High altitude performance question."
+}

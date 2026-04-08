@@ -1,0 +1,40 @@
+{
+  "id": 175,
+  "question_type": "single_select_4orless",
+  "question": "Under which condition is UA registration required at the time of operations?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "UA weighing 100 grams in total mass"
+    },
+    {
+      "key": "B",
+      "text": "UA weighing 200 grams in total mass"
+    },
+    {
+      "key": "C",
+      "text": "UA weighing 249 grams in total mass"
+    },
+    {
+      "key": "D",
+      "text": "UA weighing 300 grams in total mass"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Permits, registration, and UAPL rules are being tested."
+}

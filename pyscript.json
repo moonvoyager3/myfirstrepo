@@ -1,0 +1,9 @@
+{
+    "packages": [],
+    "plugins": ["!error"],
+    "files": {
+        "./learner_storage.py": "./learner_storage.py",
+        "./learner_scheduler.py": "./learner_scheduler.py",
+        "./learner_mode.py": "./learner_mode.py"
+    }
+}

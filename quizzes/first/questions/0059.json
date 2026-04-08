@@ -1,0 +1,36 @@
+{
+  "id": 59,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is a consequence of a damaged lithium battery?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "It can result in a fire accident."
+    },
+    {
+      "key": "B",
+      "text": "The result of a change in the CG of the UA."
+    },
+    {
+      "key": "C",
+      "text": "Reduces the speed of the aircraft."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 04",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Damaged lithium battery / component failure question."
+}

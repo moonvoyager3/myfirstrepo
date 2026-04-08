@@ -1,0 +1,40 @@
+{
+  "id": 233,
+  "question_type": "single_select_4orless",
+  "question": "A commercial pilot from a business providing aerial services is being engaged to fly his 5kg UA (in maximum take-off weight) in a protected area. He is required to seek approval from the Singapore Police Force during the permit application process. Which of the following permit(s) is he required to possess before the operation? I. UA Operator Permit II. Class 1 Activity Permit with SPF special permit III. Class 2 Activity Permit IV. Class 2 Activity Permit with SPF special permit",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "I and II"
+    },
+    {
+      "key": "B",
+      "text": "I and III"
+    },
+    {
+      "key": "C",
+      "text": "I, II and IV"
+    },
+    {
+      "key": "D",
+      "text": "III and IV"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

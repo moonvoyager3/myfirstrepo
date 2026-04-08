@@ -1,0 +1,40 @@
+{
+  "id": 359,
+  "question_type": "single_select_4orless",
+  "question": "An aircraft is flying at 10 km/h against the wind, the wind speed is 5 km/h. What is the ground speed?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "15 km/h"
+    },
+    {
+      "key": "B",
+      "text": "10 km/h"
+    },
+    {
+      "key": "C",
+      "text": "20 km/h"
+    },
+    {
+      "key": "D",
+      "text": "5 km/h"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 04",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Ground speed with headwind."
+}

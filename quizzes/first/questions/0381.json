@@ -1,0 +1,40 @@
+{
+  "id": 381,
+  "question_type": "single_select_4orless",
+  "question": "If you had consumed alcohol, how long should you rest before attempting to fly a UA?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "After 2 hours"
+    },
+    {
+      "key": "B",
+      "text": "After 4 hours"
+    },
+    {
+      "key": "C",
+      "text": "After 6 hours"
+    },
+    {
+      "key": "D",
+      "text": "After 8 hours"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 02 01",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Human-factors/physiology topics are being tested."
+}

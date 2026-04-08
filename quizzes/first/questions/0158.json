@@ -1,0 +1,40 @@
+{
+  "id": 158,
+  "question_type": "single_select_4orless",
+  "question": "A person must not operate an unmanned aircraft outdoors within the boundaries of any prohibited area. This includes operating an unmanned aircraft within any of the designated No Fly Zone (NFZ) denoted by CAAS operational area limit. A person who contravenes the above paragraph (1) shall be guilty of an offence and shall be liable on conviction, for the first offence, to:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "a fine not exceeding $20,000 or to imprisonment for a term not exceeding 2 years or both."
+    },
+    {
+      "key": "B",
+      "text": "a fine not exceeding $30,000 or to imprisonment for a term not exceeding 3 years or both."
+    },
+    {
+      "key": "C",
+      "text": "a fine not exceeding $50,000 or to imprisonment for a term not exceeding 2 years or both."
+    },
+    {
+      "key": "D",
+      "text": "a fine not exceeding $50,000 or to imprisonment for a term not exceeding 3 years or both."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 01 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

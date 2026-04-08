@@ -1,0 +1,40 @@
+{
+  "id": 370,
+  "question_type": "single_select_4orless",
+  "question": "This is a METAR at Perth Airport 131030Z 06008KT 9999 FEW020 SCT280 30/25 Q1008 NOSIG What is the visibility distance?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "280m"
+    },
+    {
+      "key": "B",
+      "text": "1008m"
+    },
+    {
+      "key": "C",
+      "text": "10 km or more"
+    },
+    {
+      "key": "D",
+      "text": "6008m"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 05",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "METAR visibility code."
+}

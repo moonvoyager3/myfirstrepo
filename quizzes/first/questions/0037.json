@@ -1,0 +1,40 @@
+{
+  "id": 37,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is not considered a flight critical system?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Payload System"
+    },
+    {
+      "key": "B",
+      "text": "Propulsion System"
+    },
+    {
+      "key": "C",
+      "text": "Command & Control System"
+    },
+    {
+      "key": "D",
+      "text": "Electrical System"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 02",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Payload is not a flight-critical system."
+}

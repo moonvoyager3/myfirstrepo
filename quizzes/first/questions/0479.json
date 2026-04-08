@@ -1,0 +1,40 @@
+{
+  "id": 479,
+  "question_type": "single_select_4orless",
+  "question": "Which one of the following is not part of the procedure of a UA during a pre- flight check?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Check motors for debris and obstructions"
+    },
+    {
+      "key": "B",
+      "text": "Check the integrity of the landing gear"
+    },
+    {
+      "key": "C",
+      "text": "Check ground control station for faults"
+    },
+    {
+      "key": "D",
+      "text": "Check charger for visible damage"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

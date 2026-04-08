@@ -1,0 +1,40 @@
+{
+  "id": 263,
+  "question_type": "single_select_4orless",
+  "question": "Which category of UA users requires a UAPL?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Recreational purpose with UA exceeding 7kg"
+    },
+    {
+      "key": "B",
+      "text": "Educational purpose with UA exceeding 7kg"
+    },
+    {
+      "key": "C",
+      "text": "All non-recreational / non-educational users"
+    },
+    {
+      "key": "D",
+      "text": "All of the above"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 06 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 06 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "UAPL requirement by user category is tested."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 368,
+  "question_type": "single_select_4orless",
+  "question": "This is a METAR at Perth Airport 131030Z 06008KT 9999 FEW020 SCT280 30/25 Q1008 NOSIG What is the date and time (Time in Singapore) of the reported METAR?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Time: 1300, Date:30th"
+    },
+    {
+      "key": "B",
+      "text": "Time: 2110, Date:30th"
+    },
+    {
+      "key": "C",
+      "text": "Time :1030, Date 13th"
+    },
+    {
+      "key": "D",
+      "text": "Time: 1830, Date 13th"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 05",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "METAR time conversion."
+}

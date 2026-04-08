@@ -1,0 +1,40 @@
+{
+  "id": 285,
+  "question_type": "single_select_4orless",
+  "question": "Satellites being too close together is known as:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Dilution of precision"
+    },
+    {
+      "key": "B",
+      "text": "Multipath delays"
+    },
+    {
+      "key": "C",
+      "text": "Satellite to satellite interference"
+    },
+    {
+      "key": "D",
+      "text": "Positional clumping"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 01 02",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 429,
+  "question_type": "single_select_4orless",
+  "question": "Risk analysis must logically take place between the:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "evaluation of the different options and the decision."
+    },
+    {
+      "key": "B",
+      "text": "evaluation of the different options and the perception of the information."
+    },
+    {
+      "key": "C",
+      "text": "decision and evaluation of the different options."
+    },
+    {
+      "key": "D",
+      "text": "perception of information and the evaluation of different options."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 01 03",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 01 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Risk analysis timing question."
+}

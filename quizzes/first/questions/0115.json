@@ -1,0 +1,40 @@
+{
+  "id": 115,
+  "question_type": "single_select_4orless",
+  "question": "Positive static stability involves?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Tendency to return to original position."
+    },
+    {
+      "key": "B",
+      "text": "Tendency of an aircraft to dampen back to its original position once disturbed to a new position."
+    },
+    {
+      "key": "C",
+      "text": "Tendency of an aircraft to return to the trimmed angle of attack."
+    },
+    {
+      "key": "D",
+      "text": "Movement about this axis causes the nose of the aircraft to raise or lower, and is caused by moving the elevators."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 05",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

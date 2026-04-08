@@ -1,0 +1,40 @@
+{
+  "id": 224,
+  "question_type": "single_select_4orless",
+  "question": "Which one of the following cases does not require UA registration?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "A recreational player who uses a radio-controlled kite above 250 grams."
+    },
+    {
+      "key": "B",
+      "text": "A 10-year-old son who intends to use his 300 gram UA as part of a school science project."
+    },
+    {
+      "key": "C",
+      "text": "A recreational flyer using a UA with a total weight of 200 grams."
+    },
+    {
+      "key": "D",
+      "text": "A business entity who intends to market and sell commercial UA, each weighing 500 grams."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 04 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 04 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

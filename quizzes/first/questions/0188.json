@@ -1,0 +1,40 @@
+{
+  "id": 188,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is true for First Person View (FPV) operation?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Vision aids, such as binoculars, may be used throughout the flight to enhance situational awareness."
+    },
+    {
+      "key": "B",
+      "text": "You only need 1 crew apart from the UA pilot to maintain visual line of sight with the UA at all times."
+    },
+    {
+      "key": "C",
+      "text": "You may fly FPV without any crew member capable of keeping the UA within visual line of sight at any time."
+    },
+    {
+      "key": "D",
+      "text": "All the above."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "FPV operation still requires a crew member to maintain VLOS."
+}

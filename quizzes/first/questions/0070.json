@@ -1,0 +1,40 @@
+{
+  "id": 70,
+  "question_type": "single_select_4orless",
+  "question": "What are the 4 forces of flight?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Lift, Weight, Thrust, Drag"
+    },
+    {
+      "key": "B",
+      "text": "Lift, Propel, Weight, Drag"
+    },
+    {
+      "key": "C",
+      "text": "Weight, Drag, Dynamic Stability, Thrust"
+    },
+    {
+      "key": "D",
+      "text": "Longitudinal Stability, Weight, Thrust, Drag"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 01",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 227,
+  "question_type": "single_select_4orless",
+  "question": "A group of students are planning to conduct an indoor test flight for their UA project at their school hall location shown on the map below. Which of the following permits is required?",
+  "image": "./quizzes/first/assets/question-images/page_0023_img_1.png",
+  "options": [
+    {
+      "key": "A",
+      "text": "No permit required since it is an indoor flight"
+    },
+    {
+      "key": "B",
+      "text": "Class 1 Activity Permit"
+    },
+    {
+      "key": "C",
+      "text": "Operator Permit"
+    },
+    {
+      "key": "D",
+      "text": "Class 2 Activity Permit"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Indoor flight is treated as not requiring an outdoor permit."
+}

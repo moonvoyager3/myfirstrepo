@@ -1,0 +1,36 @@
+{
+  "id": 46,
+  "question_type": "single_select_4orless",
+  "question": "What is the most appropriate action if a drone encounters interference or jamming during a flight?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Continue the flight and ignore the interference."
+    },
+    {
+      "key": "B",
+      "text": "Land as soon as safely possible."
+    },
+    {
+      "key": "C",
+      "text": "Increase altitude to avoid the source of interference."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 03",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Interference or jamming handling question."
+}

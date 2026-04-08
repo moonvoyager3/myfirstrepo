@@ -1,0 +1,40 @@
+{
+  "id": 392,
+  "question_type": "single_select_4orless",
+  "question": "How do you apply day visual scanning techniques?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Avoid looking directly at an object for no more than 2-3 seconds."
+    },
+    {
+      "key": "B",
+      "text": "Using upward and downward movements to scan, regularly spaced eye movements which bring successive areas of sky into the central (fovea) visual field."
+    },
+    {
+      "key": "C",
+      "text": "Do not move the body and head to see around physical obstructions."
+    },
+    {
+      "key": "D",
+      "text": "Perform a series of short, regularly spaced eye movements which bring successive areas of sky into the central (fovea) visual field."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 02 02",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Day visual scanning."
+}

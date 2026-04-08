@@ -1,0 +1,40 @@
+{
+  "id": 162,
+  "question_type": "single_select_4orless",
+  "question": "What is the penalty for unauthorised photography with an unmanned aircraft over protected areas?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "A fine not exceeding $10,000 or imprisonment not exceeding 6 months, or both for first offence."
+    },
+    {
+      "key": "B",
+      "text": "A fine not exceeding $15,000 or imprisonment not exceeding 9 months, or both for first offence."
+    },
+    {
+      "key": "C",
+      "text": "A fine not exceeding $20,000 or imprisonment not exceeding 12 months, or both for first offence."
+    },
+    {
+      "key": "D",
+      "text": "A fine not exceeding $50,000 or imprisonment not exceeding 24 months, or both for first offence."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 01 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Protected-area photography is an ANA offence, so this asks for the Act penalty."
+}

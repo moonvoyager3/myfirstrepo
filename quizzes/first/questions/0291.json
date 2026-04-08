@@ -1,0 +1,40 @@
+{
+  "id": 291,
+  "question_type": "single_select_4orless",
+  "question": "What is the minimum number of satellites required in the Global Positioning System?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "21"
+    },
+    {
+      "key": "B",
+      "text": "22"
+    },
+    {
+      "key": "C",
+      "text": "24"
+    },
+    {
+      "key": "D",
+      "text": "23"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 01 02",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

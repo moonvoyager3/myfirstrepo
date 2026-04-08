@@ -1,0 +1,40 @@
+{
+  "id": 357,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is true for Cumulonimbus clouds:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "cloud with vertical development associated with stable air from surface to 6500ft"
+    },
+    {
+      "key": "B",
+      "text": "cloud with vertical development associated with unstable air from 6500 ft to high altitude"
+    },
+    {
+      "key": "C",
+      "text": "cloud with horizontal development extending over huge land mass"
+    },
+    {
+      "key": "D",
+      "text": "high altitude cloud that consists of mainly ice crystals"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 03",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Cumulonimbus characteristics."
+}

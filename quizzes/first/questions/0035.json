@@ -1,0 +1,40 @@
+{
+  "id": 35,
+  "question_type": "single_select_4orless",
+  "question": "When a radio control transmitter is used as the ground control system it must be bound with the receiver. The binding process links the receiver to:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Only the specific transmitter it is bound to."
+    },
+    {
+      "key": "B",
+      "text": "Any transmitter operating on 2.4 GHz."
+    },
+    {
+      "key": "C",
+      "text": "Any transmitter operating on a legal radio control frequency."
+    },
+    {
+      "key": "D",
+      "text": "Any transmitter with the control sticks held in the start position."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 02",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

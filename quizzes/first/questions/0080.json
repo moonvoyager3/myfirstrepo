@@ -1,0 +1,40 @@
+{
+  "id": 80,
+  "question_type": "single_select_4orless",
+  "question": "Define Angle of attack:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Angle between the wing chord line of an airfoil and the relative wind."
+    },
+    {
+      "key": "B",
+      "text": "Angle between airfoil center of gravity and the relative wind."
+    },
+    {
+      "key": "C",
+      "text": "The relative wind and the angle between the propeller blades."
+    },
+    {
+      "key": "D",
+      "text": "The angle formed by the center of gravity of the airfoil and the trailing edge during flight."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 02",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

@@ -1,0 +1,36 @@
+{
+  "id": 167,
+  "question_type": "single_select_4orless",
+  "question": "During a flight of your UA, you observe a hot air balloon entering the area. You should:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "yield the right-of-way to the hot air balloon."
+    },
+    {
+      "key": "B",
+      "text": "ensure the UA passes below, above, or ahead of the balloon."
+    },
+    {
+      "key": "C",
+      "text": "expect the hot air balloon to climb above your altitude."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Right-of-way rule is part of ANR-101 operating provisions."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 252,
+  "question_type": "single_select_4orless",
+  "question": "Which one of the following conditions requires a Class 2 Activity Permit? I. Within 5km of aerodromes. II. At an altitude below 200ft AMSL. III. Protected Area under Section 7 Air Navigation Act. IV. Within Danger Areas.",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "I and II"
+    },
+    {
+      "key": "B",
+      "text": "II and IV"
+    },
+    {
+      "key": "C",
+      "text": "I and III"
+    },
+    {
+      "key": "D",
+      "text": "I, III and IV"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

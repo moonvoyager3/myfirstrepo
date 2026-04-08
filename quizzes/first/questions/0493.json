@@ -1,0 +1,36 @@
+{
+  "id": 493,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following injuries requires notifying the CAAS?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Serious injury or death to the UA pilot, or any other person, or damage to any property."
+    },
+    {
+      "key": "B",
+      "text": "Scrapes and cuts bandaged on site."
+    },
+    {
+      "key": "C",
+      "text": "Minor bruises."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 02",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Notifiable injuries and damage."
+}

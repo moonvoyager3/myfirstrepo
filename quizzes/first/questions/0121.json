@@ -1,0 +1,40 @@
+{
+  "id": 121,
+  "question_type": "single_select_4orless",
+  "question": "What is the effect of decreasing the payload weight of a fixed wing aircraft?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Maneuverability increases"
+    },
+    {
+      "key": "B",
+      "text": "Maneuverability decreases"
+    },
+    {
+      "key": "C",
+      "text": "Flight time decreases"
+    },
+    {
+      "key": "D",
+      "text": "Take-off speed increases"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 05",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Payload-weight changes affect manoeuvrability and stability characteristics."
+}

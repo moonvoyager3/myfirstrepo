@@ -1,0 +1,40 @@
+{
+  "id": 195,
+  "question_type": "single_select_4orless",
+  "question": "What is the penalty for failing to produce a valid Activity Permit during verification checks?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "You will be fined up to $5,000 for the first offence."
+    },
+    {
+      "key": "B",
+      "text": "You will be fined up to $10,000 for the first offence."
+    },
+    {
+      "key": "C",
+      "text": "You will be fined up to $15,000 for the first offence."
+    },
+    {
+      "key": "D",
+      "text": "You will be fined up to $20,000 for the first offence."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Penalty for failing to produce a valid Activity Permit is a contravention penalty under ANR-101 rules."
+}

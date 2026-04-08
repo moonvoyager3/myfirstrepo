@@ -1,0 +1,40 @@
+{
+  "id": 147,
+  "question_type": "single_select_4orless",
+  "question": "Control around the longitudinal axis of an UA is achieved by the use of the:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Elevators"
+    },
+    {
+      "key": "B",
+      "text": "Flaps"
+    },
+    {
+      "key": "C",
+      "text": "Ailerons"
+    },
+    {
+      "key": "D",
+      "text": "Rudder"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 02 02",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

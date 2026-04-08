@@ -1,0 +1,40 @@
+{
+  "id": 57,
+  "question_type": "single_select_4orless",
+  "question": "What are the necessary actions if battery is warmer than normal during a post flight inspection?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Check if there is possible excessive current drawn"
+    },
+    {
+      "key": "B",
+      "text": "It is normal and requires no action"
+    },
+    {
+      "key": "C",
+      "text": "Store the battery in a refrigerator to cool it"
+    },
+    {
+      "key": "D",
+      "text": "Throw away the battery"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 04",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

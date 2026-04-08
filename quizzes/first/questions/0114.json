@@ -1,0 +1,40 @@
+{
+  "id": 114,
+  "question_type": "single_select_4orless",
+  "question": "On a multirotor (UA) with an underslung load, the forward centre of gravity (CG) limit is reached. When the underslung load is released, the aircraft will:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Only move laterally"
+    },
+    {
+      "key": "B",
+      "text": "Remain in the same position"
+    },
+    {
+      "key": "C",
+      "text": "Pitch down"
+    },
+    {
+      "key": "D",
+      "text": "Pitch up"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 05",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

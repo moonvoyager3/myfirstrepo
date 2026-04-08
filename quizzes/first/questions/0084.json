@@ -1,0 +1,36 @@
+{
+  "id": 84,
+  "question_type": "single_select_4orless",
+  "question": "What should a drone pilot consider regarding the propeller wash effect when flying close to the ground?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "It can cause the drone to ascend rapidly."
+    },
+    {
+      "key": "B",
+      "text": "It has no significant effect."
+    },
+    {
+      "key": "C",
+      "text": "It can lead to reduced stability and control."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 02",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Propeller wash / ground effect question."
+}

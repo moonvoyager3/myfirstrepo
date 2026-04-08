@@ -1,0 +1,40 @@
+{
+  "id": 419,
+  "question_type": "single_select_4orless",
+  "question": "What can reduce or eliminate stress from an operational flight?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Performance bonus"
+    },
+    {
+      "key": "B",
+      "text": "Numerous contract pricing"
+    },
+    {
+      "key": "C",
+      "text": "Proper planning"
+    },
+    {
+      "key": "D",
+      "text": "Lack of contract competition"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 05 03",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 05 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Stress reduction by planning."
+}

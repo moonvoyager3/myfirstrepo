@@ -1,0 +1,36 @@
+{
+  "id": 47,
+  "question_type": "single_select_4orless",
+  "question": "What is the recommended action if a drone pilot notices a decrease in signal strength during a flight?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Continue the flight as planned."
+    },
+    {
+      "key": "B",
+      "text": "Adjust the antenna direction."
+    },
+    {
+      "key": "C",
+      "text": "Return the drone to a safer distance."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 03",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Loss of signal strength / C2 link handling question."
+}

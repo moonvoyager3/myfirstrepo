@@ -1,0 +1,40 @@
+{
+  "id": 500,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following statement is incorrect, with regards to maintenance practice?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "The item must be restored to its original reliability after maintenance action."
+    },
+    {
+      "key": "B",
+      "text": "Maintenance will consist of a mixture of Preventive and Corrective work."
+    },
+    {
+      "key": "C",
+      "text": "There should be scheduled inspections to monitor the progress of wear-out processes."
+    },
+    {
+      "key": "D",
+      "text": "Scheduled maintenance can be lapsed for a maximum of 5 days to support operation availability."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 03",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Maintenance practice."
+}

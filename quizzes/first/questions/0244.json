@@ -1,0 +1,40 @@
+{
+  "id": 244,
+  "question_type": "single_select_4orless",
+  "question": "What is the cost for each addition or change to an unmanned aircraft type listed in the operator permit?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "$350"
+    },
+    {
+      "key": "B",
+      "text": "$400"
+    },
+    {
+      "key": "C",
+      "text": "$450"
+    },
+    {
+      "key": "D",
+      "text": "$500"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Operator permit amendment fee question."
+}

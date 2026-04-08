@@ -1,0 +1,40 @@
+{
+  "id": 237,
+  "question_type": "single_select_4orless",
+  "question": "A UAS Pilot, who operates an UA that is approximately 20 kg in maximum take-off weight, intends to fly his UA in his neighbourhood park within 5km to Paya Lebar Air Base for recreation. Which of the following clearances is needed for his flight? I. UA Operator Permit II. Class 1 Activity Permit III. Class 2 Activity Permit IV. UAPL",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "I and II"
+    },
+    {
+      "key": "B",
+      "text": "II and IV"
+    },
+    {
+      "key": "C",
+      "text": "I, II and IV"
+    },
+    {
+      "key": "D",
+      "text": "III and IV"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

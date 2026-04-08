@@ -1,0 +1,40 @@
+{
+  "id": 266,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is true for UAPL application?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Be at least 16 years old, pass theory test and practical assessment."
+    },
+    {
+      "key": "B",
+      "text": "Be at least 18 years old, pass theory test and practical assessment."
+    },
+    {
+      "key": "C",
+      "text": "Be at least 16 years old, completed UABT, pass theory test and practical assessment."
+    },
+    {
+      "key": "D",
+      "text": "Be at least 18 years old, completed UABT, pass theory test and practical assessment."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 06 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 06 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

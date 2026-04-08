@@ -1,0 +1,40 @@
+{
+  "id": 101,
+  "question_type": "single_select_4orless",
+  "question": "An aircraft is considered to have positive static stability:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Only if it remains in its present position, after having been disturbed by the external force."
+    },
+    {
+      "key": "B",
+      "text": "If it returns to its original position, after having been disturbed."
+    },
+    {
+      "key": "C",
+      "text": "If it does not return to its original position after having been disturbed."
+    },
+    {
+      "key": "D",
+      "text": "If it moves, after having been disturbed, and continues to deviate further from its original position."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 05",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

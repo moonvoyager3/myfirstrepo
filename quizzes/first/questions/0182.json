@@ -1,0 +1,40 @@
+{
+  "id": 182,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following best defines educational purpose?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "An organization conducting a flight demonstration with its UA to its prospective customers."
+    },
+    {
+      "key": "B",
+      "text": "Students flying their personal UA in a school's compound."
+    },
+    {
+      "key": "C",
+      "text": "A business providing UA training."
+    },
+    {
+      "key": "D",
+      "text": "Any lecture, tutorial, seminar, demonstration, class or similar activity on UA provided by an educational institution as defined in section 72 of the Private Education Act (Cap. 247A)."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Permits, registration, and UAPL rules are being tested."
+}

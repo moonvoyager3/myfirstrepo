@@ -1,0 +1,40 @@
+{
+  "id": 83,
+  "question_type": "single_select_4orless",
+  "question": "What happens when an airfoil exceeds the critical angle of attack?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Stall"
+    },
+    {
+      "key": "B",
+      "text": "Descend"
+    },
+    {
+      "key": "C",
+      "text": "Improved boundary airflow"
+    },
+    {
+      "key": "D",
+      "text": "Climb"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 02",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Angle of attack is an aerofoil concept."
+}

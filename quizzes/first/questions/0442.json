@@ -1,0 +1,40 @@
+{
+  "id": 442,
+  "question_type": "single_select_4orless",
+  "question": "Flying responsibility includes good aeronautical decision making. The common cause of aviation accidents is:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Human factors"
+    },
+    {
+      "key": "B",
+      "text": "Systems failure"
+    },
+    {
+      "key": "C",
+      "text": "Inaccurate Loading"
+    },
+    {
+      "key": "D",
+      "text": "Structural failure"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 02",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Human factors as accident cause."
+}

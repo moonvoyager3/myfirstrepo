@@ -1,0 +1,40 @@
+{
+  "id": 160,
+  "question_type": "single_select_4orless",
+  "question": "What is the penalty for first offence should one contravene the guideline, 'Maximum visual line of sight (VLOS) distance between the UA pilot and the UA must not exceed 400m' according to the CAAS ANA-101?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Fine not exceeding $20,000 or to imprisonment for a term not exceeding 1 year or both."
+    },
+    {
+      "key": "B",
+      "text": "Fine not exceeding $30,000 or to imprisonment for a term not exceeding 2 years or both."
+    },
+    {
+      "key": "C",
+      "text": "Fine not exceeding $50,000 or to imprisonment for a term not exceeding 1 year or both."
+    },
+    {
+      "key": "D",
+      "text": "Fine not exceeding $50,000 or to imprisonment for a term not exceeding 2 years or both."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 01 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

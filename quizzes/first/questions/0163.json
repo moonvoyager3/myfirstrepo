@@ -1,0 +1,40 @@
+{
+  "id": 163,
+  "question_type": "single_select_4orless",
+  "question": "A remote pilot in command conducting a search operation around a fire scene with a UA briefly loses sight of the aircraft while it is temporarily behind a dense column of smoke. The pilot _____",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "may continue with binoculars."
+    },
+    {
+      "key": "B",
+      "text": "may continue the flight without regaining visual line of sight."
+    },
+    {
+      "key": "C",
+      "text": "must reroute the flight path to maintain visual line of sight."
+    },
+    {
+      "key": "D",
+      "text": "may continue if the visual line of sight can be maintained for 50% of the route."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Brief loss of sight is not acceptable; VLOS must be maintained."
+}

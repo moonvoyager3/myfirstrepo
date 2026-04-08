@@ -1,0 +1,40 @@
+{
+  "id": 361,
+  "question_type": "single_select_4orless",
+  "question": "How does headwind affect the aircraft during take-off?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "It doesn't affect the aircraft"
+    },
+    {
+      "key": "B",
+      "text": "It increases the aircraft take-off run"
+    },
+    {
+      "key": "C",
+      "text": "It increases the aircraft's lift"
+    },
+    {
+      "key": "D",
+      "text": "It increases the aircraft speed faster"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 04",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Headwind and take-off performance."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 389,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is a symptom of fatigue?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Muscle spasms"
+    },
+    {
+      "key": "B",
+      "text": "Fever"
+    },
+    {
+      "key": "C",
+      "text": "Hyperactive"
+    },
+    {
+      "key": "D",
+      "text": "Slow reaction time"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 02 01",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Human-factors/physiology topics are being tested."
+}

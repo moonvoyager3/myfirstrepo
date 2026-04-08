@@ -1,0 +1,40 @@
+{
+  "id": 82,
+  "question_type": "single_select_4orless",
+  "question": "What are the basic definitions of ground effect?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "The negative influence on the lifting characteristics of the vertical surfaces of an aircraft wing when it is close to the ground."
+    },
+    {
+      "key": "B",
+      "text": "The positive influence on the lifting characteristics of the horizontal surfaces of an aircraft wing when it is further away from the ground."
+    },
+    {
+      "key": "C",
+      "text": "The negative influence on the lifting characteristics of the horizontal surfaces of an aircraft wing when it is close to the ground."
+    },
+    {
+      "key": "D",
+      "text": "The positive influence on the lifting characteristics of the horizontal surfaces of an aircraft wing when it is close to the ground."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 02",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

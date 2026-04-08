@@ -1,0 +1,40 @@
+{
+  "id": 6,
+  "question_type": "single_select_4orless",
+  "question": "How does powered-lift UA generate lift?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Helium gas"
+    },
+    {
+      "key": "B",
+      "text": "Aerodynamic reactions on surfaces which remain fixed under given conditions of flight"
+    },
+    {
+      "key": "C",
+      "text": "Engine-driven lift devices or engine thrust for the lift during vertical flight regimes and on non-rotating aerofoils for lift during horizontal flight"
+    },
+    {
+      "key": "D",
+      "text": "Engine thrust only"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 01 02",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

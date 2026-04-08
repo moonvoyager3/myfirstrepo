@@ -1,0 +1,40 @@
+{
+  "id": 436,
+  "question_type": "single_select_4orless",
+  "question": "Situation awareness is the skill of?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Predicting weather changes early."
+    },
+    {
+      "key": "B",
+      "text": "Understanding what is going on around you throughout the flight."
+    },
+    {
+      "key": "C",
+      "text": "Understanding weather associated risks on a flight track, before the flight."
+    },
+    {
+      "key": "D",
+      "text": "Completing mission on time."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Situation awareness."
+}

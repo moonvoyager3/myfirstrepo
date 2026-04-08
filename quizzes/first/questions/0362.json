@@ -1,0 +1,36 @@
+{
+  "id": 362,
+  "question_type": "single_select_4orless",
+  "question": "How does tailwind affect the aircraft flight?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "It increases the aircraft ground speed."
+    },
+    {
+      "key": "B",
+      "text": "It decreases the aircraft ground speed."
+    },
+    {
+      "key": "C",
+      "text": "It doesn't affect the aircraft ground speed."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 04",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Tailwind increases ground speed."
+}

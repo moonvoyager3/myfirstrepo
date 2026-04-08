@@ -1,0 +1,40 @@
+{
+  "id": 480,
+  "question_type": "single_select_4orless",
+  "question": "Who has the responsibility for the safe conduct of a UAS flight?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "UA operator"
+    },
+    {
+      "key": "B",
+      "text": "UA owner"
+    },
+    {
+      "key": "C",
+      "text": "CAAS"
+    },
+    {
+      "key": "D",
+      "text": "Operations manager"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Responsibility for safe conduct aligns with flight planning and operational checks."
+}

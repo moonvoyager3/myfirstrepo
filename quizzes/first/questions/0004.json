@@ -1,0 +1,40 @@
+{
+  "id": 4,
+  "question_type": "single_select_4orless",
+  "question": "Airship is a:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Non-powered lighter than air aircraft"
+    },
+    {
+      "key": "B",
+      "text": "Seaplane"
+    },
+    {
+      "key": "C",
+      "text": "Free balloon capable of carrying cargo"
+    },
+    {
+      "key": "D",
+      "text": "Power-driven lighter than air aircraft"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 01 02",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

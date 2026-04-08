@@ -1,0 +1,36 @@
+{
+  "id": 327,
+  "question_type": "single_select_4orless",
+  "question": "What is the impact of high humidity on drone flight?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "It increases lift and improves performance."
+    },
+    {
+      "key": "B",
+      "text": "It has no significant effect."
+    },
+    {
+      "key": "C",
+      "text": "It can reduce lift and affect battery life."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 01",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Humidity effect on flight question."
+}

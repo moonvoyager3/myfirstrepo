@@ -1,0 +1,40 @@
+{
+  "id": 415,
+  "question_type": "single_select_4orless",
+  "question": "Why is it necessary for a UA Pilot to maintain good mental fitness?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Ensure UA has good center of gravity."
+    },
+    {
+      "key": "B",
+      "text": "Vital for safe flight operations as the main workload of an individual is intellectual in nature."
+    },
+    {
+      "key": "C",
+      "text": "Prevent loose wires from contacting spinning propellers."
+    },
+    {
+      "key": "D",
+      "text": "Prevent radio systems from being interfered or to interfere other radio equipment."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 05 02",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Mental fitness is tied to safe judgement under stress."
+}

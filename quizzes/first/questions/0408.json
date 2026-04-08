@@ -1,0 +1,36 @@
+{
+  "id": 408,
+  "question_type": "single_select_4orless",
+  "question": "You are a remote pilot for a co-op energy service provider. You are to use your UA to inspect power lines in a remote area 15 hours away from your home office. After the drive, fatigue impacts your abilities to complete your assignment on time. Fatigue can be recognized:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "easily by an experienced pilot."
+    },
+    {
+      "key": "B",
+      "text": "as being in an impaired state."
+    },
+    {
+      "key": "C",
+      "text": "by an ability to overcome sleep deprivation."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 04 02",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 04 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Fatigue recognition."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 10,
+  "question_type": "single_select_4orless",
+  "question": "What is the benefit of performing mapping using UA instead of satellite?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "UA can cover more areas than satellites"
+    },
+    {
+      "key": "B",
+      "text": "Satellites do not capture clear images"
+    },
+    {
+      "key": "C",
+      "text": "UA can fly at a higher cruise speed"
+    },
+    {
+      "key": "D",
+      "text": "Images taken from a UA will not be affected by high-altitude cloud coverage"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 01 03",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 01 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

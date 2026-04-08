@@ -1,0 +1,40 @@
+{
+  "id": 56,
+  "question_type": "single_select_4orless",
+  "question": "How will damaged components affect UA flight operations? I. Cuts and stab injuries caused by broken propeller blades II. Aged batteries combust and cause environmental damage III. Fall from a height causing significant damage",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "I and II"
+    },
+    {
+      "key": "B",
+      "text": "I and III"
+    },
+    {
+      "key": "C",
+      "text": "II and III"
+    },
+    {
+      "key": "D",
+      "text": "All of the above"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 04",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

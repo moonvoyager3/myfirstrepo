@@ -1,0 +1,40 @@
+{
+  "id": 474,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is not part of the post-flight check of the UA?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Disarming"
+    },
+    {
+      "key": "B",
+      "text": "Record Flight Details"
+    },
+    {
+      "key": "C",
+      "text": "Proper storage"
+    },
+    {
+      "key": "D",
+      "text": "Calibration"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Post-flight checks."
+}

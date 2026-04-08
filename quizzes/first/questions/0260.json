@@ -1,0 +1,40 @@
+{
+  "id": 260,
+  "question_type": "single_select_4orless",
+  "question": "Users who fail to produce a valid UA Basic Training certificate, UA Pilot Licence (UAPL), activity or operator permit during the verification checks by CAAS enforcement officers could face:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "a fine up to $10,000 for a first offence, and a fine of up to $20,000 or imprisonment not exceeding 10 months, or both for a second or subsequent offence."
+    },
+    {
+      "key": "B",
+      "text": "a fine up to $10,000 for a first offence, and a fine of up to $20,000 or imprisonment not exceeding 15 months, or both for a second or subsequent offence."
+    },
+    {
+      "key": "C",
+      "text": "a fine up to $20,000 for a first offence, and a fine of up to $40,000 or imprisonment not exceeding 10 months, or both for a second or subsequent offence."
+    },
+    {
+      "key": "D",
+      "text": "a fine up to $20,000 for a first offence, and a fine of up to $40,000 or imprisonment not exceeding 15 months, or both for a second or subsequent offence."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 06 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 06 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 49,
+  "question_type": "single_select_4orless",
+  "question": "What should you do to get the best signal from the remote controller when the UA is flying in front of the pilot? I. The tip of the antenna should not point directly at the UA. II. The antennas are positioned upwards and the strongest signal is in a line perpendicular to them. III. The lengths of the antennas should cross each other.",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "I and II"
+    },
+    {
+      "key": "B",
+      "text": "I and III"
+    },
+    {
+      "key": "C",
+      "text": "II and III"
+    },
+    {
+      "key": "D",
+      "text": "All of the above"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 03",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

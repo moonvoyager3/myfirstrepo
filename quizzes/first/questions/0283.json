@@ -1,0 +1,40 @@
+{
+  "id": 283,
+  "question_type": "single_select_4orless",
+  "question": "High Dilution of Precision (DOP) value of the GNSS satellites will:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Not occur as satellites travel in very precise orbits"
+    },
+    {
+      "key": "B",
+      "text": "Will result in significant position error."
+    },
+    {
+      "key": "C",
+      "text": "Will be corrected by the on board position thruster."
+    },
+    {
+      "key": "D",
+      "text": "Will not cause a position error."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 01 02",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

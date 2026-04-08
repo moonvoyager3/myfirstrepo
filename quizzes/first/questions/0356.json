@@ -1,0 +1,40 @@
+{
+  "id": 356,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following best describes cumulonimbus clouds?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Vertical development, unstable conditions rising to the tropopause."
+    },
+    {
+      "key": "B",
+      "text": "Dark, grey, featureless layers of cloud, thick enough to block out the Sun."
+    },
+    {
+      "key": "C",
+      "text": "Thin and wispy with a silky sheen appearance."
+    },
+    {
+      "key": "D",
+      "text": "Uniformly grey, smooth, and mostly featureless."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 03",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

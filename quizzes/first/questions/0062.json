@@ -1,0 +1,40 @@
+{
+  "id": 62,
+  "question_type": "single_select_4orless",
+  "question": "An unmanned aeroplane (UA), in straight and level flight, at a constant airspeed:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "lift equals thrust plus drag."
+    },
+    {
+      "key": "B",
+      "text": "Thrust equals drag and lift equals weight."
+    },
+    {
+      "key": "C",
+      "text": "Thrust is greater than drag and lift is greater than weight."
+    },
+    {
+      "key": "D",
+      "text": "Thrust equals weight and lift equals drag."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 01",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

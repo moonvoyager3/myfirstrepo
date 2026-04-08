@@ -1,0 +1,40 @@
+{
+  "id": 36,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following can a 2.4 GHz receiver be bound to?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "2.4 GHz transmitter of any brand/model"
+    },
+    {
+      "key": "B",
+      "text": "any radio transmitter"
+    },
+    {
+      "key": "C",
+      "text": "2.4 GHz transmitter of the same brand/model"
+    },
+    {
+      "key": "D",
+      "text": "None of the above"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 02",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

@@ -1,0 +1,36 @@
+{
+  "id": 366,
+  "question_type": "single_select_4orless",
+  "question": "While operating around buildings, the Remote Pilot in Command should be aware of the creation of wind gusts that:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Change rapidly in direction and speed causing turbulence."
+    },
+    {
+      "key": "B",
+      "text": "Increase performance of the aircraft."
+    },
+    {
+      "key": "C",
+      "text": "Enhance stability and imagery."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 04",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Wind gusts and building-induced turbulence."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 409,
+  "question_type": "single_select_4orless",
+  "question": "How does a UA operator manage his/her own fatigue level and what are the techniques?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "By consuming more energy drinks and tablets to maintain its fatigue level."
+    },
+    {
+      "key": "B",
+      "text": "Consuming alcohol, the day before the UAS operation to have a deeper sleep."
+    },
+    {
+      "key": "C",
+      "text": "Managing own sleeping patterns on intervals, for example two hours of sleep and 1 hour of activity."
+    },
+    {
+      "key": "D",
+      "text": "Ensure adequate rest and sleep, a well-balanced diet, cutting back on caffeine and exercise regularly."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 04 03",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 04 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Fatigue management techniques."
+}

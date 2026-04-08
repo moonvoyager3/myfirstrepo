@@ -1,0 +1,36 @@
+{
+  "id": 352,
+  "question_type": "single_select_4orless",
+  "question": "What clouds have the greatest turbulence?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Towering cumulus."
+    },
+    {
+      "key": "B",
+      "text": "Cumulonimbus"
+    },
+    {
+      "key": "C",
+      "text": "Nimbostratus"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 03",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Cumulonimbus turbulence question."
+}

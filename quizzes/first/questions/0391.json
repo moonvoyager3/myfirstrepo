@@ -1,0 +1,40 @@
+{
+  "id": 391,
+  "question_type": "single_select_4orless",
+  "question": "During night UA operations, what are you able to see?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Objects beyond the horizon"
+    },
+    {
+      "key": "B",
+      "text": "Objects beyond your line of sight"
+    },
+    {
+      "key": "C",
+      "text": "Nothing"
+    },
+    {
+      "key": "D",
+      "text": "Only objects directly within your line of sight"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 02 02",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Night operations still rely on correct visual scanning."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 364,
+  "question_type": "single_select_4orless",
+  "question": "What is a crosswind?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Winds that are parallel to the line of travel."
+    },
+    {
+      "key": "B",
+      "text": "Winds that are not parallel to the line of travel."
+    },
+    {
+      "key": "C",
+      "text": "Winds that are against the aircraft."
+    },
+    {
+      "key": "D",
+      "text": "Winds that are with the aircraft."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 04",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Crosswind definition."
+}

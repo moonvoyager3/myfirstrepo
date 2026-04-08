@@ -1,0 +1,40 @@
+{
+  "id": 241,
+  "question_type": "single_select_4orless",
+  "question": "An UA Operator Permit is valid for:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Up to 6 months."
+    },
+    {
+      "key": "B",
+      "text": "Up to 9 months."
+    },
+    {
+      "key": "C",
+      "text": "Up to 12 months."
+    },
+    {
+      "key": "D",
+      "text": "Up to 15 months."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

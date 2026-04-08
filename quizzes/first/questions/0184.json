@@ -1,0 +1,40 @@
+{
+  "id": 184,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following does not constitute an activity for recreational purpose?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "A hobbyist flying his racing drone with a group of friends for fun."
+    },
+    {
+      "key": "B",
+      "text": "A sporting activity that forms part of an organized group activity or organized competition or tournament (such as a flying display)."
+    },
+    {
+      "key": "C",
+      "text": "A hobbyist learning how to fly his UA."
+    },
+    {
+      "key": "D",
+      "text": "An avid photographer taking landscape photos of the Marina Bay skyline with his UA."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Permits, registration, and UAPL rules are being tested."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 457,
+  "question_type": "single_select_4orless",
+  "question": "In the aeronautical decision making (ADM) process, what is the first step in neutralizing a hazardous attitude?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Making a rational judgment"
+    },
+    {
+      "key": "B",
+      "text": "Recognizing hazardous thoughts"
+    },
+    {
+      "key": "C",
+      "text": "Recognizing the invulnerability of the situation"
+    },
+    {
+      "key": "D",
+      "text": "Getting help from someone"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 05",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Hazardous-attitude antidotes and neutralization."
+}

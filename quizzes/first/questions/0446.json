@@ -1,0 +1,40 @@
+{
+  "id": 446,
+  "question_type": "single_select_4orless",
+  "question": "What is Get-Home-Itis?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Homesickness"
+    },
+    {
+      "key": "B",
+      "text": "Forgetting to set the \"Return To Home\" point"
+    },
+    {
+      "key": "C",
+      "text": "Blinded by the desire to \"finish the job\""
+    },
+    {
+      "key": "D",
+      "text": "Hurrying the \"Return To Home\" time"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 03",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Get-home-it-is is a hazardous mindset topic."
+}

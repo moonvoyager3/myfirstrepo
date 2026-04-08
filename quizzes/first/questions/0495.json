@@ -1,0 +1,40 @@
+{
+  "id": 495,
+  "question_type": "single_select_4orless",
+  "question": "After a flight check, you notice a small nick in a propeller blade leading edge, you should:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Continue the flight and check for additional damage after the flight."
+    },
+    {
+      "key": "B",
+      "text": "Replace the propeller and consult the manufacturer for any possible repair advice."
+    },
+    {
+      "key": "C",
+      "text": "Continue operation but only at sites free from loose twigs, stones and debris."
+    },
+    {
+      "key": "D",
+      "text": "Continue the flight but limit the propeller RPM to 75% maximum speed."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 03",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Damaged propeller maintenance."
+}

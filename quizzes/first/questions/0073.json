@@ -1,0 +1,40 @@
+{
+  "id": 73,
+  "question_type": "single_select_4orless",
+  "question": "What is total Drag?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "All the forces that helps the aircraft move forward"
+    },
+    {
+      "key": "B",
+      "text": "All the forces that helps the aircraft climb"
+    },
+    {
+      "key": "C",
+      "text": "All the forces that opposes the aircraft's motion through the air"
+    },
+    {
+      "key": "D",
+      "text": "All the forces that pulls an aircraft down"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 01",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

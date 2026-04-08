@@ -1,0 +1,36 @@
+{
+  "id": 471,
+  "question_type": "single_select_4orless",
+  "question": "What is needed during a flight review?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Review of the current general operating and flight rules."
+    },
+    {
+      "key": "B",
+      "text": "A review of those maneuvers and procedures."
+    },
+    {
+      "key": "C",
+      "text": "All of the above."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Flight review and checks question."
+}

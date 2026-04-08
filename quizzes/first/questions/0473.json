@@ -1,0 +1,40 @@
+{
+  "id": 473,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is an ideal condition to operate your UA?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Flying behind buildings"
+    },
+    {
+      "key": "B",
+      "text": "Flying in good weather conditions and within line of sight"
+    },
+    {
+      "key": "C",
+      "text": "Flying into low lying clouds"
+    },
+    {
+      "key": "D",
+      "text": "Flying behind a tree"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Ideal operating conditions are part of flight planning and conduct."
+}

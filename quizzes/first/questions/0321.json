@@ -1,0 +1,36 @@
+{
+  "id": 321,
+  "question_type": "single_select_4orless",
+  "question": "What effect does high density altitude have on the efficiency of a UA propeller?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Propeller efficiency is increased."
+    },
+    {
+      "key": "B",
+      "text": "Propeller efficiency is decreased."
+    },
+    {
+      "key": "C",
+      "text": "Density altitude does not affect propeller efficiency."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 01",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "High density altitude reduces propeller efficiency."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 294,
+  "question_type": "single_select_4orless",
+  "question": "Real Time Kinematics (RTK) is",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "An additional piece of equipment to augment GPS satellite signal strength in orbit."
+    },
+    {
+      "key": "B",
+      "text": "A differential GNSS technique that provides high performance positioning in the vicinity of a base station."
+    },
+    {
+      "key": "C",
+      "text": "A portable station that provides WiFi for the device."
+    },
+    {
+      "key": "D",
+      "text": "A device that augments and boosts the satellite signal strength."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 01 03",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 01 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

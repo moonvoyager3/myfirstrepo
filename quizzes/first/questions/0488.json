@@ -1,0 +1,36 @@
+{
+  "id": 488,
+  "question_type": "single_select_4orless",
+  "question": "What action should the Remote PIC take upon GPS signal loss?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Follow normal UAS operational procedures, noting any mode or control changes that normally occur if GPS is lost."
+    },
+    {
+      "key": "B",
+      "text": "Perform the planned flyaway emergency procedure."
+    },
+    {
+      "key": "C",
+      "text": "Land the unmanned aircraft immediately prior to loss of control."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 02",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "GPS signal loss procedure."
+}

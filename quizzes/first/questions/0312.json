@@ -1,0 +1,40 @@
+{
+  "id": 312,
+  "question_type": "single_select_4orless",
+  "question": "How does Dynamic Pressure act on the aircraft if it's flying forward?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Acts only in opposite direction of movement."
+    },
+    {
+      "key": "B",
+      "text": "Acts only from the side of the aircraft."
+    },
+    {
+      "key": "C",
+      "text": "Acts only from beneath the aircraft."
+    },
+    {
+      "key": "D",
+      "text": "Acts only in the direction of movement."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 01",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Dynamic pressure direction."
+}

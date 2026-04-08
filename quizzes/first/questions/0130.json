@@ -1,0 +1,40 @@
+{
+  "id": 130,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is true for an aircraft with positive static stability?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "An aircraft that has positive static stability sees the oscillations continue to either side of the original attitude but become smaller when it is disturbed."
+    },
+    {
+      "key": "B",
+      "text": "An aircraft that has positive static stability tends to return to its original attitude when it is disturbed."
+    },
+    {
+      "key": "C",
+      "text": "An aircraft that has positive static stability initially tends to return to its original attitude when it is disturbed and continues in that direction."
+    },
+    {
+      "key": "D",
+      "text": "An aircraft that has positive static stability remains in its attitude when it is disturbed."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 05",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Aircraft stability and centre-of-gravity topics."
+}

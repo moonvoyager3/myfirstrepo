@@ -1,0 +1,40 @@
+{
+  "id": 61,
+  "question_type": "single_select_4orless",
+  "question": "A heavy aircraft will result in",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "lower Landing Speed"
+    },
+    {
+      "key": "B",
+      "text": "higher Landing Speed"
+    },
+    {
+      "key": "C",
+      "text": "lower Stall Speed"
+    },
+    {
+      "key": "D",
+      "text": "no change in Landing Speed"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 01",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "A heavier aircraft needs more lift and therefore higher landing speed."
+}

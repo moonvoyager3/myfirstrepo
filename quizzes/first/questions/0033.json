@@ -1,0 +1,40 @@
+{
+  "id": 33,
+  "question_type": "single_select_4orless",
+  "question": "What is the minimum number of channels required on a radio control receiver for the operation of a Multirotor UA?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "2"
+    },
+    {
+      "key": "B",
+      "text": "3"
+    },
+    {
+      "key": "C",
+      "text": "4"
+    },
+    {
+      "key": "D",
+      "text": "6"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 02",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

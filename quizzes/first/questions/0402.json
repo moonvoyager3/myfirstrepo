@@ -1,0 +1,40 @@
+{
+  "id": 402,
+  "question_type": "single_select_4orless",
+  "question": "Psychoactive substances while operating an UA,",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Is acceptable if the substance is prescribed by a doctor."
+    },
+    {
+      "key": "B",
+      "text": "May render a person unable to operate the aircraft."
+    },
+    {
+      "key": "C",
+      "text": "Is acceptable if the substance is legally purchased."
+    },
+    {
+      "key": "D",
+      "text": "Is acceptable for night flying of an UA as it enhances visual scanning."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 03 02",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 03 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Effects of psychoactive substances."
+}

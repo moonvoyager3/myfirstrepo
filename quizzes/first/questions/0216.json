@@ -1,0 +1,40 @@
+{
+  "id": 216,
+  "question_type": "single_select_4orless",
+  "question": "What is the penalty for displaying a false registration label on an unmanned aircraft?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "A fine not exceeding $10,000, or imprisonment not exceeding 6 months, or both."
+    },
+    {
+      "key": "B",
+      "text": "A fine not exceeding $20,000, or imprisonment not exceeding 6 months, or both."
+    },
+    {
+      "key": "C",
+      "text": "A fine not exceeding $15,000, or imprisonment not exceeding 6 months, or both."
+    },
+    {
+      "key": "D",
+      "text": "A fine not exceeding $5,000, or imprisonment not exceeding 6 months, or both."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 04 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 04 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "False registration label relates directly to UA registration requirements."
+}

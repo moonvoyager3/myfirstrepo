@@ -1,0 +1,40 @@
+{
+  "id": 179,
+  "question_type": "single_select_4orless",
+  "question": "When an UA accident involves serious injuries to a person, UA Pilot should:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "call the police and ambulance then providing the necessary assistance to the injured person."
+    },
+    {
+      "key": "B",
+      "text": "notify the CAAS as soon as possible while providing the necessary assistance to the injured person."
+    },
+    {
+      "key": "C",
+      "text": "send the person for treatment and pay for the medical fee."
+    },
+    {
+      "key": "D",
+      "text": "call the police and leave the accident site."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Question covers reporting obligations after a serious-injury accident."
+}

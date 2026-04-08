@@ -1,0 +1,40 @@
+{
+  "id": 157,
+  "question_type": "single_select_4orless",
+  "question": "Which one of the following is an example of a reportable safety matters?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Near collision of the UA"
+    },
+    {
+      "key": "B",
+      "text": "Flying inside private property"
+    },
+    {
+      "key": "C",
+      "text": "Testing of UA inside laboratory"
+    },
+    {
+      "key": "D",
+      "text": "Assembly of UA in household residence"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 01 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 01 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Reportable safety matters fall under statutory UAS-related provisions in the Act."
+}

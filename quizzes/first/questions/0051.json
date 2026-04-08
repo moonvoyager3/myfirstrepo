@@ -1,0 +1,40 @@
+{
+  "id": 51,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following are methods used to communicate between UAVs and ground stations?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Satellite dishes within UAVs"
+    },
+    {
+      "key": "B",
+      "text": "Direct wireless links, such as Wi-Fi channels"
+    },
+    {
+      "key": "C",
+      "text": "Tethered data links to ground stations"
+    },
+    {
+      "key": "D",
+      "text": "All of the above"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 03",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

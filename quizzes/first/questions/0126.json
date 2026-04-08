@@ -1,0 +1,40 @@
+{
+  "id": 126,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following helps to increase dynamic stability?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Move CG Aft"
+    },
+    {
+      "key": "B",
+      "text": "Move CP Aft"
+    },
+    {
+      "key": "C",
+      "text": "Move CG forward"
+    },
+    {
+      "key": "D",
+      "text": "Move CP forward"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 05",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Dynamic stability is explicit syllabus content."
+}

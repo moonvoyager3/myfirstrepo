@@ -1,0 +1,40 @@
+{
+  "id": 137,
+  "question_type": "single_select_4orless",
+  "question": "Elevator control movement is along which axis?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Longitudinal"
+    },
+    {
+      "key": "B",
+      "text": "Lateral"
+    },
+    {
+      "key": "C",
+      "text": "Vertical"
+    },
+    {
+      "key": "D",
+      "text": "None of the above"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 02 01",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Elevator motion is along the pitch axis."
+}

@@ -1,0 +1,36 @@
+{
+  "id": 458,
+  "question_type": "single_select_4orless",
+  "question": "This is a type of hazardous attitude characterized by wanting to do everything quickly with no due consideration of safety measures and operational objectives.",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Invulnerability"
+    },
+    {
+      "key": "B",
+      "text": "Machismo"
+    },
+    {
+      "key": "C",
+      "text": "Impulsivity"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 05",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Impulsivity hazardous attitude question."
+}

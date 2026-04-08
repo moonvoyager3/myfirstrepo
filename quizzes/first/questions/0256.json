@@ -1,0 +1,40 @@
+{
+  "id": 256,
+  "question_type": "single_select_4orless",
+  "question": "A person found guilty of being unable to produce an UAPL when required may:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Have their UAPL suspended for minimum 12 months."
+    },
+    {
+      "key": "B",
+      "text": "Be sentenced to imprisonment for a period not exceeding 12 months."
+    },
+    {
+      "key": "C",
+      "text": "Have their UAPL cancelled and be required to resit their UAPL qualifications."
+    },
+    {
+      "key": "D",
+      "text": "Be fined an amount not exceeding $20,000 in first instance."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 06 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 06 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

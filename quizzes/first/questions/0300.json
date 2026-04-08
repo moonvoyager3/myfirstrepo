@@ -1,0 +1,40 @@
+{
+  "id": 300,
+  "question_type": "single_select_4orless",
+  "question": "Magnetometer accuracy is affected by",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "uneven heating of the earth's surface"
+    },
+    {
+      "key": "B",
+      "text": "rapid ascend and descend"
+    },
+    {
+      "key": "C",
+      "text": "position of the sun/moon"
+    },
+    {
+      "key": "D",
+      "text": "local magnetic fields"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 01 04",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 01 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Magnetometer accuracy is a navigation/guidance sensor topic."
+}

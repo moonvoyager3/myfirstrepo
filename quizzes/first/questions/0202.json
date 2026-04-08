@@ -1,0 +1,40 @@
+{
+  "id": 202,
+  "question_type": "single_select_4orless",
+  "question": "What is the maximum allowable altitude for recreational users flying a 1.5kg UA in an approved fly-zone?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Above 200 feet AMSL"
+    },
+    {
+      "key": "B",
+      "text": "Below 200 feet AMSL"
+    },
+    {
+      "key": "C",
+      "text": "1000ft AMSL"
+    },
+    {
+      "key": "D",
+      "text": "No altitude limit"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 03 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Recreational altitude limits are part of airspace rules."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 437,
+  "question_type": "single_select_4orless",
+  "question": "Situational awareness in aeronautical decision-making is defined as",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Good judgment"
+    },
+    {
+      "key": "B",
+      "text": "Good piloting skills"
+    },
+    {
+      "key": "C",
+      "text": "Gut feeling"
+    },
+    {
+      "key": "D",
+      "text": "Knowing what is going on around you"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Situational awareness is a decision-making topic."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 238,
+  "question_type": "single_select_4orless",
+  "question": "Activity Permit is not required when operating an UA indoors:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "For an organised drone race."
+    },
+    {
+      "key": "B",
+      "text": "For events attended by more than 50 individuals at any time."
+    },
+    {
+      "key": "C",
+      "text": "For flying displays."
+    },
+    {
+      "key": "D",
+      "text": "In cages or netted areas that are erected outside of a conventional building."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Indoor operations and permits."
+}

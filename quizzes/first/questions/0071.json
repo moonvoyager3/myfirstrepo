@@ -1,0 +1,36 @@
+{
+  "id": 71,
+  "question_type": "single_select_4orless",
+  "question": "What are the main requirements for a quadcopter to hover successfully?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "The net thrust of the four rotors pushing the drone up must be equal to the gravitational force pulling it down."
+    },
+    {
+      "key": "B",
+      "text": "The net thrust of the 2 rear rotors pushing the drone up must be equal to the gravitational force pulling it down."
+    },
+    {
+      "key": "C",
+      "text": "The net thrust of the 2 front rotors pushing the drone up must be equal to the gravitational force pulling it down."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 01",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Hover requires thrust equal to weight."
+}

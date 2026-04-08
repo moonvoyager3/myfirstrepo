@@ -1,0 +1,40 @@
+{
+  "id": 190,
+  "question_type": "single_select_4orless",
+  "question": "Which of these UA operation is considered as education purpose?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "A public educational institute using its UA to take photographs and videos of its activities and events."
+    },
+    {
+      "key": "B",
+      "text": "A training service provider conducting UA flying courses for an educational institute's students on its behalf."
+    },
+    {
+      "key": "C",
+      "text": "A university or tertiary institute conducting a course that involves flying of a UA for its enrolled students."
+    },
+    {
+      "key": "D",
+      "text": "An organisation conducting a flight demonstration with its UA to its prospective customers."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Purpose-based UA operations question."
+}

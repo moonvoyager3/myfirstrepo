@@ -1,0 +1,40 @@
+{
+  "id": 141,
+  "question_type": "single_select_4orless",
+  "question": "When an aircraft rolls to the right and left, which axis does it move on?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Lateral"
+    },
+    {
+      "key": "B",
+      "text": "Longitudinal"
+    },
+    {
+      "key": "C",
+      "text": "Vertical"
+    },
+    {
+      "key": "D",
+      "text": "Yaw"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 02 01",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

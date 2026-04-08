@@ -1,0 +1,36 @@
+{
+  "id": 483,
+  "question_type": "single_select_4orless",
+  "question": "How should a drone pilot manage battery usage to ensure a safe return during a flight?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Monitor battery levels and plan for a return trip with adequate reserve."
+    },
+    {
+      "key": "B",
+      "text": "Only use half of the battery capacity for the outbound trip."
+    },
+    {
+      "key": "C",
+      "text": "Rely on the drone's automatic low-battery warning."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 02",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Battery usage and safe return question."
+}

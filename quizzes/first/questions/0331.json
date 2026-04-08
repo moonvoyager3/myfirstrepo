@@ -1,0 +1,36 @@
+{
+  "id": 331,
+  "question_type": "single_select_4orless",
+  "question": "Which combination of atmospheric conditions will reduce aircraft takeoff and climb performance?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Low temperature, low relative humidity, and low density altitude."
+    },
+    {
+      "key": "B",
+      "text": "High temperature, low relative humidity, and low density altitude."
+    },
+    {
+      "key": "C",
+      "text": "High temperature, high relative humidity, and high density altitude."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 01",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Performance affected by hot, humid, high-density-altitude conditions."
+}

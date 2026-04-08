@@ -1,0 +1,36 @@
+{
+  "id": 403,
+  "question_type": "single_select_4orless",
+  "question": "Which is true regarding the presence of alcohol within the human body?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "A small amount of alcohol increases vision acuity."
+    },
+    {
+      "key": "B",
+      "text": "Consuming an equal amount of water will increase the destruction of alcohol and alleviate a hangover."
+    },
+    {
+      "key": "C",
+      "text": "Judgment and decision-making abilities can be adversely affected by even small amounts of alcohol."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 03 02",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 03 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Effects of alcohol."
+}

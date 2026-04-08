@@ -1,0 +1,40 @@
+{
+  "id": 242,
+  "question_type": "single_select_4orless",
+  "question": "What is required if you intend to fly a 3kg unmanned aircraft above 200 feet AMSL outdoors to take videos for fun?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Operator Permit"
+    },
+    {
+      "key": "B",
+      "text": "Class 1 Activity Permit"
+    },
+    {
+      "key": "C",
+      "text": "UABT"
+    },
+    {
+      "key": "D",
+      "text": "UAPL"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Outdoor recreation permit question."
+}

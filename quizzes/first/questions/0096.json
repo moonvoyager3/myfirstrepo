@@ -1,0 +1,40 @@
+{
+  "id": 96,
+  "question_type": "single_select_4orless",
+  "question": "Which action is required to recover from a stall?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Pitch up till aircraft climb"
+    },
+    {
+      "key": "B",
+      "text": "Increase throttle and pitch up"
+    },
+    {
+      "key": "C",
+      "text": "Pitch down to increase airflow over wings"
+    },
+    {
+      "key": "D",
+      "text": "Invert the aircraft"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 03",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Stall recovery is explicit syllabus content."
+}

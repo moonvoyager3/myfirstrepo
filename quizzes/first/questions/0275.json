@@ -1,0 +1,40 @@
+{
+  "id": 275,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following categories fall under Class B UAPL?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Powered-lift UA with a total mass not exceeding 25kg"
+    },
+    {
+      "key": "B",
+      "text": "Airship UA with a total mass not exceeding 25kg"
+    },
+    {
+      "key": "C",
+      "text": "Rotorcraft UA above 25kg"
+    },
+    {
+      "key": "D",
+      "text": "Rotorcraft UA with a total mass not exceeding 25kg"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 06 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 06 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "UAPL classes and categories are being tested."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 377,
+  "question_type": "single_select_4orless",
+  "question": "What does each of the letters in SHELL model stand for?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Software, Hardware, Environment, Liveware"
+    },
+    {
+      "key": "B",
+      "text": "Software, Heart-ware, E-Environment, Life-ware"
+    },
+    {
+      "key": "C",
+      "text": "Safety, Hardware, Environment, Liveware"
+    },
+    {
+      "key": "D",
+      "text": "Safety, Heart-ware, Emotion, Life-ware"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 01 01",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 01 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

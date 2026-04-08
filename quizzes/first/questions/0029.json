@@ -1,0 +1,40 @@
+{
+  "id": 29,
+  "question_type": "single_select_4orless",
+  "question": "While preparing UA for flight, you notice that there is a chip at the tip of one of the propeller blades. What action should you take?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Replace all propellers on the UA."
+    },
+    {
+      "key": "B",
+      "text": "Remove and replace the damaged propeller; consult manufacturer for repair, if any."
+    },
+    {
+      "key": "C",
+      "text": "If the nick is less than 1/4 of the length of the blade, it is safe to operate without replacement."
+    },
+    {
+      "key": "D",
+      "text": "Repair by filing the nick to a smooth curve or with adhesive approved for use on the propeller material."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 01",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "General UAS knowledge and UA-category topics are being tested."
+}

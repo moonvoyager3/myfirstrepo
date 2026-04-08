@@ -1,0 +1,40 @@
+{
+  "id": 153,
+  "question_type": "single_select_4orless",
+  "question": "What are the functions of trim tabs?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Trim tabs are small surfaces connected to the trailing edge of a larger control surface on a boat or aircraft, used to control the trim of the controls."
+    },
+    {
+      "key": "B",
+      "text": "Allow the pilot to apply rudder controls quicker than usual."
+    },
+    {
+      "key": "C",
+      "text": "To control movement about the longitudinal axis of an aircraft."
+    },
+    {
+      "key": "D",
+      "text": "Trim tabs are small, primary flight control surfaces that are attached to the trailing edge of a larger, primary control surface such as an elevator or rudder."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 02 03",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

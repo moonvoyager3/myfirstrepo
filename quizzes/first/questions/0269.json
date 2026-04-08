@@ -1,0 +1,40 @@
+{
+  "id": 269,
+  "question_type": "single_select_4orless",
+  "question": "What information is not required to add a Class B rating to the UAPL?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Approved UA model within an operator permit."
+    },
+    {
+      "key": "B",
+      "text": "Practical assessment results of the applicant."
+    },
+    {
+      "key": "C",
+      "text": "Valid Class A UAPL of the corresponding category."
+    },
+    {
+      "key": "D",
+      "text": "Evidence of competency in operating the specific UA."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 06 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 06 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Class B rating addition question."
+}

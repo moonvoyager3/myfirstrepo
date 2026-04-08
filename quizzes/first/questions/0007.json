@@ -1,0 +1,40 @@
+{
+  "id": 7,
+  "question_type": "single_select_4orless",
+  "question": "What is the advantage of using a multirotor over an aeroplane?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Higher cruise speed"
+    },
+    {
+      "key": "B",
+      "text": "Looks cool"
+    },
+    {
+      "key": "C",
+      "text": "Higher landing speed"
+    },
+    {
+      "key": "D",
+      "text": "Able to take off in confined spaces"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 01 02",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Multirotor advantages are category/operating-principle content."
+}

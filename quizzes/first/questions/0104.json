@@ -1,0 +1,36 @@
+{
+  "id": 104,
+  "question_type": "single_select_4orless",
+  "question": "An unmanned aircraft has been loaded in such a manner that the CG is located aft of the aft CG limit. One undesirable flight characteristic a remote pilot might experience with this aircraft would be,",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "a longer takeoff run."
+    },
+    {
+      "key": "B",
+      "text": "difficulty in recovering from a stalled condition."
+    },
+    {
+      "key": "C",
+      "text": "stalling at higher-than-normal airspeed."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 05",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Aft CG and stall recovery."
+}

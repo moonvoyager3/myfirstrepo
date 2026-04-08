@@ -1,0 +1,40 @@
+{
+  "id": 378,
+  "question_type": "single_select_4orless",
+  "question": "What is the objective of the SHELL model?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Proportionate blame"
+    },
+    {
+      "key": "B",
+      "text": "Analyze the causes of accidents"
+    },
+    {
+      "key": "C",
+      "text": "For record keeping"
+    },
+    {
+      "key": "D",
+      "text": "Identify hazards"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 01 01",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 01 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "SHELL is a human factors model."
+}

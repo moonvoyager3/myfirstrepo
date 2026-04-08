@@ -1,0 +1,40 @@
+{
+  "id": 450,
+  "question_type": "single_select_4orless",
+  "question": "In crew resource management, which of the following statement is false?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "The remote PIC and all crew members should communicate any observed hazards or concerns to one another."
+    },
+    {
+      "key": "B",
+      "text": "Individuals who are exhibiting signs of hazardous attitudes should be approached about the issue."
+    },
+    {
+      "key": "C",
+      "text": "Crew members cannot, under any circumstances, challenge the decisions of the Remote PIC."
+    },
+    {
+      "key": "D",
+      "text": "Crew members should express any and all concerns about decisions of the remote PIC or other crew members at any time."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 04",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "CRM is a crew resource management topic."
+}

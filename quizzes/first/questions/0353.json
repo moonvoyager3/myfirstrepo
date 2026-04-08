@@ -1,0 +1,36 @@
+{
+  "id": 353,
+  "question_type": "single_select_4orless",
+  "question": "What feature is normally associated with the cumulus stage of a thunderstorm?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Roll cloud"
+    },
+    {
+      "key": "B",
+      "text": "Continuous updraft"
+    },
+    {
+      "key": "C",
+      "text": "Frequent lightning"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 03",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Cumulus-stage thunderstorm characteristics."
+}

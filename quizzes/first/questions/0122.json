@@ -1,0 +1,40 @@
+{
+  "id": 122,
+  "question_type": "single_select_4orless",
+  "question": "When disturbed, an aircraft's tendency to not return to equilibrium or to not continue in the disturbed displacement is called:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Negative static stability"
+    },
+    {
+      "key": "B",
+      "text": "Positive dynamic stability"
+    },
+    {
+      "key": "C",
+      "text": "Neutral static stability"
+    },
+    {
+      "key": "D",
+      "text": "Positive static stability"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 05",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Aircraft stability and centre-of-gravity topics."
+}

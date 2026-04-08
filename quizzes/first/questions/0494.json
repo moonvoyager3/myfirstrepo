@@ -1,0 +1,40 @@
+{
+  "id": 494,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is not a consideration for development of an adequate emergency handling procedure?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "All landing areas, including emergency landing areas, should allow the recovery of the UA in an expeditious manner with adequate considerations made to safety and security."
+    },
+    {
+      "key": "B",
+      "text": "Operator should identify landing areas for emergency recovery."
+    },
+    {
+      "key": "C",
+      "text": "The operator should ensure that all devices, including UA, remote controller and any other devices used have their firmware updated to the latest versions."
+    },
+    {
+      "key": "D",
+      "text": "The Operator should ensure that all map data necessary for navigation, including for the purpose of situational awareness and detect and avoid, are updated in a timely manner."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 02",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Emergency handling considerations."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 289,
+  "question_type": "single_select_4orless",
+  "question": "What can a small error in the position of the GNSS satellites lead to?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "A large error in the calculation of receiver position"
+    },
+    {
+      "key": "B",
+      "text": "A small error in the calculation of receiver position"
+    },
+    {
+      "key": "C",
+      "text": "No effect"
+    },
+    {
+      "key": "D",
+      "text": "A large error in the calculation of clock timing"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 01 02",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

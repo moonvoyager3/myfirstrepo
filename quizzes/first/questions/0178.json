@@ -1,0 +1,40 @@
+{
+  "id": 178,
+  "question_type": "single_select_4orless",
+  "question": "What is the penalty for a person who is unable to produce his UAPL?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Fine not exceeding $20,000 or to imprisonment not exceeding 12 months, or both."
+    },
+    {
+      "key": "B",
+      "text": "Fine up to $50,000, or imprisonment not exceeding 2 years, or both for the first offence. Fine up to $100,000, or imprisonment not exceeding 5 years, or both for the second offence."
+    },
+    {
+      "key": "C",
+      "text": "Fine not exceeding $20,000 for the first offence, fine not exceeding $40,000 or imprisonment not exceeding 15 months, or both for second time offence."
+    },
+    {
+      "key": "D",
+      "text": "Fine not exceeding $100,000 or to imprisonment not exceeding 5 years, or both."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Permits, registration, and UAPL rules are being tested."
+}

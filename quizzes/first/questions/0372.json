@@ -1,0 +1,40 @@
+{
+  "id": 372,
+  "question_type": "single_select_4orless",
+  "question": "What do both a semicircle and a triangle opposing each other on lines in the weather chart represent?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Same pressure"
+    },
+    {
+      "key": "B",
+      "text": "Occluded fronts"
+    },
+    {
+      "key": "C",
+      "text": "Warm fronts"
+    },
+    {
+      "key": "D",
+      "text": "Stationary fronts"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 05",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Stationary front symbol."
+}

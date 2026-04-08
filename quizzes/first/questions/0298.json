@@ -1,0 +1,40 @@
+{
+  "id": 298,
+  "question_type": "single_select_4orless",
+  "question": "How does an Ultrasound system work:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "A sensor in the drone sends out a high-frequency sound pulse and times the duration it takes for the echo of the sound to reflect."
+    },
+    {
+      "key": "B",
+      "text": "A remote sensing technology where the environment is scanned with a pulsed laser beam and the reflection time of the signal from the object back to the detector is measured."
+    },
+    {
+      "key": "C",
+      "text": "Calculation of depth information by combining two-dimensional images from two cameras at slightly different viewpoints."
+    },
+    {
+      "key": "D",
+      "text": "Work with a specific frequency of infra-red which is produced by the emitter, reflected by an object, then picked up by the receiver."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 01 04",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 01 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Ultrasound operating principle."
+}

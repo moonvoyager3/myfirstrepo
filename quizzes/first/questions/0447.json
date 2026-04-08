@@ -1,0 +1,36 @@
+{
+  "id": 447,
+  "question_type": "single_select_4orless",
+  "question": "A local TV station has hired a remote pilot to operate their small UA to cover breaking news stories. The remote pilot has had multiple near misses with obstacles on the ground and two small UAS accidents. What would be a solution for the news station to improve their operating safety culture?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "The news station should implement a policy of no more than five crashes/incidents within 6 months."
+    },
+    {
+      "key": "B",
+      "text": "The news station does not need to make any changes; there are times that an accident is unavoidable."
+    },
+    {
+      "key": "C",
+      "text": "The news station should recognize hazardous attitudes and situations and develop standard operating procedures that emphasize safety."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 04",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Safety culture and SOPs."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 164,
+  "question_type": "single_select_4orless",
+  "question": "A UA pilot is required to complete basic UA training:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Only for operating unmanned aircraft (UA) with a total mass greater than 7kg for recreational and educational purposes."
+    },
+    {
+      "key": "B",
+      "text": "To operate an UA with a total mass exceeding 1.5 kg but not exceeding 7kg for recreational and educational purposes."
+    },
+    {
+      "key": "C",
+      "text": "Before undertaking any UA operations training under the supervision of a licensed UA pilot."
+    },
+    {
+      "key": "D",
+      "text": "Only for operating UA with a total mass greater than 25kg for business purposes."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 24,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following flight modes enables position hold function?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Attitude mode"
+    },
+    {
+      "key": "B",
+      "text": "Altitude hold mode"
+    },
+    {
+      "key": "C",
+      "text": "GPS Flight mode"
+    },
+    {
+      "key": "D",
+      "text": "Manual Flight mode"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 01",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Position hold is a flight-control/navigation function."
+}

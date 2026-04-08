@@ -1,0 +1,36 @@
+{
+  "id": 339,
+  "question_type": "single_select_4orless",
+  "question": "Under which condition will pressure altitude be equal to true altitude?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "When the atmospheric pressure is 29.92 inches Hg."
+    },
+    {
+      "key": "B",
+      "text": "When standard atmospheric conditions exist."
+    },
+    {
+      "key": "C",
+      "text": "When indicated altitude is equal to the pressure altitude."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 02",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Pressure altitude and true altitude under standard atmosphere."
+}

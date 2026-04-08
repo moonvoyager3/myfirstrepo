@@ -1,0 +1,40 @@
+{
+  "id": 475,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is not performed during Pre-Flight Check - Before powering up?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Check GPS and Transmitter signal strength"
+    },
+    {
+      "key": "B",
+      "text": "Check landing gears"
+    },
+    {
+      "key": "C",
+      "text": "Check propellers are secured"
+    },
+    {
+      "key": "D",
+      "text": "Check Battery are sufficiently charged"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Pre-flight checks are part of flight preparation."
+}

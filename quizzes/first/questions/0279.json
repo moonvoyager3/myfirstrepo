@@ -1,0 +1,40 @@
+{
+  "id": 279,
+  "question_type": "single_select_4orless",
+  "question": "What is another term for Longitude?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Meridians"
+    },
+    {
+      "key": "B",
+      "text": "Topic of Cancer"
+    },
+    {
+      "key": "C",
+      "text": "Equator"
+    },
+    {
+      "key": "D",
+      "text": "Poles"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 01 01",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 01 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Latitude and longitude are basic navigation concepts."
+}

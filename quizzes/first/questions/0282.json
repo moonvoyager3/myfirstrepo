@@ -1,0 +1,40 @@
+{
+  "id": 282,
+  "question_type": "single_select_4orless",
+  "question": "Why are latitude lines not suitable for measurement?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "The lines get tangled closer to the poles"
+    },
+    {
+      "key": "B",
+      "text": "The lines get longer closer to the poles"
+    },
+    {
+      "key": "C",
+      "text": "The lines get shorter closer to the poles"
+    },
+    {
+      "key": "D",
+      "text": "The lines disappear closer to the poles"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 01 01",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 01 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

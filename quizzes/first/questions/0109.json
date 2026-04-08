@@ -1,0 +1,36 @@
+{
+  "id": 109,
+  "question_type": "single_select_4orless",
+  "question": "How does overloading a drone beyond its maximum weight capacity impact its flight?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Increases flight stability."
+    },
+    {
+      "key": "B",
+      "text": "Decreases battery consumption."
+    },
+    {
+      "key": "C",
+      "text": "Reduces maneuverability and flight time."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 05",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Overweight performance question."
+}

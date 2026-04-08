@@ -1,0 +1,40 @@
+{
+  "id": 228,
+  "question_type": "single_select_4orless",
+  "question": "What is assessed when applying for an operator permit?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "The number of unmanned aircraft in the fleet."
+    },
+    {
+      "key": "B",
+      "text": "The operational base location of the organisation."
+    },
+    {
+      "key": "C",
+      "text": "The airworthiness of each unmanned aircraft."
+    },
+    {
+      "key": "D",
+      "text": "The size of each unmanned aircraft."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Operator permit assessment question."
+}

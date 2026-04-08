@@ -1,0 +1,36 @@
+{
+  "id": 50,
+  "question_type": "single_select_4orless",
+  "question": "Which is a recommended action if a drone pilot experiences video transmission issues during a flight?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Switch to a different video frequency."
+    },
+    {
+      "key": "B",
+      "text": "Continue the flight using visual line of sight."
+    },
+    {
+      "key": "C",
+      "text": "Land the drone immediately."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 03",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Video-transmission issue handling question."
+}

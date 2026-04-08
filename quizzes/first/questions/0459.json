@@ -1,0 +1,36 @@
+{
+  "id": 459,
+  "question_type": "single_select_4orless",
+  "question": "What antidotal phrase can help reverse the hazardous attitude of \"antiauthority\"?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "I know what I am doing."
+    },
+    {
+      "key": "B",
+      "text": "Follow the rules."
+    },
+    {
+      "key": "C",
+      "text": "Rules do not apply in this situation."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 05",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Anti-authority antidote."
+}

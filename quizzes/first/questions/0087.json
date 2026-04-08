@@ -1,0 +1,40 @@
+{
+  "id": 87,
+  "question_type": "single_select_4orless",
+  "question": "Which angle is between the chord line and relative airflow?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Pitch angle"
+    },
+    {
+      "key": "B",
+      "text": "Angle of incidence"
+    },
+    {
+      "key": "C",
+      "text": "Angle of attack"
+    },
+    {
+      "key": "D",
+      "text": "Rigging angle"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 02",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Angle of attack is an aerofoil/airflow concept."
+}

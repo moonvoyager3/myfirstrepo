@@ -1,0 +1,40 @@
+{
+  "id": 222,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following information is not required during the online registration of UA?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Company name and Business registration number"
+    },
+    {
+      "key": "B",
+      "text": "Information about the UA (Brand, Model, Weight, Frequency, Serial No)"
+    },
+    {
+      "key": "C",
+      "text": "Your SingPass / CorpPass / UAPass Account"
+    },
+    {
+      "key": "D",
+      "text": "Photograph of the UA affixed with the registration label"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 04 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 04 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Online registration details are part of UA registration."
+}

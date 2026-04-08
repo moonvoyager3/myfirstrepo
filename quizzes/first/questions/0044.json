@@ -1,0 +1,40 @@
+{
+  "id": 44,
+  "question_type": "single_select_4orless",
+  "question": "What are the 2 frequencies commonly used for UA command and control?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "900 MHz and 1.2 GHz"
+    },
+    {
+      "key": "B",
+      "text": "1.2 GHz and 3.4 GHz"
+    },
+    {
+      "key": "C",
+      "text": "200 MHz and 500 MHz"
+    },
+    {
+      "key": "D",
+      "text": "2.4 GHz and 5.8 GHz"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 03",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "C2 frequencies are command-and-control link content."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 3,
+  "question_type": "single_select_4orless",
+  "question": "A powered-lift UA is capable of performing",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "horizontal take off only"
+    },
+    {
+      "key": "B",
+      "text": "vertical take-off only"
+    },
+    {
+      "key": "C",
+      "text": "vertical and low speed horizontal flight"
+    },
+    {
+      "key": "D",
+      "text": "vertical take-off and horizontal landing only"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 01 02",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Powered-lift is a UA category and operating-principle topic."
+}

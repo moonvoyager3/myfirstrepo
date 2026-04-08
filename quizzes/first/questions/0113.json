@@ -1,0 +1,40 @@
+{
+  "id": 113,
+  "question_type": "single_select_4orless",
+  "question": "Longitudinal stability of an unmanned aircraft (UA) is enhanced by:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Carriage of an underslung load"
+    },
+    {
+      "key": "B",
+      "text": "An aft centre of gravity (CG)"
+    },
+    {
+      "key": "C",
+      "text": "GPS flight mode"
+    },
+    {
+      "key": "D",
+      "text": "A forward centre of gravity (CG)"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 05",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

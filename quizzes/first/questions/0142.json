@@ -1,0 +1,36 @@
+{
+  "id": 142,
+  "question_type": "single_select_4orless",
+  "question": "When operating an unmanned airplane, the remote pilot should consider that the load factor on the wings may be increased any time when,",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "the CG is shifted rearward to the aft CG limit."
+    },
+    {
+      "key": "B",
+      "text": "the airplane is subjected to maneuvers other than straight-and-level flight."
+    },
+    {
+      "key": "C",
+      "text": "the gross weight is reduced."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 02 01",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Load factor increase in turns links to aircraft motion during manoeuvres."
+}

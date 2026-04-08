@@ -1,0 +1,40 @@
+{
+  "id": 218,
+  "question_type": "single_select_4orless",
+  "question": "What is the validity period for registration of an unmanned aircraft?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Registration expires after 12 months."
+    },
+    {
+      "key": "B",
+      "text": "Registration expires after 24 months."
+    },
+    {
+      "key": "C",
+      "text": "Registration does not have an expiry date."
+    },
+    {
+      "key": "D",
+      "text": "Registration must be renewed after 24 months."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 04 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 04 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Registration validity question."
+}

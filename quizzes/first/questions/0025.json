@@ -1,0 +1,40 @@
+{
+  "id": 25,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is a significant limitation on the duration of UAV use?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Weight distribution with variable payloads"
+    },
+    {
+      "key": "B",
+      "text": "Battery power and recharging"
+    },
+    {
+      "key": "C",
+      "text": "Communication in areas with little-to-no cellular service"
+    },
+    {
+      "key": "D",
+      "text": "Line-of-sight navigation due to tall buildings and variable terrain"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 01",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

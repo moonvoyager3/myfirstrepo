@@ -1,0 +1,40 @@
+{
+  "id": 426,
+  "question_type": "single_select_4orless",
+  "question": "Which are the risks categories the UA Operator should assess for an intended BVLOS operation?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "High & Low risks"
+    },
+    {
+      "key": "B",
+      "text": "Air & Ground risks"
+    },
+    {
+      "key": "C",
+      "text": "Identified & Non-Identified risks"
+    },
+    {
+      "key": "D",
+      "text": "Hardware & software risks"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 01 02",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "BVLOS risk categories question."
+}

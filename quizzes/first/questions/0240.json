@@ -1,0 +1,40 @@
+{
+  "id": 240,
+  "question_type": "single_select_4orless",
+  "question": "An operator permit is required to operate an unmanned aircraft (UA):",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "With a mass greater than 7kg for the purposes that are not recreational or educational in nature."
+    },
+    {
+      "key": "B",
+      "text": "At a mass of less than 7kg with or without an operator permit."
+    },
+    {
+      "key": "C",
+      "text": "At any mass for purposes that are not recreational or educational in nature."
+    },
+    {
+      "key": "D",
+      "text": "At the mass greater than 7kg only for purposes that are business in nature, with multiple activities."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

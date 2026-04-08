@@ -1,0 +1,40 @@
+{
+  "id": 397,
+  "question_type": "single_select_4orless",
+  "question": "A person may not act as a crew member of a UA if alcoholic beverages have been consumed by that person within the preceding",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "12 hours"
+    },
+    {
+      "key": "B",
+      "text": "24 hours"
+    },
+    {
+      "key": "C",
+      "text": "8 hours"
+    },
+    {
+      "key": "D",
+      "text": "4 hours"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 03 01",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Alcohol use by crew members is prohibited."
+}

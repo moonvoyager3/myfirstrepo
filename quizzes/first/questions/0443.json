@@ -1,0 +1,36 @@
+{
+  "id": 443,
+  "question_type": "single_select_4orless",
+  "question": "What is the primary purpose of aeronautical decision-making for a drone pilot?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "To ensure efficient flight operations."
+    },
+    {
+      "key": "B",
+      "text": "To enhance safety by identifying risks and hazards."
+    },
+    {
+      "key": "C",
+      "text": "To comply with CAAS regulations."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 02",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Purpose of aeronautical decision making question."
+}

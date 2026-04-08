@@ -1,0 +1,40 @@
+{
+  "id": 30,
+  "question_type": "single_select_4orless",
+  "question": "Why is it important to check the electrical wiring of a self-built UA?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Ensure that appropriate Center of Gravity is applied."
+    },
+    {
+      "key": "B",
+      "text": "Ensure no loose wires can come into contact with the spinning propellers."
+    },
+    {
+      "key": "C",
+      "text": "Prevent radio systems from being interfered or to interfere other radio equipment."
+    },
+    {
+      "key": "D",
+      "text": "Ensure all screws securely fastened and applied with cable tie if necessary."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 01",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "General UAS knowledge and UA-category topics are being tested."
+}

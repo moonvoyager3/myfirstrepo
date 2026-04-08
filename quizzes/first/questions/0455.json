@@ -1,0 +1,36 @@
+{
+  "id": 455,
+  "question_type": "single_select_4orless",
+  "question": "Hazardous attitudes occur to every pilot to some degree at some time. What are some of these hazardous attitudes?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Poor risk management and lack of stress management."
+    },
+    {
+      "key": "B",
+      "text": "Antiauthority, impulsivity, macho, resignation, and invulnerability."
+    },
+    {
+      "key": "C",
+      "text": "Poor situational awareness, snap judgments, and lack of a decision making process."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 05",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Hazardous attitudes list."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 207,
+  "question_type": "single_select_4orless",
+  "question": "B-RID is described as a \"digital licence plate\" for unmanned aircraft. What is B-RID?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Beacon Remote Identification"
+    },
+    {
+      "key": "B",
+      "text": "Basic Remote Identification"
+    },
+    {
+      "key": "C",
+      "text": "Broadcast Remote Identification"
+    },
+    {
+      "key": "D",
+      "text": "Bluetooth Remote Identification"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 04 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 04 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "B-RID / registration identity question."
+}

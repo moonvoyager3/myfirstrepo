@@ -1,0 +1,36 @@
+{
+  "id": 435,
+  "question_type": "single_select_4orless",
+  "question": "Most midair collision accidents occur during:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "hazy days"
+    },
+    {
+      "key": "B",
+      "text": "clear days"
+    },
+    {
+      "key": "C",
+      "text": "cloudy nights"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Collision risk recognition supports maintaining situation awareness."
+}

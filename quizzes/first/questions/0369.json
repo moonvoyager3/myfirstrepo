@@ -1,0 +1,40 @@
+{
+  "id": 369,
+  "question_type": "single_select_4orless",
+  "question": "This is a METAR at Perth Airport 131030Z 06008KT 9999 FEW020 SCT280 30/25 Q1008 NOSIG What is the temperature and dewpoint?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Temperature: 30 °C, Dewpoint: 25 °C"
+    },
+    {
+      "key": "B",
+      "text": "Temperature: 10 °C, Dewpoint: 08 °C"
+    },
+    {
+      "key": "C",
+      "text": "Temperature: 25 °C, Dewpoint: 30 °C"
+    },
+    {
+      "key": "D",
+      "text": "Temperature: 08 °C, Dewpoint: 10 °C"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 05",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "METAR temperature and dewpoint."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 149,
+  "question_type": "single_select_4orless",
+  "question": "Under the basic understanding of fixed wing aircraft, during take-off and after touching down on the ground, which control surface does a pilot use to maintain the center line?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Elevators"
+    },
+    {
+      "key": "B",
+      "text": "Spoilers"
+    },
+    {
+      "key": "C",
+      "text": "Ailerons"
+    },
+    {
+      "key": "D",
+      "text": "Rudders"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 02 02",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

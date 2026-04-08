@@ -1,0 +1,40 @@
+{
+  "id": 13,
+  "question_type": "single_select_4orless",
+  "question": "What are the possible symptoms for transmitter signal loss?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "UA not responding to commands"
+    },
+    {
+      "key": "B",
+      "text": "No video feed observed on transmitter display"
+    },
+    {
+      "key": "C",
+      "text": "Audio or visual alerts from transmitter or UA"
+    },
+    {
+      "key": "D",
+      "text": "All of the above"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 01",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "General UAS knowledge and UA-category topics are being tested."
+}

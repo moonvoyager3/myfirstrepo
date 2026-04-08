@@ -1,0 +1,40 @@
+{
+  "id": 466,
+  "question_type": "single_select_4orless",
+  "question": "A pilot operating an UA that is visually obstructed by a structure in front of him, he is:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Compliant with the visual line of sight requirements if the structure is less than 200 feet in height."
+    },
+    {
+      "key": "B",
+      "text": "Non-compliant with the visual line of sight requirements."
+    },
+    {
+      "key": "C",
+      "text": "Compliant with the visual line of sight requirement."
+    },
+    {
+      "key": "D",
+      "text": "Compliant if the UA is behind the structure for less than a total of 5 seconds."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "VLOS obstruction by structure."
+}

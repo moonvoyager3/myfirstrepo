@@ -1,0 +1,40 @@
+{
+  "id": 448,
+  "question_type": "single_select_4orless",
+  "question": "A remote pilot-in-command and a visual observer define their roles and responsibilities prior and during the operation of a small UA. This is a good use of?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Safety management system"
+    },
+    {
+      "key": "B",
+      "text": "Authoritarian resource management"
+    },
+    {
+      "key": "C",
+      "text": "Single-pilot resource management"
+    },
+    {
+      "key": "D",
+      "text": "Crew resource management"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 04",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

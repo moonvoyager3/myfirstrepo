@@ -1,0 +1,40 @@
+{
+  "id": 485,
+  "question_type": "single_select_4orless",
+  "question": "Interference can cause loss of the radio control link. As a precaution for this possibility, fail safe should be selected to:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Return to home and land"
+    },
+    {
+      "key": "B",
+      "text": "GPS off"
+    },
+    {
+      "key": "C",
+      "text": "Low throttle"
+    },
+    {
+      "key": "D",
+      "text": "Failsafe off"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 02",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

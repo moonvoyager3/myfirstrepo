@@ -1,0 +1,40 @@
+{
+  "id": 99,
+  "question_type": "single_select_4orless",
+  "question": "What are the techniques to apply during a spin recovery? (Fixed wing)",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "P-Power Idle, A-Aileron Neutral, R-Rudder Opposite, E-Elevator Through Neutral."
+    },
+    {
+      "key": "B",
+      "text": "A-Aileron Neutral, R-Rudder Opposite, E-Elevator Through Neutral, P-Power Idle."
+    },
+    {
+      "key": "C",
+      "text": "R-Rudder Opposite, E-Elevator Through Neutral, P-Power Idle, A-Aileron Neutral."
+    },
+    {
+      "key": "D",
+      "text": "None of the above."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 04",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Spin stages and recovery are stall/spin syllabus content."
+}

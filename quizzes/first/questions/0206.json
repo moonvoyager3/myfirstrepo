@@ -1,0 +1,40 @@
+{
+  "id": 206,
+  "question_type": "single_select_4orless",
+  "question": "An unmanned aircraft (UA) is required to have:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "A registration label permanently affixed to the aircraft, and in the event of total destruction, notify CAAS within a month."
+    },
+    {
+      "key": "B",
+      "text": "A registration label permanently affixed to the aircraft, with a unique identification number visible."
+    },
+    {
+      "key": "C",
+      "text": "A registration label to be permanently affixed under the propeller blade of the first motor."
+    },
+    {
+      "key": "D",
+      "text": "A registration label to be permanently affixed at a position where it can be visible from the ground while operating."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 04 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 04 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

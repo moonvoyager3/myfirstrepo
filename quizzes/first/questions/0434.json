@@ -1,0 +1,40 @@
+{
+  "id": 434,
+  "question_type": "single_select_4orless",
+  "question": "What is the correct definition of 'hazardous' risk level?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Failure would reduce the capability of the UA or the ability of the crew to cope with adverse operating conditions to the extent of 'uncontrolled loss of UA'."
+    },
+    {
+      "key": "B",
+      "text": "Failure would reduce the capability of the UA or the ability of the crew to cope with adverse operating conditions to the extent of 'A large reduction in safety margins or functional capabilities'."
+    },
+    {
+      "key": "C",
+      "text": "Failure would reduce the capability of the UA or the ability of the crew to cope with adverse operating conditions to the extent of 'slight increase in crew workload'."
+    },
+    {
+      "key": "D",
+      "text": "Failure would reduce the capability of the UA or the ability of the crew to cope with adverse operating conditions to the extent of 'potential discomfort to person or minor property damage'."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 01 03",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 01 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Hazardous risk level definition."
+}

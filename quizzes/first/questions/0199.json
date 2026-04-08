@@ -1,0 +1,40 @@
+{
+  "id": 199,
+  "question_type": "single_select_4orless",
+  "question": "A list for the no-fly areas in Singapore can be found at:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Onepass.gov.sg"
+    },
+    {
+      "key": "B",
+      "text": "DroneMap.gov"
+    },
+    {
+      "key": "C",
+      "text": "Caas.gov"
+    },
+    {
+      "key": "D",
+      "text": "Onemap.sg"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 03 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

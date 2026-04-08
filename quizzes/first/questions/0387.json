@@ -1,0 +1,36 @@
+{
+  "id": 387,
+  "question_type": "single_select_4orless",
+  "question": "What is spatial orientation?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "The ability to maintain body and posture in relation to the surrounding environment at rest or during motion."
+    },
+    {
+      "key": "B",
+      "text": "The perception of altitude and speed is about the same from reality."
+    },
+    {
+      "key": "C",
+      "text": "The perception of altitude and speed is different from reality."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 02 01",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Spatial orientation question."
+}

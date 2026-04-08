@@ -1,0 +1,40 @@
+{
+  "id": 271,
+  "question_type": "single_select_4orless",
+  "question": "What is the maximum weight categorized under the Class A UAPL?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Unmanned aircraft's total mass does not exceed 25kg."
+    },
+    {
+      "key": "B",
+      "text": "Unmanned aircraft's total mass more than 1.5kg but cannot exceed 7kg."
+    },
+    {
+      "key": "C",
+      "text": "Unmanned aircraft's total mass more than 1.5kg but cannot exceed 15kg."
+    },
+    {
+      "key": "D",
+      "text": "Unmanned aircraft's total mass more than 25kg."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 06 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 06 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Class A UAPL maximum weight question."
+}

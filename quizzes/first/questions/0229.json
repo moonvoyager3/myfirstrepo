@@ -1,0 +1,40 @@
+{
+  "id": 229,
+  "question_type": "single_select_4orless",
+  "question": "What is the typical processing time for an Activity Permit application?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "3 working days"
+    },
+    {
+      "key": "B",
+      "text": "5 working days"
+    },
+    {
+      "key": "C",
+      "text": "7 working days"
+    },
+    {
+      "key": "D",
+      "text": "10 working days"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Activity Permit application timing question."
+}

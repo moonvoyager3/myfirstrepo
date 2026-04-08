@@ -1,0 +1,40 @@
+{
+  "id": 11,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following applications can a UA fitted with a thermal camera be used for?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Detecting heat signature"
+    },
+    {
+      "key": "B",
+      "text": "Mapping"
+    },
+    {
+      "key": "C",
+      "text": "Photography"
+    },
+    {
+      "key": "D",
+      "text": "Filming"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 01 03",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 01 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Thermal cameras are an application of UAS."
+}

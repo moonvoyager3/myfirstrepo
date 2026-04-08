@@ -1,0 +1,40 @@
+{
+  "id": 382,
+  "question_type": "single_select_4orless",
+  "question": "What are the common disorientations during UAS operation, and how are they overcome?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "In hazy weather, the drone actually appears nearer than it actually is - Do not get tricked by your own eyes; use the app as a reference to see the distance of the drone from yourself."
+    },
+    {
+      "key": "B",
+      "text": "Do not use surrounding visual reference points to navigate the UAS - trees, buildings, roads or canals."
+    },
+    {
+      "key": "C",
+      "text": "Apply sudden head and hand movements in flight, particularly when manoeuvring - too little movement will cause different illusions."
+    },
+    {
+      "key": "D",
+      "text": "Ensure best practices such as using app height indications as a reference if an illusion occurs - In hazy weather, the drone actually appears further than it actually is."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 02 01",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Disorientation and mitigation."
+}

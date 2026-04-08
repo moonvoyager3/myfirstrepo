@@ -1,0 +1,36 @@
+{
+  "id": 139,
+  "question_type": "single_select_4orless",
+  "question": "What is the significance of a drone's \"load factor\" in turns?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "It determines the drone's speed in turns."
+    },
+    {
+      "key": "B",
+      "text": "It affects the drone's ability to maintain altitude in turns."
+    },
+    {
+      "key": "C",
+      "text": "It is relevant only for racing drones."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 02 01",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Load factor in turns question."
+}

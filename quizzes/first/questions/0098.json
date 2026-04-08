@@ -1,0 +1,40 @@
+{
+  "id": 98,
+  "question_type": "single_select_4orless",
+  "question": "What are the 4 steps to recover your fixed-wing aircraft out of a spin?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "C.A.R.E"
+    },
+    {
+      "key": "B",
+      "text": "P.P.P"
+    },
+    {
+      "key": "C",
+      "text": "P.A.R.E"
+    },
+    {
+      "key": "D",
+      "text": "P.A.V.E"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 04",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Spin recovery question."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 467,
+  "question_type": "single_select_4orless",
+  "question": "Checklists have long been used in aviation, their primary purpose is to:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "make sure each crew member has a meaningful task."
+    },
+    {
+      "key": "B",
+      "text": "create flow and cohesiveness with the crew."
+    },
+    {
+      "key": "C",
+      "text": "assist new pilots and crew members to learn their responsibilities."
+    },
+    {
+      "key": "D",
+      "text": "serve as a memory aid to ensure no critical items are overlooked."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Checklist purpose question."
+}

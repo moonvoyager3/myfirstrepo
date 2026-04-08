@@ -1,0 +1,46 @@
+{
+  "id": 187,
+  "question_type": "multi_select_4orless",
+  "question": "Which of the following is required to qualify for a CAAS UA Pilot Licence (UAPL)? (Select one or more correct answers)",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Be at least 16 years old"
+    },
+    {
+      "key": "B",
+      "text": "Pass a medical examination"
+    },
+    {
+      "key": "C",
+      "text": "Pass a practical assessment conducted by an Authorised Flight Examiner"
+    },
+    {
+      "key": "D",
+      "text": "Pass a theory test administered by CAAS"
+    }
+  ],
+  "correct_answers": [
+    "A",
+    "C",
+    "D"
+  ],
+  "answer": [
+    "A",
+    "C",
+    "D"
+  ],
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Permits, registration, and UAPL rules are being tested."
+}

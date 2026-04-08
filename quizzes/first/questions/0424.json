@@ -1,0 +1,40 @@
+{
+  "id": 424,
+  "question_type": "single_select_4orless",
+  "question": "When should you use the IMSAFE acronym?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Before every flight"
+    },
+    {
+      "key": "B",
+      "text": "For the first and last flight of a day"
+    },
+    {
+      "key": "C",
+      "text": "Before start of a day"
+    },
+    {
+      "key": "D",
+      "text": "After end of last flight of a day"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 01 02",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "IMSAFE use before flight."
+}

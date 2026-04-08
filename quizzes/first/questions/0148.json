@@ -1,0 +1,40 @@
+{
+  "id": 148,
+  "question_type": "single_select_4orless",
+  "question": "On a mode 2 remote controller, the left control stick is moved to the right. What does the UA do?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Roll Right"
+    },
+    {
+      "key": "B",
+      "text": "Yaw Right"
+    },
+    {
+      "key": "C",
+      "text": "Yaw Left"
+    },
+    {
+      "key": "D",
+      "text": "Roll Left"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 02 02",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Mode 2 stick movement maps to yaw control via control surfaces/system response."
+}

@@ -1,0 +1,36 @@
+{
+  "id": 386,
+  "question_type": "single_select_4orless",
+  "question": "What factors should a remote pilot consider when operating a drone in urban areas at night?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "The availability of street lighting for better visibility."
+    },
+    {
+      "key": "B",
+      "text": "The increased likelihood of signal interference from city lights."
+    },
+    {
+      "key": "C",
+      "text": "Potential hazards such as unseen obstacles and reduced visibility."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 02 01",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Night urban operations and vision question."
+}

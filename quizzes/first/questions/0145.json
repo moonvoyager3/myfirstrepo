@@ -1,0 +1,40 @@
+{
+  "id": 145,
+  "question_type": "single_select_4orless",
+  "question": "An aeroplane's primary flight control surface for controlling pitch is?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Rudder"
+    },
+    {
+      "key": "B",
+      "text": "Motor"
+    },
+    {
+      "key": "C",
+      "text": "Ailerons"
+    },
+    {
+      "key": "D",
+      "text": "Elevator"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 02 02",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Pitch control surface question."
+}

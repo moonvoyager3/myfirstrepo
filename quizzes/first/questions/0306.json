@@ -1,0 +1,40 @@
+{
+  "id": 306,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is a disadvantage of using an Ultrasound system?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Useless without the presence of light."
+    },
+    {
+      "key": "B",
+      "text": "Not Affected by dust, dirt or high moisture environments."
+    },
+    {
+      "key": "C",
+      "text": "Sensing accuracy affected by soft materials."
+    },
+    {
+      "key": "D",
+      "text": "High sensitivity and high penetrating power."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 01 04",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 01 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Ultrasound system drawback."
+}

@@ -1,0 +1,36 @@
+{
+  "id": 438,
+  "question_type": "single_select_4orless",
+  "question": "The CARE attention scan can be used:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "before starting operations to evaluate the risks."
+    },
+    {
+      "key": "B",
+      "text": "during operations to maintain situational awareness."
+    },
+    {
+      "key": "C",
+      "text": "at the end of operations to debrief the crew."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "CARE scan / situation awareness question."
+}

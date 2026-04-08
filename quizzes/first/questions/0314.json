@@ -1,0 +1,40 @@
+{
+  "id": 314,
+  "question_type": "single_select_4orless",
+  "question": "How would high density altitude affect the performance of the UA?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Decreased performance"
+    },
+    {
+      "key": "B",
+      "text": "It only affects the operator"
+    },
+    {
+      "key": "C",
+      "text": "Increased performance"
+    },
+    {
+      "key": "D",
+      "text": "No change in performance"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 01",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Density altitude affects performance through atmospheric conditions."
+}

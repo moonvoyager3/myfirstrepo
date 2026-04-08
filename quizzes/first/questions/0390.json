@@ -1,0 +1,40 @@
+{
+  "id": 390,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is not a method of coping with visual illusion?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Understand the causes of these illusions and remain constantly alert for them."
+    },
+    {
+      "key": "B",
+      "text": "Confide with a friend."
+    },
+    {
+      "key": "C",
+      "text": "Ensure proper rest and adequate diet."
+    },
+    {
+      "key": "D",
+      "text": "Be proficient in flying with sensor data."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 02 01",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Visual illusion coping is a vision/human factors topic."
+}

@@ -1,0 +1,36 @@
+{
+  "id": 452,
+  "question_type": "single_select_4orless",
+  "question": "When adapting crew resource management (CRM) concepts to the operation of a small UA, CRM must be integrated into?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "The flight portion only"
+    },
+    {
+      "key": "B",
+      "text": "All phases of the operation"
+    },
+    {
+      "key": "C",
+      "text": "The communications only"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 04",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "CRM across all phases."
+}

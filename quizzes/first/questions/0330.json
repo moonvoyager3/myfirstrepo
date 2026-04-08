@@ -1,0 +1,36 @@
+{
+  "id": 330,
+  "question_type": "single_select_4orless",
+  "question": "What should a remote pilot consider when operating a drone in cold weather conditions?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Reduced battery performance."
+    },
+    {
+      "key": "B",
+      "text": "Increased GPS accuracy."
+    },
+    {
+      "key": "C",
+      "text": "Decreased visibility."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 01",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Cold-weather operations question."
+}

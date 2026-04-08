@@ -1,0 +1,60 @@
+﻿{
+  "quiz_id": "first",
+  "branding": {
+    "page_title": "Quiz Practice",
+    "meta_description": "Static  Page quiz app for practice.",
+    "hero_title": "Quiz Practice",
+    "hero_subtitle": "Random question sets, image support, and full answer review, all from a static site.",
+    "loader_text": "Loading quiz..."
+  },
+  "paths": {
+    "quiz_config": "./quizzes/first/quiz_config.json",
+    "quiz_index": "./quizzes/first/quiz_index.json",
+    "question_path_template": "./quizzes/first/questions/{question_id:04d}.json"
+  },
+  "features": {
+    "advanced_options": true,
+    "metadata_panel": true,
+    "results_metadata_toggle": true,
+    "timer_option": true,
+    "learner_mode_option": true
+  },
+  "metadata": {
+    "results_default_visible": false,
+    "question_panel_fields": [
+      {
+        "key": "knowledge_area",
+        "label": "Knowledge Area",
+        "empty_value": "Not assigned"
+      },
+      {
+        "key": "syllabus_reference",
+        "label": "Syllabus Number",
+        "empty_value": "Not assigned"
+      },
+      {
+        "key": "learning_outcome",
+        "label": "Learning Outcome",
+        "empty_value": "Not assigned"
+      }
+    ],
+    "results_fields": [
+      {
+        "key": "knowledge_area",
+        "label": "Knowledge Area",
+        "empty_value": ""
+      },
+      {
+        "key": "syllabus_reference",
+        "label": "Syllabus Number",
+        "empty_value": ""
+      },
+      {
+        "key": "learning_outcome",
+        "label": "Learning Outcome",
+        "empty_value": ""
+      }
+    ]
+  }
+}
+

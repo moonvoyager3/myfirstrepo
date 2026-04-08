@@ -1,0 +1,40 @@
+{
+  "id": 418,
+  "question_type": "single_select_4orless",
+  "question": "Stress can be managed by",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "breathing into a paper bag"
+    },
+    {
+      "key": "B",
+      "text": "recognizing potential increase in stress"
+    },
+    {
+      "key": "C",
+      "text": "consume stress reduction medicine"
+    },
+    {
+      "key": "D",
+      "text": "increasing stress tolerance"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 05 03",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 05 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Stress management is explicit syllabus content."
+}

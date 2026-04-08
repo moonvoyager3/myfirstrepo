@@ -1,0 +1,36 @@
+{
+  "id": 329,
+  "question_type": "single_select_4orless",
+  "question": "What measurement can be used to determine the stability of the atmosphere?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Atmospheric pressure"
+    },
+    {
+      "key": "B",
+      "text": "Actual lapse rate"
+    },
+    {
+      "key": "C",
+      "text": "Surface temperature"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 01",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Atmospheric stability measurement question."
+}

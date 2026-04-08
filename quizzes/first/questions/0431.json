@@ -1,0 +1,36 @@
+{
+  "id": 431,
+  "question_type": "single_select_4orless",
+  "question": "Safety is an important element for a remote pilot to consider prior to operating an unmanned aircraft system. To prevent the final \"link\" in the accident chain, a remote pilot must consider which methodology?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Crew Resource Management"
+    },
+    {
+      "key": "B",
+      "text": "Safety Management System"
+    },
+    {
+      "key": "C",
+      "text": "Risk Management"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 01 03",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 01 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Risk management to break the accident chain."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 405,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following substances can affect human performance?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Over the counter medications only"
+    },
+    {
+      "key": "B",
+      "text": "Over the counter and prescribed medications"
+    },
+    {
+      "key": "C",
+      "text": "Vitamins"
+    },
+    {
+      "key": "D",
+      "text": "Prescription medication only"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 03 03",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 03 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

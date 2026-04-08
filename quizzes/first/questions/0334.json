@@ -1,0 +1,36 @@
+{
+  "id": 334,
+  "question_type": "single_select_4orless",
+  "question": "Which weather phenomenon is most likely to have a significant impact on the performance and battery life of a small unmanned aircraft?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "High humidity"
+    },
+    {
+      "key": "B",
+      "text": "Extreme temperatures"
+    },
+    {
+      "key": "C",
+      "text": "Light rain"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 01",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Temperature / battery performance weather question."
+}

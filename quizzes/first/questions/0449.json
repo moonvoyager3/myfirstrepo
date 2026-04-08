@@ -1,0 +1,40 @@
+{
+  "id": 449,
+  "question_type": "single_select_4orless",
+  "question": "Crew resource management (CRM) in aviation is:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "To identify any broken or damaged parts of an aircraft."
+    },
+    {
+      "key": "B",
+      "text": "To identify safety-related hazards and mitigate the associated risks."
+    },
+    {
+      "key": "C",
+      "text": "To protect against accidental damage during take off and landing."
+    },
+    {
+      "key": "D",
+      "text": "To help pilots learn how to gather information and mitigate the associated risks."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 04",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Crew resource management."
+}

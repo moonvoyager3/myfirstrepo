@@ -1,0 +1,40 @@
+{
+  "id": 92,
+  "question_type": "single_select_4orless",
+  "question": "How does a pilot recover from a stall? (Fixed wings)",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Pilot must have neutralized the controls and increase the engine power. When air speed increases again, the pilot can level the wings and pull up to return the aircraft to normal flight."
+    },
+    {
+      "key": "B",
+      "text": "Pilot must pull the nose up and decrease the engine power. When air speed decreases, the pilot can level the wings and pull up to return the aircraft to normal flight."
+    },
+    {
+      "key": "C",
+      "text": "Pilot must lower the nose and decrease the engine power. When air speed decreases, the pilot can level the wings and pull up to return the aircraft to normal flight."
+    },
+    {
+      "key": "D",
+      "text": "Pilot must lower the nose and increase the engine power. Use rudder as required. When air speed is above the stall speed, gently recover to the correct attitude."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 03",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Stall recovery is explicit syllabus content."
+}

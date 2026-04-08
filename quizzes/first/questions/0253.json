@@ -1,0 +1,40 @@
+{
+  "id": 253,
+  "question_type": "single_select_4orless",
+  "question": "With regards to compliance of safety requirements and documentation, which of the following statements is incorrect?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "It is the operator's responsibilities to 'Maintaining all records, such as flight logs, maintenance logs, UA configuration management and UA operation personnel's training records'."
+    },
+    {
+      "key": "B",
+      "text": "It is the operator's responsibilities to 'Ensuring that the Operations Manual is complete, relevant and up-to-date'."
+    },
+    {
+      "key": "C",
+      "text": "It is the operator's responsibilities to 'Establishing and monitoring of safety performance, and resolution of any safety issues.'"
+    },
+    {
+      "key": "D",
+      "text": "It is the operator's responsibilities to 'Establish and maintain constant communication with the authority such as CAAS and Singapore Police Force (SPF)'."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Operator documentation duties map to permit conditions applicable to operations."
+}

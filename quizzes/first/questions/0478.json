@@ -1,0 +1,40 @@
+{
+  "id": 478,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following statements is incorrect, with reference to CAAS flight check compliance?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "If there are no manuals or instructions from the manufacturers, the operator cannot develop their own flight check procedures and describe them."
+    },
+    {
+      "key": "B",
+      "text": "If there are no manuals or instructions from the manufacturers, the operator is to develop their own flight check procedures and describe them."
+    },
+    {
+      "key": "C",
+      "text": "If operators follow flight check procedures as stated in the manufacturer's user manual, the user manual's title and revision, and references to the relevant sections of the user manual are to be indicated."
+    },
+    {
+      "key": "D",
+      "text": "Flight check procedures should minimally cover all the critical UA sub-systems such as propulsion system, power system, command and control system, navigation and flight control system, as well as the overall structural integrity."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Flight check compliance."
+}

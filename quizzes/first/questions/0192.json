@@ -1,0 +1,40 @@
+{
+  "id": 192,
+  "question_type": "single_select_4orless",
+  "question": "Which one of the following cases does not require basic training for UA?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Users who operate their unmanned aircraft (UA) with a total weight of less than 1.5 kilograms for recreational or educational purpose."
+    },
+    {
+      "key": "B",
+      "text": "Users who operate their unmanned aircraft (UA) with a total weight of less than 1.5 kilograms for commercial purpose."
+    },
+    {
+      "key": "C",
+      "text": "Users who operate their unmanned aircraft (UA) with a total weight of more than 7.0 kilograms for recreational or educational purpose."
+    },
+    {
+      "key": "D",
+      "text": "Users who operate their unmanned aircraft (UA) with a total weight of more than 7.0 kilograms for commercial purpose."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

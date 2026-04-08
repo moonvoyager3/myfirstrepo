@@ -1,0 +1,40 @@
+{
+  "id": 231,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is not part of the Operation Procedures document required for Operator Permit application?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Flight logs"
+    },
+    {
+      "key": "B",
+      "text": "Drone registration log"
+    },
+    {
+      "key": "C",
+      "text": "Training logs"
+    },
+    {
+      "key": "D",
+      "text": "Maintenance logs"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Operator permit application documents."
+}

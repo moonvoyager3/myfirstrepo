@@ -1,0 +1,40 @@
+{
+  "id": 396,
+  "question_type": "single_select_4orless",
+  "question": "Why is scanning of the surroundings recommended during UA activities?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "To maintain awareness of dynamic changes in the operational environment."
+    },
+    {
+      "key": "B",
+      "text": "To inform public of your UA activities."
+    },
+    {
+      "key": "C",
+      "text": "To exercise the eyes."
+    },
+    {
+      "key": "D",
+      "text": "To show public that you are a professional UA pilot."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 02 02",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Scanning the surroundings is a visual scanning topic."
+}

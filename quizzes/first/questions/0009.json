@@ -1,0 +1,40 @@
+{
+  "id": 9,
+  "question_type": "single_select_4orless",
+  "question": "First Person View (FPV) cameras are commonly used for which application?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Detecting Heat signature"
+    },
+    {
+      "key": "B",
+      "text": "Detecting moisture in the field"
+    },
+    {
+      "key": "C",
+      "text": "Search and rescue"
+    },
+    {
+      "key": "D",
+      "text": "Analyzing vegetation health"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 01 03",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 01 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

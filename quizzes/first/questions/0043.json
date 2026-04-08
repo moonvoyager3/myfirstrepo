@@ -1,0 +1,40 @@
+{
+  "id": 43,
+  "question_type": "single_select_4orless",
+  "question": "To prevent link loss, the UA operator should",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "ensure the UA battery is fully charged"
+    },
+    {
+      "key": "B",
+      "text": "use longer antennas"
+    },
+    {
+      "key": "C",
+      "text": "use a more powerful radio controller"
+    },
+    {
+      "key": "D",
+      "text": "always keep your UA within your visual line of sight"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 03",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

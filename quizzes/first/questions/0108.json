@@ -1,0 +1,40 @@
+{
+  "id": 108,
+  "question_type": "single_select_4orless",
+  "question": "Directional and lateral stability concerns?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Yaw and Pitch"
+    },
+    {
+      "key": "B",
+      "text": "Roll and Pitch"
+    },
+    {
+      "key": "C",
+      "text": "Yaw and Roll"
+    },
+    {
+      "key": "D",
+      "text": "Pitch and Climb"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 05",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

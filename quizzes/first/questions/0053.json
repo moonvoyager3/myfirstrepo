@@ -1,0 +1,40 @@
+{
+  "id": 53,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following statements is false?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "If a system check shows that the flight controller is fine, there is no signal interference at play."
+    },
+    {
+      "key": "B",
+      "text": "Interference can happen if another radio signal has the same frequency as the UA."
+    },
+    {
+      "key": "C",
+      "text": "Wi-Fi routers and video transmitters use the 2.4GHz frequency and can interfere with UA signals."
+    },
+    {
+      "key": "D",
+      "text": "Interference may even prevent signal reception and cause temporary loss of signal."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 03",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

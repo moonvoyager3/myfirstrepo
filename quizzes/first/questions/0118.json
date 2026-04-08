@@ -1,0 +1,36 @@
+{
+  "id": 118,
+  "question_type": "single_select_4orless",
+  "question": "To ensure that the unmanned aircraft center of gravity (CG) limits are not exceeded, follow the aircraft loading instructions specified in the:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Pilot's Operating Handbook or UAS Flight Manual"
+    },
+    {
+      "key": "B",
+      "text": "Aeronautical Information Manual (AIM)"
+    },
+    {
+      "key": "C",
+      "text": "Aircraft Weight and Balance Handbook"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 05",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Loading instructions for CG limits."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 211,
+  "question_type": "single_select_4orless",
+  "question": "Registration label should be affixed",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "on the topside fuselage of the UA with clear visibility of the serial number"
+    },
+    {
+      "key": "B",
+      "text": "underside of the UA"
+    },
+    {
+      "key": "C",
+      "text": "on the propeller or rotor blades"
+    },
+    {
+      "key": "D",
+      "text": "on the camera of the UA"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 04 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 04 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

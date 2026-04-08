@@ -1,0 +1,36 @@
+{
+  "id": 174,
+  "question_type": "single_select_4orless",
+  "question": "UABT is required if you are operating an unmanned aircraft:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "With a total weight of 2kg to take photos for personal collection."
+    },
+    {
+      "key": "B",
+      "text": "With a total weight of 8kg to take videos for a charity event."
+    },
+    {
+      "key": "C",
+      "text": "With a total weight of 1kg as part of a school activity that is not publicly accessible."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "UA Basic Training applicability question."
+}

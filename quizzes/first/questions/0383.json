@@ -1,0 +1,40 @@
+{
+  "id": 383,
+  "question_type": "single_select_4orless",
+  "question": "What are the common illusions a drone pilot faces during a UAS operation?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "In hazy weather, the drone actually appears further than it actually is."
+    },
+    {
+      "key": "B",
+      "text": "In hazy weather, the drone actually appears nearer than it actually is."
+    },
+    {
+      "key": "C",
+      "text": "Flying drones with extended landing gear will not cause illusion of drone facing different orientation."
+    },
+    {
+      "key": "D",
+      "text": "Contrasting colours become less distinct, making objects easier to see."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 02 01",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Visual illusion in haze."
+}

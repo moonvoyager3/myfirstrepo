@@ -1,0 +1,40 @@
+{
+  "id": 249,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is/are required for an organization conducting a flight demonstration with a 5kg UA to its prospective customers?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "UA registration"
+    },
+    {
+      "key": "B",
+      "text": "Class 1 Activity Permit"
+    },
+    {
+      "key": "C",
+      "text": "Operator Permit"
+    },
+    {
+      "key": "D",
+      "text": "All of the above"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Flight demonstration requirements test permit conditions."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 28,
+  "question_type": "single_select_4orless",
+  "question": "Which part of an aeroplane generates lift?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Airfoils"
+    },
+    {
+      "key": "B",
+      "text": "Elevator"
+    },
+    {
+      "key": "C",
+      "text": "Rudder"
+    },
+    {
+      "key": "D",
+      "text": "Ailerons"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 01",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "General UAS knowledge and UA-category topics are being tested."
+}

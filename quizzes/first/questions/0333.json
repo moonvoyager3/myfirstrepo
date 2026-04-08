@@ -1,0 +1,40 @@
+{
+  "id": 333,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is wrong about static pressure?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Always acts equally in every direction."
+    },
+    {
+      "key": "B",
+      "text": "Aircraft always have static pressure acting on all surfaces."
+    },
+    {
+      "key": "C",
+      "text": "Acts only when the aircraft is moving."
+    },
+    {
+      "key": "D",
+      "text": "Static pressure will vary at different altitude."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 01",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Static pressure properties."
+}

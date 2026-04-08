@@ -1,0 +1,40 @@
+{
+  "id": 274,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following categories fall under Class A UAPL?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Aeroplane UA above 25kg"
+    },
+    {
+      "key": "B",
+      "text": "Powered-lift UA with a total mass not exceeding 25kg"
+    },
+    {
+      "key": "C",
+      "text": "Airship UA above 25kg"
+    },
+    {
+      "key": "D",
+      "text": "Powered-lift UA above 25kg"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 06 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 06 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "UAPL classes and categories are being tested."
+}

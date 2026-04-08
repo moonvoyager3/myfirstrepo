@@ -1,0 +1,40 @@
+{
+  "id": 340,
+  "question_type": "single_select_4orless",
+  "question": "What does MSL stand for?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Medium Sea Level"
+    },
+    {
+      "key": "B",
+      "text": "Mid Sea Level"
+    },
+    {
+      "key": "C",
+      "text": "Mean Sea Level"
+    },
+    {
+      "key": "D",
+      "text": "Minimum Sea Level"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 02",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Altimetry terminology is being tested."
+}

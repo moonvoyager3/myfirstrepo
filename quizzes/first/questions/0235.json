@@ -1,0 +1,40 @@
+{
+  "id": 235,
+  "question_type": "single_select_4orless",
+  "question": "A group of students are planning to conduct an outdoor test flight for their 2kg UA project at their school location shown on the map below. Apart from having a UABT certificate, which of the following is required?",
+  "image": "./quizzes/first/assets/question-images/page_0171_img_1.png",
+  "options": [
+    {
+      "key": "A",
+      "text": "No permit required since it is an outdoor flight"
+    },
+    {
+      "key": "B",
+      "text": "Class 2 Activity Permit"
+    },
+    {
+      "key": "C",
+      "text": "Operator Permit"
+    },
+    {
+      "key": "D",
+      "text": "Class 1 Activity Permit"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

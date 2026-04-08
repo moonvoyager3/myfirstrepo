@@ -1,0 +1,40 @@
+{
+  "id": 243,
+  "question_type": "single_select_4orless",
+  "question": "What is required if you intend to operate a 8kg unmanned aircraft indoors for a flying display attended by more than 50 individuals?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "UA Registration, UABT, AP2"
+    },
+    {
+      "key": "B",
+      "text": "UA Registration, UABT, OP, AP2"
+    },
+    {
+      "key": "C",
+      "text": "UA Registration, UAPL, AP1"
+    },
+    {
+      "key": "D",
+      "text": "UA Registration, UAPL, OP, AP1"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Indoor flying display permit question."
+}

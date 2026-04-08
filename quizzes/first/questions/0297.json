@@ -1,0 +1,40 @@
+{
+  "id": 297,
+  "question_type": "single_select_4orless",
+  "question": "How does a Vision-based system work?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Reflection principle to detect obstacles."
+    },
+    {
+      "key": "B",
+      "text": "High-frequency sound pulse"
+    },
+    {
+      "key": "C",
+      "text": "Calculation of depth information by combining 2D image."
+    },
+    {
+      "key": "D",
+      "text": "Remote sensing method that uses light in the form of a pulsed laser to measure ranges."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 01 04",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 01 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Vision-based depth estimation."
+}

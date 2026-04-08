@@ -1,0 +1,40 @@
+{
+  "id": 441,
+  "question_type": "single_select_4orless",
+  "question": "During an aerial photography work (airborne imagery), your customer wants additional unprepared views. Your decision is:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "I switch to the hovering mode in order to implement the requested new points in the guidance system."
+    },
+    {
+      "key": "B",
+      "text": "I switch on the GPS function to safely perform this new task."
+    },
+    {
+      "key": "C",
+      "text": "I ask the customer for his help in order to perform the requested views."
+    },
+    {
+      "key": "D",
+      "text": "I finish the first flight as planned, I land and will plan the new flight."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 02",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Aeronautical decision making under changing mission demands."
+}

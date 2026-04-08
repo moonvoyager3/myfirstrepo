@@ -1,0 +1,36 @@
+{
+  "id": 398,
+  "question_type": "single_select_4orless",
+  "question": "After having dinner and wine, your client asks you to go outside to demonstrate the UA's capabilities. You must:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "pass a self-administered sobriety test before operating a UA."
+    },
+    {
+      "key": "B",
+      "text": "not operate a UA within 8 hours of consuming any alcoholic beverage."
+    },
+    {
+      "key": "C",
+      "text": "ensure that your visual observer has not consumed any alcoholic beverage in the previous 12 hours."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 03 01",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Alcohol/intoxication and fitness to operate."
+}

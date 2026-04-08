@@ -1,0 +1,36 @@
+{
+  "id": 351,
+  "question_type": "single_select_4orless",
+  "question": "What are characteristics of unstable air?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Nimbostratus clouds and good surface visibility."
+    },
+    {
+      "key": "B",
+      "text": "Turbulence and good surface visibility."
+    },
+    {
+      "key": "C",
+      "text": "Turbulence and poor surface visibility."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 03",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Unstable air characteristics question."
+}

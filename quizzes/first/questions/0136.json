@@ -1,0 +1,40 @@
+{
+  "id": 136,
+  "question_type": "single_select_4orless",
+  "question": "Control around the vertical axis (yaw control) of a multirotor unmanned aircraft is achieved by:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Increasing the speed of all 4 motors equally."
+    },
+    {
+      "key": "B",
+      "text": "Increasing the speed of a pair of diagonal motors while decreasing the speed of another pair."
+    },
+    {
+      "key": "C",
+      "text": "Increasing the speed of the motors at the front and back of the aircraft."
+    },
+    {
+      "key": "D",
+      "text": "Increasing the speed of the motors on either side of the aircraft."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 02 01",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

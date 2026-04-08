@@ -1,0 +1,36 @@
+{
+  "id": 344,
+  "question_type": "single_select_4orless",
+  "question": "When does density altitude have the same reading as pressure altitude?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "When standard temperature exists"
+    },
+    {
+      "key": "B",
+      "text": "When there is no wind"
+    },
+    {
+      "key": "C",
+      "text": "When the aircraft is on the ground"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 02",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Density altitude and pressure altitude."
+}

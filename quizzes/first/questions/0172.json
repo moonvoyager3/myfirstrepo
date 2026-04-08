@@ -1,0 +1,40 @@
+{
+  "id": 172,
+  "question_type": "single_select_4orless",
+  "question": "To conduct an outdoor educational flight operation above 200 feet AMSL with a UA weighing 10kg, which of the following is required?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "UA Registration, UABT, Class 2 AP and Operator Permit."
+    },
+    {
+      "key": "B",
+      "text": "UA Registration, UAPL and Class 1 AP."
+    },
+    {
+      "key": "C",
+      "text": "UA Registration, UAPL, Class 1 AP and Operator Permit."
+    },
+    {
+      "key": "D",
+      "text": "UA Registration, UABT and Class 2 AP."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Question tests which permits and licences are required for a specific operation."
+}

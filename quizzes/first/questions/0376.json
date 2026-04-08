@@ -1,0 +1,40 @@
+{
+  "id": 376,
+  "question_type": "single_select_4orless",
+  "question": "SHELL framework is to:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Identify hazards through workplace risk assessment."
+    },
+    {
+      "key": "B",
+      "text": "Consider any health related issues which may affect your ability to conduct a flight."
+    },
+    {
+      "key": "C",
+      "text": "Consider and optimize human behavior and performance."
+    },
+    {
+      "key": "D",
+      "text": "Identify operational hazards and personnel interaction with its components."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 01 01",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 01 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "SHELL model purpose."
+}

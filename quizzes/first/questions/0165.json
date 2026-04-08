@@ -1,0 +1,40 @@
+{
+  "id": 165,
+  "question_type": "single_select_4orless",
+  "question": "As defined in ANR-101,\"recreation purpose\" means any pursuit or activity engaged in for enjoyment, relaxation or leisure. However, this does not include:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "An individual flying a UA for fun in line with CAAS' operating conditions."
+    },
+    {
+      "key": "B",
+      "text": "An individual flying for a sporting activity that forms part of an organised group activity."
+    },
+    {
+      "key": "C",
+      "text": "An individual flying within his private property for practice."
+    },
+    {
+      "key": "D",
+      "text": "An individual flying a UA higher than 200 feet above mean sea level for aerial photography for personal collection."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

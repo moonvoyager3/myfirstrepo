@@ -1,0 +1,40 @@
+{
+  "id": 246,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is true for CAAS Class 1 Activity Permit?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Required for educational UA user flying indoors."
+    },
+    {
+      "key": "B",
+      "text": "Granted to an organization/individual to assess safe operations of the Unmanned Aircraft (UA) safely."
+    },
+    {
+      "key": "C",
+      "text": "For UA activities conducted outdoors for purposes that are not recreational or educational in nature."
+    },
+    {
+      "key": "D",
+      "text": "Required for a recreational UA user flying outdoors above 200ft AMSL."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Class 1 permit conditions are being tested."
+}

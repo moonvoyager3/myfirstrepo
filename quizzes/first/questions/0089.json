@@ -1,0 +1,36 @@
+{
+  "id": 89,
+  "question_type": "single_select_4orless",
+  "question": "Which statement relates to Bernoulli's principle?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "For every action there is an equal and opposite reaction."
+    },
+    {
+      "key": "B",
+      "text": "An additional upward force is generated as the lower surface of the wing deflects air downward."
+    },
+    {
+      "key": "C",
+      "text": "Air traveling faster over the curved upper surface of an airfoil causes lower pressure on the top surface."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 02",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Bernoulli principle."
+}

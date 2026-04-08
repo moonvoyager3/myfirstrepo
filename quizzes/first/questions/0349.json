@@ -1,0 +1,36 @@
+{
+  "id": 349,
+  "question_type": "single_select_4orless",
+  "question": "The suffix 'nimbus', used in naming clouds, means:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "A rain cloud."
+    },
+    {
+      "key": "B",
+      "text": "A low-level cloud containing pellets."
+    },
+    {
+      "key": "C",
+      "text": "A cloud with extensive vertical development."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 03",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Nimbus means rain cloud."
+}

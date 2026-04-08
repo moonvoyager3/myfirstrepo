@@ -1,0 +1,40 @@
+{
+  "id": 68,
+  "question_type": "single_select_4orless",
+  "question": "In straight and level flight, lift equals",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Thrust"
+    },
+    {
+      "key": "B",
+      "text": "Weight"
+    },
+    {
+      "key": "C",
+      "text": "Drag"
+    },
+    {
+      "key": "D",
+      "text": "All the above"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 01",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "This asks about force balance in flight."
+}

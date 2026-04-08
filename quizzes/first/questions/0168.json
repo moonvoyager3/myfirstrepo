@@ -1,0 +1,40 @@
+{
+  "id": 168,
+  "question_type": "single_select_4orless",
+  "question": "For failing to produce a valid UA Basic Training certificate during verification checks,",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "you will be fined up to $5,000 for the first offence."
+    },
+    {
+      "key": "B",
+      "text": "you will be fined up to $10,000 for the first offence."
+    },
+    {
+      "key": "C",
+      "text": "you will be fined up to $15,000 for the first offence."
+    },
+    {
+      "key": "D",
+      "text": "you will be fined up to $20,000 for the first offence."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "UA Basic Training compliance question."
+}

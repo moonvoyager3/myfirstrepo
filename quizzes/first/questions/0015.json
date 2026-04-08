@@ -1,0 +1,40 @@
+{
+  "id": 15,
+  "question_type": "single_select_4orless",
+  "question": "What Is the maximum voltage on a fully charged 6 cell (6S) LiPo battery?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "25.0 V"
+    },
+    {
+      "key": "B",
+      "text": "25.2 V"
+    },
+    {
+      "key": "C",
+      "text": "25.6 V"
+    },
+    {
+      "key": "D",
+      "text": "26.0 V"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 01",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

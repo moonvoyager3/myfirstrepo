@@ -1,0 +1,40 @@
+{
+  "id": 272,
+  "question_type": "single_select_4orless",
+  "question": "What is the prerequisite for applying a Class B UAPL?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Must hold a valid Class A UAPL."
+    },
+    {
+      "key": "B",
+      "text": "Must hold a valid UABT and Class A UAPL."
+    },
+    {
+      "key": "C",
+      "text": "Must hold a valid UABT and Class A UAPL with at least 1 year of UA piloting experience."
+    },
+    {
+      "key": "D",
+      "text": "Must hold a valid Class A UAPL with at least 1 year of UA piloting experience."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 06 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 06 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Class B UAPL prerequisite question."
+}

@@ -1,0 +1,36 @@
+{
+  "id": 430,
+  "question_type": "single_select_4orless",
+  "question": "Risk management, as part of the aeronautical decision making (ADM) process, relies on which features to reduce the risks associated with each flight?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Application of stress management and risk element procedures."
+    },
+    {
+      "key": "B",
+      "text": "Situational awareness, problem recognition, and good judgment."
+    },
+    {
+      "key": "C",
+      "text": "The mental process of analyzing all information in a particular situation and making a timely decision on what action to take."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 01 03",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 01 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Risk management and risk reduction in ADM."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 204,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following can be used to determine fly and no-fly zones?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "OneMap.sg"
+    },
+    {
+      "key": "B",
+      "text": "Google Maps"
+    },
+    {
+      "key": "C",
+      "text": "CAAS website"
+    },
+    {
+      "key": "D",
+      "text": "NEA Website"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 03 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "OneMap is used for airspace and fly-zone checks."
+}

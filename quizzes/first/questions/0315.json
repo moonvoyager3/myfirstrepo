@@ -1,0 +1,40 @@
+{
+  "id": 315,
+  "question_type": "single_select_4orless",
+  "question": "If the aircraft is on level flight and constant speed:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Dynamic Pressure Increases, Static Pressure decreases."
+    },
+    {
+      "key": "B",
+      "text": "Dynamic Pressure decreases, Static Pressure increases."
+    },
+    {
+      "key": "C",
+      "text": "Dynamic Pressure and Static Pressure have no change."
+    },
+    {
+      "key": "D",
+      "text": "Dynamic Pressure increases while Static Pressure remains the same."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 01",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Level flight pressure balance."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 472,
+  "question_type": "single_select_4orless",
+  "question": "When you are operating a visual line of sight inspection of a fire scene, you lose sight of your UA behind a plume of smoke, you should:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Immediately ascend to a height at which the aircraft reappears and abort the flight."
+    },
+    {
+      "key": "B",
+      "text": "Regain VLOS as soon as possible and continue the flight."
+    },
+    {
+      "key": "C",
+      "text": "Descend and land the aircraft immediately even though you cannot see it."
+    },
+    {
+      "key": "D",
+      "text": "Initiate the return to home function of the aircraft."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Regain VLOS after smoke obscures the UA."
+}

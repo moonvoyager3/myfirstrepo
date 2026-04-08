@@ -1,0 +1,40 @@
+{
+  "id": 278,
+  "question_type": "single_select_4orless",
+  "question": "Longitude is/are:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Lines that run east and west around Earth."
+    },
+    {
+      "key": "B",
+      "text": "Lines that run north and south around Earth."
+    },
+    {
+      "key": "C",
+      "text": "Great circles."
+    },
+    {
+      "key": "D",
+      "text": "International date line."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 01 01",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 01 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

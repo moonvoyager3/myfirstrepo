@@ -1,0 +1,40 @@
+{
+  "id": 232,
+  "question_type": "single_select_4orless",
+  "question": "A Class 2 Activity permit is required if",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "UA's total mass is below 7kg (education) or below 25kg (recreation), operating in a fly zone and/or below 200 feet AMSL for recreation or educational purposes."
+    },
+    {
+      "key": "B",
+      "text": "UA's total mass is above 7kg, operating in a no-fly zone and/or above 200ft AMSL for non recreation or non educational purposes."
+    },
+    {
+      "key": "C",
+      "text": "UA's total mass is below 7kg (education) or below 25kg (recreation), operating in a no-fly zone and/or above 200feet AMSL."
+    },
+    {
+      "key": "D",
+      "text": "None of the above."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Class 2 permit conditions govern recreational and educational activity limits."
+}

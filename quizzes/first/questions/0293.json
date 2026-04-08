@@ -1,0 +1,40 @@
+{
+  "id": 293,
+  "question_type": "single_select_4orless",
+  "question": "What slows down GPS signal?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Atmosphere"
+    },
+    {
+      "key": "B",
+      "text": "Ionosphere"
+    },
+    {
+      "key": "C",
+      "text": "Static in the air"
+    },
+    {
+      "key": "D",
+      "text": "Air"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 01 02",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

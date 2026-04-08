@@ -1,0 +1,40 @@
+{
+  "id": 189,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following UA mass requires a UA Basic Training Certificate for recreational and educational purpose?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "250g or less"
+    },
+    {
+      "key": "B",
+      "text": "More than 1.5kg up to 7kg"
+    },
+    {
+      "key": "C",
+      "text": "More than 7kg"
+    },
+    {
+      "key": "D",
+      "text": "More than 250g up to 1.5kg"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

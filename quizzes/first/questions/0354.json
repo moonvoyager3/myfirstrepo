@@ -1,0 +1,36 @@
+{
+  "id": 354,
+  "question_type": "single_select_4orless",
+  "question": "What happens when UAS fly in the vicinity of Cumulonimbus clouds?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "UAS are able to gain height easily"
+    },
+    {
+      "key": "B",
+      "text": "Nothing will happen to the UAS"
+    },
+    {
+      "key": "C",
+      "text": "Downdraft will cause UAS to lose altitude"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 03",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Cumulonimbus hazard."
+}

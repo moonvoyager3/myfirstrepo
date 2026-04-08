@@ -1,0 +1,40 @@
+{
+  "id": 226,
+  "question_type": "single_select_4orless",
+  "question": "Which one of the following is not part of the registration process?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Purchase of a registration label bearing a unique UA registration number."
+    },
+    {
+      "key": "B",
+      "text": "Submit original and photocopy of the purchaser's photo identification."
+    },
+    {
+      "key": "C",
+      "text": "Submit unique identification number listed on the registration label."
+    },
+    {
+      "key": "D",
+      "text": "Submit unique camera system specification of the UA."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 04 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 04 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

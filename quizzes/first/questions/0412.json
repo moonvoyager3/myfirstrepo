@@ -1,0 +1,40 @@
+{
+  "id": 412,
+  "question_type": "single_select_4orless",
+  "question": "What are the effects of stress on UAS operations?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "UAS operator will execute operations successfully."
+    },
+    {
+      "key": "B",
+      "text": "UAS operator will tend to consume more energy drinks and vitamins to counter stress level."
+    },
+    {
+      "key": "C",
+      "text": "Not focused on the task of flying and handling procedures."
+    },
+    {
+      "key": "D",
+      "text": "Reducing chances of crashing the UAS."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 05 02",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Stress effects on operations."
+}

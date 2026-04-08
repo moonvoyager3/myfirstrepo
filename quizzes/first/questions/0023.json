@@ -1,0 +1,40 @@
+{
+  "id": 23,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following best describes the unique advantages of hybrid rotary/ fixed-wing UAVs?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "These UAVs combine the maneuverability of a quadcopter with the endurance of a fixed-wing UAV."
+    },
+    {
+      "key": "B",
+      "text": "These UAVs combine the maneuverability of a fixed-wing UAV with the endurance of a quadcopter."
+    },
+    {
+      "key": "C",
+      "text": "These UAVs can reach higher altitudes than quadcopters while flying faster than standard fixed-wing UAVS."
+    },
+    {
+      "key": "D",
+      "text": "These UAVs use two different power sources, enabling safer flights over urban areas."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 01",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "General UAS knowledge and UA-category topics are being tested."
+}

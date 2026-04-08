@@ -1,0 +1,36 @@
+{
+  "id": 305,
+  "question_type": "single_select_4orless",
+  "question": "What should a remote pilot consider when flying a drone near reflective surfaces?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Potential for increased battery life."
+    },
+    {
+      "key": "B",
+      "text": "Possible signal interference."
+    },
+    {
+      "key": "C",
+      "text": "Enhanced visibility of the drone."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 01 04",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 01 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Reflective surfaces and guidance-sensor question."
+}

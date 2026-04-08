@@ -1,0 +1,36 @@
+{
+  "id": 213,
+  "question_type": "single_select_4orless",
+  "question": "Under what condition would a UA not have to be registered before it is operated?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "When the aircraft weighs less than 250g on takeoff, including everything that is onboard or attached to the aircraft."
+    },
+    {
+      "key": "B",
+      "text": "When the aircraft has a takeoff weight that is more than 250g, but less than 250g when not including fuel and necessary attachments."
+    },
+    {
+      "key": "C",
+      "text": "All aircraft need to be registered regardless of the weight of the aircraft before, during, or after the flight."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 04 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 04 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Sub-250g registration exemption."
+}

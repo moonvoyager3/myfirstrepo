@@ -1,0 +1,40 @@
+{
+  "id": 177,
+  "question_type": "single_select_4orless",
+  "question": "What is the Air Navigation Requirement (ANR) number relevant for Unmanned Aircraft Operations?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "110"
+    },
+    {
+      "key": "B",
+      "text": "111"
+    },
+    {
+      "key": "C",
+      "text": "101"
+    },
+    {
+      "key": "D",
+      "text": "102"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "ANR-101 is the relevant regulation set."
+}

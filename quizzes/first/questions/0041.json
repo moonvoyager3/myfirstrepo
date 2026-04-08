@@ -1,0 +1,36 @@
+{
+  "id": 41,
+  "question_type": "single_select_4orless",
+  "question": "How does a remote pilot ensure the security of the control link to prevent unauthorized access during drone operations?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "By using encrypted communication channels."
+    },
+    {
+      "key": "B",
+      "text": "By flying only in remote areas."
+    },
+    {
+      "key": "C",
+      "text": "By avoiding the use of autopilot modes."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 03",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Control-link security question."
+}

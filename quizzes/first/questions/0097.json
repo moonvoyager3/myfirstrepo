@@ -1,0 +1,40 @@
+{
+  "id": 97,
+  "question_type": "single_select_4orless",
+  "question": "Spins occur in different stages. What are the stages of a spin?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Erect Spin, Inverted Spin, Flat Spin."
+    },
+    {
+      "key": "B",
+      "text": "Incipient, Developed, Recovery."
+    },
+    {
+      "key": "C",
+      "text": "Induced Spin, Rolling Spin, Flat spin."
+    },
+    {
+      "key": "D",
+      "text": "Erect Spin, Incipient, Recovery."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 04",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 04"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Spin stages and recovery are stall/spin syllabus content."
+}

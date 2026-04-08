@@ -1,0 +1,40 @@
+{
+  "id": 31,
+  "question_type": "single_select_4orless",
+  "question": "An operator will be using reverse command for roll and pitch of the UA when flying with nose-in direction. To eliminate this, you can fly in",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Auto mode"
+    },
+    {
+      "key": "B",
+      "text": "Headless mode"
+    },
+    {
+      "key": "C",
+      "text": "GPS Mode"
+    },
+    {
+      "key": "D",
+      "text": "Attitude Mode"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 02",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

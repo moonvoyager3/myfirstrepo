@@ -1,0 +1,36 @@
+{
+  "id": 489,
+  "question_type": "single_select_4orless",
+  "question": "What is the appropriate response if a remote pilot's drone unexpectedly loses GPS signal during flight?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Continue flying using visual cues."
+    },
+    {
+      "key": "B",
+      "text": "Switch to manual mode and take control."
+    },
+    {
+      "key": "C",
+      "text": "Increase altitude to regain the signal."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 02",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Unexpected GPS-loss contingency question."
+}

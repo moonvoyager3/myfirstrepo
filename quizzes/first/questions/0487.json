@@ -1,0 +1,40 @@
+{
+  "id": 487,
+  "question_type": "single_select_4orless",
+  "question": "The objective of creating an emergency plan specific to the operation is to: I. Prevent fatalities and injuries. II. Improve the value-added service of the operation. III. Protect the environment and the community. IV. Reduce damage to buildings, stock, and equipment.",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "I and II"
+    },
+    {
+      "key": "B",
+      "text": "III and IV"
+    },
+    {
+      "key": "C",
+      "text": "II, III and IV"
+    },
+    {
+      "key": "D",
+      "text": "I, III and IV"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 02",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Emergency plan objectives."
+}

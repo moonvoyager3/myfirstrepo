@@ -1,0 +1,40 @@
+{
+  "id": 93,
+  "question_type": "single_select_4orless",
+  "question": "The angle of attack at which an airfoil stalls will",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Increase if the CG is moved forward"
+    },
+    {
+      "key": "B",
+      "text": "Decrease if the CG is moved forward"
+    },
+    {
+      "key": "C",
+      "text": "Remain the same regardless of gross weight"
+    },
+    {
+      "key": "D",
+      "text": "Change with an increase in gross weight"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 03",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

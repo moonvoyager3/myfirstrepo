@@ -1,0 +1,36 @@
+{
+  "id": 316,
+  "question_type": "single_select_4orless",
+  "question": "Moisture is added to air by:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "sublimation and condensation."
+    },
+    {
+      "key": "B",
+      "text": "evaporation and sublimation."
+    },
+    {
+      "key": "C",
+      "text": "evaporation and condensation."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 01",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Moisture added to air by evaporation/saturation."
+}

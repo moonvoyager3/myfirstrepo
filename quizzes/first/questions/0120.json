@@ -1,0 +1,40 @@
+{
+  "id": 120,
+  "question_type": "single_select_4orless",
+  "question": "What is dynamic stability?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "The initial tendency of the aircraft."
+    },
+    {
+      "key": "B",
+      "text": "Imaginary line running from the nose to the tail of the aircraft."
+    },
+    {
+      "key": "C",
+      "text": "Dihedral effect."
+    },
+    {
+      "key": "D",
+      "text": "The tendency of the aircraft over time."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 05",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

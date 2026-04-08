@@ -1,0 +1,40 @@
+{
+  "id": 185,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is necessary as part of the procedures for reporting any incident or accident relating to the UA to CAAS or the relevant authority?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Initial notification within 24 hours of occurrence and a follow-up report within 3 working days."
+    },
+    {
+      "key": "B",
+      "text": "Casualties and damaged property involved, details and state of UA used."
+    },
+    {
+      "key": "C",
+      "text": "Initial analysis of the cause of the incident / accident and immediate action taken after the incident / accident."
+    },
+    {
+      "key": "D",
+      "text": "All of the above."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Incident reporting procedure is part of ANR-101 operational provisions."
+}

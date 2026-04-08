@@ -1,0 +1,40 @@
+{
+  "id": 273,
+  "question_type": "single_select_4orless",
+  "question": "Which is not in the categories of unmanned aircraft within UAPL?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Airship"
+    },
+    {
+      "key": "B",
+      "text": "Aeroplane"
+    },
+    {
+      "key": "C",
+      "text": "Rotorcraft"
+    },
+    {
+      "key": "D",
+      "text": "Combat"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 06 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 06 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "UAPL category question."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 138,
+  "question_type": "single_select_4orless",
+  "question": "What are the three axes of movement on a fixed wing UA? I. Vertical Axis II. Longitudinal axis III. Lateral axis IV. Horizontal axis",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "I,II and IV"
+    },
+    {
+      "key": "B",
+      "text": "I and V"
+    },
+    {
+      "key": "C",
+      "text": "I,II and III"
+    },
+    {
+      "key": "D",
+      "text": "II, III and IV"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 02 01",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

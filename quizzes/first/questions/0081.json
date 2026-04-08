@@ -1,0 +1,40 @@
+{
+  "id": 81,
+  "question_type": "single_select_4orless",
+  "question": "Ground effect only begins to show up at?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "1.5m above ground"
+    },
+    {
+      "key": "B",
+      "text": "Two wingspan"
+    },
+    {
+      "key": "C",
+      "text": "One Wingspan"
+    },
+    {
+      "key": "D",
+      "text": "One-half wingspan"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 02",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Ground effect is an aerofoil/airflow concept."
+}

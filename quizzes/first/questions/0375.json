@@ -1,0 +1,40 @@
+{
+  "id": 375,
+  "question_type": "single_select_4orless",
+  "question": "Wind flow moves from:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "High to low pressure"
+    },
+    {
+      "key": "B",
+      "text": "Low to High pressure"
+    },
+    {
+      "key": "C",
+      "text": "Higher altitude to lower altitude"
+    },
+    {
+      "key": "D",
+      "text": "Against the Earth's rotation"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 05",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Wind moves high to low pressure."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 281,
+  "question_type": "single_select_4orless",
+  "question": "What is the definition of Longitude?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Lines of longitude are called meridians and divide the earth from pole to pole, with the 0° meridian passing through Greenwich, England."
+    },
+    {
+      "key": "B",
+      "text": "Lines of longitude is the imaginary angular distance in degrees of a place from the equator, measured at the centre of the Earth and designated either North or South."
+    },
+    {
+      "key": "C",
+      "text": "Longitude is also known as the equator."
+    },
+    {
+      "key": "D",
+      "text": "None of the above."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 01 01",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 01 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Latitude and longitude are basic navigation concepts."
+}

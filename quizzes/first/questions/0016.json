@@ -1,0 +1,36 @@
+{
+  "id": 16,
+  "question_type": "single_select_4orless",
+  "question": "What is the role of a drone's inertial measurement unit?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "To measure the drone's altitude and airspeed."
+    },
+    {
+      "key": "B",
+      "text": "To provide data on the drone's orientation and movement."
+    },
+    {
+      "key": "C",
+      "text": "To enhance the quality of aerial photography."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 01",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "IMU role in flight control question."
+}

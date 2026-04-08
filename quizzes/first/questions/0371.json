@@ -1,0 +1,40 @@
+{
+  "id": 371,
+  "question_type": "single_select_4orless",
+  "question": "What are isobars on a weather chart?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Contour lines on a land map"
+    },
+    {
+      "key": "B",
+      "text": "Join areas of equal barometric pressure"
+    },
+    {
+      "key": "C",
+      "text": "Join areas of the same temperature"
+    },
+    {
+      "key": "D",
+      "text": "Separation lines of regions"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 05",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Isobars on weather charts."
+}

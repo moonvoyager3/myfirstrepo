@@ -1,0 +1,40 @@
+{
+  "id": 251,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following would require an operator permit?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "UA with a mass of more than 7kg for recreational purposes."
+    },
+    {
+      "key": "B",
+      "text": "UA with a mass of less than 7kg for educational purposes."
+    },
+    {
+      "key": "C",
+      "text": "For neither education nor recreation and outdoors regardless of mass."
+    },
+    {
+      "key": "D",
+      "text": "For recreation purpose and indoors at your own home."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

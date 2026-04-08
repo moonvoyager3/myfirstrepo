@@ -1,0 +1,40 @@
+{
+  "id": 123,
+  "question_type": "single_select_4orless",
+  "question": "Which is considered a result of positive dynamic stability?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Amplitude of oscillations maintains over time"
+    },
+    {
+      "key": "B",
+      "text": "Amplitude of oscillations increase over time"
+    },
+    {
+      "key": "C",
+      "text": "No oscillations"
+    },
+    {
+      "key": "D",
+      "text": "Amplitude of oscillations decrease over time"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 01 05",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 01 05"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

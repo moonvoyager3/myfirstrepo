@@ -1,0 +1,40 @@
+{
+  "id": 469,
+  "question_type": "single_select_4orless",
+  "question": "What are the various phases of flight in which identified hazards can occur?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Before flight, during flight, cruising, landing, post flight."
+    },
+    {
+      "key": "B",
+      "text": "Before flight, take-off, cruising, take-in, post flight."
+    },
+    {
+      "key": "C",
+      "text": "Pre-flight, vertical climb, ceiling-flight, downward, post flight."
+    },
+    {
+      "key": "D",
+      "text": "Pre-flight, take off, mid-flight, approach, landing."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Phases of flight and hazard identification."
+}

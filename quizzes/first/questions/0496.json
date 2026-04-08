@@ -1,0 +1,40 @@
+{
+  "id": 496,
+  "question_type": "single_select_4orless",
+  "question": "The purpose of keeping maintenance log is to track",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Component's warranty"
+    },
+    {
+      "key": "B",
+      "text": "Battery usage"
+    },
+    {
+      "key": "C",
+      "text": "Pilot's flying hours"
+    },
+    {
+      "key": "D",
+      "text": "Component's lifespan"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 03",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Maintenance logs are part of maintenance management."
+}

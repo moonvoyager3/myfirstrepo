@@ -1,0 +1,32 @@
+{
+  "id": 255,
+  "question_type": "single_select_4orless",
+  "question": "You intend to fly your unmanned aircraft that has a weight of 249g indoors. Is it required to register the UA?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Yes"
+    },
+    {
+      "key": "B",
+      "text": "No"
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 05 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Indoor flying-display / permit requirement question."
+}

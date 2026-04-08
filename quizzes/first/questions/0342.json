@@ -1,0 +1,36 @@
+{
+  "id": 342,
+  "question_type": "single_select_4orless",
+  "question": "What is the best practice for a drone pilot when operating in an area with diverse terrain elevations?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Maintain a constant altitude above ground level."
+    },
+    {
+      "key": "B",
+      "text": "Adjust altitude based on the varying terrain to maintain a safe clearance."
+    },
+    {
+      "key": "C",
+      "text": "Fly at the highest possible altitude to avoid terrain changes."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 02",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Terrain elevation and altitude-awareness question."
+}

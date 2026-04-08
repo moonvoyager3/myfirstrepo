@@ -1,0 +1,40 @@
+{
+  "id": 151,
+  "question_type": "single_select_4orless",
+  "question": "Which control surface is associated with movement around the lateral axis?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Rudder"
+    },
+    {
+      "key": "B",
+      "text": "Aileron"
+    },
+    {
+      "key": "C",
+      "text": "Throttle"
+    },
+    {
+      "key": "D",
+      "text": "Elevator"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Principles of Flight",
+  "syllabus_reference": "020 02 02",
+  "metadata": {
+    "knowledge_area": "Principles of Flight",
+    "syllabus_reference": "020 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Elevator is the control surface tied to pitch axis motion."
+}

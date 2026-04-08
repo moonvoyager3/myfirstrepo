@@ -1,0 +1,40 @@
+{
+  "id": 197,
+  "question_type": "single_select_4orless",
+  "question": "What is the penalty for operating a UA under the influence of any psychoactive substances?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "For the first offence, a fine not exceeding $20,000 or to imprisonment for a term not exceeding 2 years or both."
+    },
+    {
+      "key": "B",
+      "text": "For the first offence, a fine not exceeding $50,000 or to imprisonment for a term not exceeding 2 years or both."
+    },
+    {
+      "key": "C",
+      "text": "For the second or subsequent offence, a fine not exceeding $20,000 or to imprisonment for a term not exceeding 5 years or both."
+    },
+    {
+      "key": "D",
+      "text": "For the second or subsequent offence, a fine not exceeding $50,000 or to imprisonment for a term not exceeding 5 years or both."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 02 02",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Penalty for psychoactive substances."
+}

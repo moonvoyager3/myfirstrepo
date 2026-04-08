@@ -1,0 +1,40 @@
+{
+  "id": 492,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following events is considered a flyaway?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Loss of video link between the UA and the GCS."
+    },
+    {
+      "key": "B",
+      "text": "Loss of link between the remote PIC and the unmanned aircraft."
+    },
+    {
+      "key": "C",
+      "text": "Loss of communication link between the Remote PIC and ATC."
+    },
+    {
+      "key": "D",
+      "text": "Unmanned aircraft do not respond to control input and do not execute known lost link maneuvers."
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 02",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 261,
+  "question_type": "single_select_4orless",
+  "question": "What is the minimum requirement to be qualified as an Authorised Flight Examiner (AFE)?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "21 yrs and above"
+    },
+    {
+      "key": "B",
+      "text": "Above 16 yrs old"
+    },
+    {
+      "key": "C",
+      "text": "No age requirement"
+    },
+    {
+      "key": "D",
+      "text": "Above 21 years old with a relevant UA pilot Licence"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 06 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 06 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Authorised Flight Examiner qualification sits under pilot competency requirements."
+}

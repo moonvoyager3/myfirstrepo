@@ -1,0 +1,40 @@
+{
+  "id": 410,
+  "question_type": "single_select_4orless",
+  "question": "What are the three common hazard stressors?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Mental, Financial, Psychological"
+    },
+    {
+      "key": "B",
+      "text": "Environmental, Financial, Mental"
+    },
+    {
+      "key": "C",
+      "text": "Environmental, Physiological, Psychological"
+    },
+    {
+      "key": "D",
+      "text": "Mental, Environmental, Engineering"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 05 01",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 05 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

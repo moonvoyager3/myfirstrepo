@@ -1,0 +1,40 @@
+{
+  "id": 439,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following best defines the accurate perception and understanding of all the risk element factors and conditions?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Situational awareness"
+    },
+    {
+      "key": "B",
+      "text": "Judgment"
+    },
+    {
+      "key": "C",
+      "text": "Aeronautical decision making"
+    },
+    {
+      "key": "D",
+      "text": "Risk assessment"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 02 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

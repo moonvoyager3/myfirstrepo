@@ -1,0 +1,40 @@
+{
+  "id": 470,
+  "question_type": "single_select_4orless",
+  "question": "What does E in IMSAFE stand for?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Emotion"
+    },
+    {
+      "key": "B",
+      "text": "Environment"
+    },
+    {
+      "key": "C",
+      "text": "Education"
+    },
+    {
+      "key": "D",
+      "text": "Experience"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 01",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Safety and operations topics are being tested."
+}

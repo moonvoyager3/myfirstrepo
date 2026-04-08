@@ -1,0 +1,36 @@
+{
+  "id": 335,
+  "question_type": "single_select_4orless",
+  "question": "For aviation purposes, ceiling is defined as the height above the Earth's surface of the:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "lowest reported obscuration and the highest layer of clouds reported as overcast."
+    },
+    {
+      "key": "B",
+      "text": "lowest broken or overcast layer or vertical visibility into an obscuration."
+    },
+    {
+      "key": "C",
+      "text": "lowest layer of clouds reported as scattered, broken, or thin."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 02",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Ceiling is an altimetry / weather term."
+}

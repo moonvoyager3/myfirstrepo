@@ -1,0 +1,40 @@
+{
+  "id": 286,
+  "question_type": "single_select_4orless",
+  "question": "What are the consequences of losing GPS/GPS error?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "UA/aircraft will get a compass error."
+    },
+    {
+      "key": "B",
+      "text": "UA/aircraft will drift along with the wind."
+    },
+    {
+      "key": "C",
+      "text": "There is a height limitation on the UA."
+    },
+    {
+      "key": "D",
+      "text": "UA will engage failsafe action."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 01 02",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 01 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

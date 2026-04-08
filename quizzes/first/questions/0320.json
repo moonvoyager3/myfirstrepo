@@ -1,0 +1,40 @@
+{
+  "id": 320,
+  "question_type": "single_select_4orless",
+  "question": "What are the pressure(s) that act on a moving drone?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Dynamic Pressure"
+    },
+    {
+      "key": "B",
+      "text": "Static Pressure"
+    },
+    {
+      "key": "C",
+      "text": "Dynamic Pressure and Static Pressure"
+    },
+    {
+      "key": "D",
+      "text": "Air Pressure and Molecule Pressure"
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Navigation and Meteorology",
+  "syllabus_reference": "040 02 01",
+  "metadata": {
+    "knowledge_area": "Navigation and Meteorology",
+    "syllabus_reference": "040 02 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Static and dynamic pressure."
+}

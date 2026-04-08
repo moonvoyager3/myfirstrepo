@@ -1,0 +1,40 @@
+{
+  "id": 407,
+  "question_type": "single_select_4orless",
+  "question": "Describe the effects of fatigue that will affect a pilot during a UA operation.",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "The UA operator will be more focus on the task."
+    },
+    {
+      "key": "B",
+      "text": "The UA operator will encounter more illusions while on a UAS operation."
+    },
+    {
+      "key": "C",
+      "text": "Accidents may occur due to lack of focus causing loss of control of UA."
+    },
+    {
+      "key": "D",
+      "text": "The UAS operator will risk crashing of UAS, losing control of UA, losing line of sight easily of the UAS, but recovering control in the end."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 04 02",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 04 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Fatigue effects."
+}

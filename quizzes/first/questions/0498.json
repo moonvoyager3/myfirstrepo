@@ -1,0 +1,40 @@
+{
+  "id": 498,
+  "question_type": "single_select_4orless",
+  "question": "Which of the following is not a reason why maintenance log should be kept?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Prevent expensive repair works from happening."
+    },
+    {
+      "key": "B",
+      "text": "Prevent problems regarding warranty claims."
+    },
+    {
+      "key": "C",
+      "text": "Help an organization assign which pilot to perform the job."
+    },
+    {
+      "key": "D",
+      "text": "Helps you track who's accountable for a piece of equipment."
+    }
+  ],
+  "correct_answers": [
+    "C"
+  ],
+  "answer": "C",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 03 03",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 03 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Maintenance log purpose."
+}

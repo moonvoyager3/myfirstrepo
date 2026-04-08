@@ -1,0 +1,36 @@
+{
+  "id": 414,
+  "question_type": "single_select_4orless",
+  "question": "Which would most likely result in hyperventilation?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Emotional tension, anxiety, or fear."
+    },
+    {
+      "key": "B",
+      "text": "The excessive consumption of alcohol."
+    },
+    {
+      "key": "C",
+      "text": "An extremely slow rate of breathing and insufficient oxygen."
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 05 02",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 05 02"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Hyperventilation here is presented as an operational effect of stress and anxiety."
+}

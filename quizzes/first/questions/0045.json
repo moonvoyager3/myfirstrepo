@@ -1,0 +1,40 @@
+{
+  "id": 45,
+  "question_type": "single_select_4orless",
+  "question": "What is a possible cause for UA flyaway?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Loss of GPS signals"
+    },
+    {
+      "key": "B",
+      "text": "Bad weather"
+    },
+    {
+      "key": "C",
+      "text": "Low battery power"
+    },
+    {
+      "key": "D",
+      "text": "Flying beyond radio frequency range"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "General UAS Knowledge",
+  "syllabus_reference": "010 02 03",
+  "metadata": {
+    "knowledge_area": "General UAS Knowledge",
+    "syllabus_reference": "010 02 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Flyaway can be caused by loss of link/range limits."
+}

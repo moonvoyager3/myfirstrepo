@@ -1,0 +1,40 @@
+{
+  "id": 404,
+  "question_type": "single_select_4orless",
+  "question": "Is a UA pilot allowed to operate a UAS while on medication?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Allowed, only after 12 hours"
+    },
+    {
+      "key": "B",
+      "text": "Allowed, only after 8 hours"
+    },
+    {
+      "key": "C",
+      "text": "Allowed, only after 24 hours"
+    },
+    {
+      "key": "D",
+      "text": "Not allowed at any time"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 03 03",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 03 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Medication use during operations."
+}

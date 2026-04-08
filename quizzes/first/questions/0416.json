@@ -1,0 +1,36 @@
+{
+  "id": 416,
+  "question_type": "single_select_4orless",
+  "question": "A pilot should be able to overcome the symptoms or avoid future occurrences of hyperventilation by:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "closely monitoring the flight instruments to control the airplane."
+    },
+    {
+      "key": "B",
+      "text": "slowing the breathing rate, breathing into a bag, or talking aloud."
+    },
+    {
+      "key": "C",
+      "text": "increasing the breathing rate in order to increase lung ventilation."
+    }
+  ],
+  "correct_answers": [
+    "B"
+  ],
+  "answer": "B",
+  "knowledge_area": "Human Factors",
+  "syllabus_reference": "050 05 03",
+  "metadata": {
+    "knowledge_area": "Human Factors",
+    "syllabus_reference": "050 05 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Question asks how to manage and overcome stress-linked hyperventilation symptoms."
+}

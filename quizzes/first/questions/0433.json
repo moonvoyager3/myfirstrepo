@@ -1,0 +1,40 @@
+{
+  "id": 433,
+  "question_type": "single_select_4orless",
+  "question": "What is Risk Assessment?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Identify hazards and perform risk mitigation"
+    },
+    {
+      "key": "B",
+      "text": "Identify faults in safety management systems"
+    },
+    {
+      "key": "C",
+      "text": "To remove all risks completely"
+    },
+    {
+      "key": "D",
+      "text": "To show to auditors that accidents do not happen in our setting"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Safety and Operations",
+  "syllabus_reference": "060 01 03",
+  "metadata": {
+    "knowledge_area": "Safety and Operations",
+    "syllabus_reference": "060 01 03"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Syllabus match."
+}

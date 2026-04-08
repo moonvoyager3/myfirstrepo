@@ -1,0 +1,32 @@
+{
+  "id": 209,
+  "question_type": "single_select_4orless",
+  "question": "Can you operate your toy UA weighing only 150g in your living room without UA registration label?",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "Yes"
+    },
+    {
+      "key": "B",
+      "text": "No"
+    }
+  ],
+  "correct_answers": [
+    "A"
+  ],
+  "answer": "A",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 04 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 04 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "Registration label exemption under 250g."
+}

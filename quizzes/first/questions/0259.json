@@ -1,0 +1,40 @@
+{
+  "id": 259,
+  "question_type": "single_select_4orless",
+  "question": "The requirement for a person to be approved as an authorised flight examiner in an unmanned aircraft training organisation (UATO) is:",
+  "image": null,
+  "options": [
+    {
+      "key": "A",
+      "text": "18 years of age and holds a UA pilot licence"
+    },
+    {
+      "key": "B",
+      "text": "18 years of age and holds a private pilot licence"
+    },
+    {
+      "key": "C",
+      "text": "21 years of age and holds a commercial pilot licence"
+    },
+    {
+      "key": "D",
+      "text": "21 years of age and holds a UA pilot licence"
+    }
+  ],
+  "correct_answers": [
+    "D"
+  ],
+  "answer": "D",
+  "knowledge_area": "Air Law",
+  "syllabus_reference": "030 06 01",
+  "metadata": {
+    "knowledge_area": "Air Law",
+    "syllabus_reference": "030 06 01"
+  },
+  "classification_confidence": {
+    "knowledge_area": 1.0,
+    "syllabus_reference": 1.0
+  },
+  "classification_source": "manual",
+  "classification_notes": "AFE approval requirements align with pilot competency and licensing requirements."
+}
