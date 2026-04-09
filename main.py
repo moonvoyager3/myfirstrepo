@@ -120,6 +120,7 @@ learner_confirm_no_button = web.page["learner-confirm-no-btn"]
 learner_progress_file = web.page["learner-progress-file"]
 learner_use_current_passport_button = web.page["learner-use-current-passport-btn"]
 learner_start_fresh_button = web.page["learner-start-fresh-btn"]
+learner_passport_back_button = web.page["learner-passport-back-btn"]
 learner_username_input = web.page["learner-username-input"]
 learner_avatar_options = web.page["learner-avatar-options"]
 learner_avatar_bg_options = web.page["learner-avatar-bg-options"]
@@ -780,6 +781,14 @@ def refresh_cowboy_debug_screen() -> None:
 def show_cowboy_debug_screen() -> None:
     refresh_cowboy_debug_screen()
     show_screen("cowboy-debug")
+
+
+def should_show_question_transition_loader() -> bool:
+    if current_index != 0:
+        return True
+    if learner_session_active:
+        return bool(learner_interactions) or learner_review_mode or learner_answer_locked
+    return bool(answers)
 
 
 def format_elapsed_time(total_seconds: int) -> str:
@@ -3535,6 +3544,9 @@ async def start_learner_session(scope_name: str, restore_payload: dict | None = 
         await end_learner_session({"message": "There are no questions available for this learner scope.", "end_session": True})
         return
 
+    if restore_payload is None:
+        show_status("Loading Questions...")
+
     session_question_ids = [next_question_id]
     answers = {}
     current_index = 0
@@ -4311,11 +4323,14 @@ async def render_current_question() -> None:
     global learner_question_started_at_ms
 
     question_id = session_question_ids[current_index]
-    loader_request_id = begin_question_transition_loader()
+    loader_request_id: int | None = None
+    if should_show_question_transition_loader():
+        loader_request_id = begin_question_transition_loader()
     try:
         question = await load_question(question_id)
     finally:
-        end_question_transition_loader(loader_request_id)
+        if loader_request_id is not None:
+            end_question_transition_loader(loader_request_id)
     render_learner_debug_panel(question_id)
 
     total = len(session_question_ids)
@@ -5090,6 +5105,10 @@ def on_learner_confirm_no_click(event) -> None:
     show_screen("home")
 
 
+def on_learner_passport_back_click(event) -> None:
+    show_screen("home")
+
+
 def on_learner_start_fresh_click(event) -> None:
     if learner_storage_module is None:
         return
@@ -5593,6 +5612,7 @@ learner_confirm_yes_button.on_click.add_listener(on_learner_confirm_yes_click)
 learner_confirm_no_button.on_click.add_listener(on_learner_confirm_no_click)
 learner_use_current_passport_button.on_click.add_listener(on_learner_use_current_passport_click)
 learner_start_fresh_button.on_click.add_listener(on_learner_start_fresh_click)
+learner_passport_back_button.on_click.add_listener(on_learner_passport_back_click)
 learner_avatar_options.on_click.add_listener(on_learner_avatar_options_click)
 learner_avatar_bg_options.on_click.add_listener(on_learner_avatar_bg_options_click)
 learner_generate_passport_button.on_click.add_listener(on_learner_generate_passport_click)

@@ -469,6 +469,17 @@ input {
     margin: 1.25rem 0 1rem;
 }
 
+#learner-use-current-passport-btn {
+    background: #ead5b1 !important;
+    color: #6a4c21 !important;
+}
+
+#learner-use-current-passport-btn:hover,
+#learner-use-current-passport-btn:focus {
+    background: #e2c99c !important;
+    color: #5c411b !important;
+}
+
 .learner-summary-section {
     margin-top: 1.15rem;
 }
